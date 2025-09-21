@@ -24,7 +24,7 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                  <p className="text-gray-600">contact@apex-meridian.net</p>
+                  <p className="text-gray-600">info@apex-meridian.net</p>
                   <p className="text-sm text-gray-500">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
@@ -33,8 +33,8 @@ export default function ContactPage() {
                 <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-sm text-gray-500">Monday - Friday, 9 AM - 6 PM PST</p>
+                  <p className="text-gray-600">+201200929092</p>
+                  <p className="text-sm text-gray-500">Sunday - Thursday, 9 AM - 6 PM EET</p>
                 </div>
               </div>
 
@@ -43,9 +43,9 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Headquarters</h3>
                   <p className="text-gray-600">
-                    123 Innovation Drive<br />
-                    San Francisco, CA 94105<br />
-                    United States
+                    Apex-Meridian Technologies<br />
+                    New Cairo, Cairo Governorate<br />
+                    Egypt
                   </p>
                 </div>
               </div>
@@ -55,8 +55,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Business Hours</h3>
                   <p className="text-gray-600">
-                    Monday - Friday: 9:00 AM - 6:00 PM PST<br />
-                    Saturday - Sunday: Closed
+                    Sunday - Thursday: 9:00 AM - 6:00 PM EET<br />
+                    Friday - Saturday: Closed
                   </p>
                 </div>
               </div>
@@ -193,10 +193,10 @@ export default function ContactPage() {
             <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <MapPin className="h-8 w-8 text-purple-600" />
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Media & Press</h3>
-            <p className="text-gray-600 mb-2">Media inquiries and press relations</p>
-            <a href="mailto:press@apex-meridian.net" className="text-blue-600 hover:text-blue-800 font-medium">
-              press@apex-meridian.net
+            <h3 className="text-lg font-bold text-gray-900 mb-2">Careers & HR</h3>
+            <p className="text-gray-600 mb-2">Join our team and career opportunities</p>
+            <a href="mailto:careers@apex-meridian.net" className="text-blue-600 hover:text-blue-800 font-medium">
+              careers@apex-meridian.net
             </a>
           </div>
         </div>

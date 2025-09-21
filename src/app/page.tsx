@@ -19,13 +19,21 @@ export default function HomePage() {
             <Image
               src="/assets/logo_white.png"
               alt="Apex-Meridian Logo"
-              width={80}
-              height={80}
-              className="h-20 w-auto mr-6"
+              width={300}
+              height={100}
+              className="h-24 w-auto"
             />
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
-              Apex-Meridian
-            </h1>
+          </div>
+          <div className="flex justify-center mb-8">
+            <Link href="/solutions/agi">
+              <Image
+                src="/assets/Apex-Meridian_drawing.png"
+                alt="AGI Tree"
+                width={80}
+                height={80}
+                className="h-20 w-auto"
+              />
+            </Link>
           </div>
           <p className="mt-6 text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
             Pioneering the Future of Artificial Intelligence

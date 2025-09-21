@@ -21,15 +21,14 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/assets/logo_blue.png"
                 alt="Apex-Meridian Logo"
-                width={40}
+                width={120}
                 height={40}
                 className="h-10 w-auto"
               />
-              <span className="text-2xl font-bold text-gray-900">Apex-Meridian</span>
             </Link>
           </div>
 
