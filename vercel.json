@@ -1,4 +1,4 @@
-﻿{
+
   "framework": null,
   "outputDirectory": "out",
   "buildCommand": "npm run build",
