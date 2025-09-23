@@ -26,6 +26,3 @@
     "typescript": "^5"
   }
 }
-"scripts": {
-  "build": "next build"
-}
