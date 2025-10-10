@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // تسكيت تحذير Turbopack (اختياري)
-  turbopack: { root: __dirname },
   output: "export",
   trailingSlash: true,
-  images: { unoptimized: true },
-  
-   };
+  images: { 
+    unoptimized: true 
+  },
+  distDir: "out"
+};
+
 export default nextConfig;

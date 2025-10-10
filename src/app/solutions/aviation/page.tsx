@@ -1,203 +1,65 @@
 import React from 'react';
-import Link from 'next/link';
-import { Plane, Shield, Users, Zap, ArrowRight, CheckCircle } from 'lucide-react';
+import Image from 'next/image';
+import { Zap, Plane, Shield, BarChart3, Clock, Users, CheckCircle } from 'lucide-react';
 
-export default function AviationSolutionsPage() {
+const AviationPage: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gray-50 text-gray-800">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <Plane className="h-16 w-16 text-blue-300" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Aviation AI Solutions
-            </h1>
-            <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Transform aviation operations with intelligent flight management, predictive maintenance, passenger experience optimization, and safety compliance automation.
-            </p>
-          </div>
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-24 sm:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <Image
+            src="/images/solutions/aviation-ai.jpg"
+            alt="Aviation AI Background"
+            fill
+            className="object-cover"
+          />
         </div>
-      </section>
-
-      {/* Solutions Overview */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Comprehensive Aviation AI</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our AI solutions address every aspect of aviation operations, from flight planning to passenger services, ensuring safety, efficiency, and exceptional experiences.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Zap className="h-6 w-6 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Flight Operations</h3>
-              <p className="text-gray-600 mb-4">
-                Optimize flight paths, fuel consumption, and scheduling with AI-powered operational intelligence.
-              </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
-                <li>• Route optimization algorithms</li>
-                <li>• Fuel efficiency predictions</li>
-                <li>• Weather impact analysis</li>
-                <li>• Crew scheduling optimization</li>
-              </ul>
-              <Link href="/contact" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Safety & Compliance</h3>
-              <p className="text-gray-600 mb-4">
-                Ensure the highest safety standards with predictive maintenance and automated compliance monitoring.
-              </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
-                <li>• Predictive maintenance alerts</li>
-                <li>• Safety risk assessment</li>
-                <li>• Regulatory compliance tracking</li>
-                <li>• Incident prediction models</li>
-              </ul>
-              <Link href="/contact" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Passenger Experience</h3>
-              <p className="text-gray-600 mb-4">
-                Enhance passenger satisfaction with personalized services and proactive communication.
-              </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
-                <li>• Personalized recommendations</li>
-                <li>• Delay prediction & communication</li>
-                <li>• Dynamic pricing optimization</li>
-                <li>• Customer service automation</li>
-              </ul>
-              <Link href="/contact" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Benefits */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Proven Results</h2>
-            <p className="text-lg text-gray-600">
-              Airlines using our AI solutions see significant improvements across key metrics
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">25%</div>
-              <p className="text-gray-600 font-medium">Fuel Cost Reduction</p>
-              <p className="text-sm text-gray-500 mt-1">Through optimized flight paths</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">40%</div>
-              <p className="text-gray-600 font-medium">Maintenance Cost Savings</p>
-              <p className="text-sm text-gray-500 mt-1">Via predictive maintenance</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">30%</div>
-              <p className="text-gray-600 font-medium">Passenger Satisfaction</p>
-              <p className="text-sm text-gray-500 mt-1">Improvement in experience scores</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">99.8%</div>
-              <p className="text-gray-600 font-medium">Safety Compliance</p>
-              <p className="text-sm text-gray-500 mt-1">Automated monitoring accuracy</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Study */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-blue-50 rounded-lg p-8">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Success Story</h2>
-              <p className="text-lg text-gray-600">
-                How SkyLine Airlines transformed their operations with Apex-Meridian AI
-              </p>
-            </div>
-            
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">The Challenge</h3>
-                <p className="text-gray-600 mb-6">
-                  SkyLine Airlines was facing rising fuel costs, increasing maintenance expenses, and declining passenger satisfaction scores. They needed a comprehensive solution to optimize operations while maintaining safety standards.
-                </p>
-                
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">The Solution</h3>
-                <p className="text-gray-600 mb-6">
-                  We implemented our complete aviation AI suite, including flight optimization, predictive maintenance, and passenger experience enhancement across their entire fleet of 150 aircraft.
-                </p>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Real-time flight path optimization</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Predictive maintenance scheduling</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Personalized passenger services</span>
-                  </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                  <Zap className="h-10 w-10 text-white" />
+                </div>
+                <div>
+                  <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">AeroMind</h1>
+                  <p className="text-xl text-blue-200">Aviation Intelligence Platform</p>
                 </div>
               </div>
-              
-              <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Results After 12 Months</h3>
+              <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
+                Revolutionizing aviation through intelligent automation, predictive analytics, and real-time decision making that transforms how aircraft operate, maintain, and serve passengers.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <button className="px-8 py-4 bg-white text-blue-900 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                  Request Demo
+                </button>
+                <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-white/30 transition-all duration-300">
+                  View Case Studies
+                </button>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-6">Key Capabilities</h3>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Fuel Cost Reduction</span>
-                    <span className="text-2xl font-bold text-green-600">$12M</span>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Predictive Maintenance AI</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Maintenance Savings</span>
-                    <span className="text-2xl font-bold text-blue-600">$8M</span>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Real-time Route Optimization</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">On-time Performance</span>
-                    <span className="text-2xl font-bold text-purple-600">+15%</span>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Passenger Experience Enhancement</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Customer Satisfaction</span>
-                    <span className="text-2xl font-bold text-orange-600">+25%</span>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Safety Compliance Automation</span>
                   </div>
-                </div>
-                
-                <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-600 italic">
-                    &quot;Apex-Meridian&apos;s AI solutions have transformed our operations. We&apos;re now more efficient, safer, and our passengers are happier than ever.&quot;
-                  </p>
-                  <p className="text-sm font-medium text-gray-900 mt-2">
-                    - Sarah Johnson, CEO, SkyLine Airlines
-                  </p>
                 </div>
               </div>
             </div>
@@ -205,92 +67,128 @@ export default function AviationSolutionsPage() {
         </div>
       </section>
 
-      {/* Technology Features */}
-      <section className="py-16 bg-gray-50">
+      {/* Features Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Advanced AI Technology</h2>
-            <p className="text-lg text-gray-600">
-              Built on our MeridianAI platform with aviation-specific optimizations
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Intelligent Aviation Solutions</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              AeroMind transforms every aspect of aviation operations with cutting-edge AI technology
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Real-time Processing</h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Plane className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Flight Operations</h3>
               <p className="text-gray-600 mb-4">
-                Process millions of data points from aircraft sensors, weather systems, and operational databases in real-time to make instant optimization decisions.
+                AI-powered flight planning, weather analysis, and real-time adjustments for optimal performance and safety.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Sub-second response times</li>
-                <li>• 99.99% uptime guarantee</li>
-                <li>• Edge computing capabilities</li>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Dynamic route optimization</li>
+                <li>• Weather pattern prediction</li>
+                <li>• Fuel efficiency maximization</li>
+                <li>• Air traffic coordination</li>
               </ul>
             </div>
-            
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Machine Learning Models</h3>
+
+            <div className="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Predictive Maintenance</h3>
               <p className="text-gray-600 mb-4">
-                Advanced ML algorithms trained on aviation-specific datasets to understand complex operational patterns and predict optimal outcomes.
+                Advanced analytics predict component failures before they occur, reducing downtime and ensuring safety.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• Deep learning neural networks</li>
-                <li>• Reinforcement learning optimization</li>
-                <li>• Continuous model improvement</li>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Component health monitoring</li>
+                <li>• Failure prediction algorithms</li>
+                <li>• Maintenance scheduling optimization</li>
+                <li>• Parts inventory management</li>
               </ul>
             </div>
-            
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Integration Capabilities</h3>
+
+            <div className="group bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Passenger Experience</h3>
               <p className="text-gray-600 mb-4">
-                Seamlessly integrate with existing aviation systems including flight management, maintenance, and passenger service platforms.
+                Personalized services and proactive communication enhance every aspect of the passenger journey.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• API-first architecture</li>
-                <li>• Legacy system compatibility</li>
-                <li>• Cloud and on-premise deployment</li>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li>• Personalized recommendations</li>
+                <li>• Real-time updates</li>
+                <li>• Service optimization</li>
+                <li>• Sentiment analysis</li>
               </ul>
             </div>
-            
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Security & Compliance</h3>
-              <p className="text-gray-600 mb-4">
-                Meet the highest aviation security standards with end-to-end encryption and compliance with international aviation regulations.
-              </p>
-              <ul className="text-sm text-gray-500 space-y-1">
-                <li>• FAA/EASA certified</li>
-                <li>• SOC 2 Type II compliant</li>
-                <li>• End-to-end encryption</li>
-              </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Performance Metrics */}
+      <section className="py-20 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Proven Results</h2>
+            <p className="text-xl text-blue-200">AeroMind delivers measurable improvements across all aviation metrics</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="w-10 h-10 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">35%</div>
+              <div className="text-blue-200">Fuel Savings</div>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-10 h-10 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">60%</div>
+              <div className="text-blue-200">Reduced Delays</div>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-10 h-10 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">99.9%</div>
+              <div className="text-blue-200">Safety Score</div>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
+              </div>
+              <div className="text-4xl font-bold mb-2">95%</div>
+              <div className="text-blue-200">Passenger Satisfaction</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Aviation Operations?</h2>
-          <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
-            Join leading airlines already using Apex-Meridian AI to optimize operations, reduce costs, and enhance passenger experiences.
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Transform Your Aviation Operations?</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Join leading airlines and aviation companies already using AeroMind to revolutionize their operations.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
-            >
-              Schedule a Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link
-              href="/technology/platform"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
-            >
-              Learn About Our Platform
-            </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <button className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+              Schedule Consultation
+            </button>
+            <button className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300">
+              Download Whitepaper
+            </button>
           </div>
         </div>
       </section>
     </div>
   );
-}
+};
+
+export default AviationPage;

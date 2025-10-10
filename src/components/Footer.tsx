@@ -10,15 +10,14 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+            <div className="flex items-center mb-4">
               <Image
                 src="/assets/logo_white.png"
                 alt="Apex-Meridian Logo"
-                width={40}
+                width={120}
                 height={40}
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
-              <span className="text-2xl font-bold">Apex-Meridian</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Leading the future of artificial intelligence with cutting-edge solutions across aviation, 
@@ -27,15 +26,15 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">contact@apex-meridian.net</span>
+                <span className="text-gray-300">info@apex-meridian.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+201200929092</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">San Francisco, CA</span>
+                <span className="text-gray-300">New Cairo, Egypt</span>
               </div>
             </div>
           </div>

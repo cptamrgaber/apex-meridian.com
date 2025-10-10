@@ -24,7 +24,7 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                  <p className="text-gray-600">info@apex-meridian.net</p>
+                  <p className="text-gray-600">info@apex-meridian.com</p>
                   <p className="text-sm text-gray-500">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
@@ -173,8 +173,8 @@ export default function ContactPage() {
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Sales Inquiries</h3>
             <p className="text-gray-600 mb-2">Ready to get started with our AI solutions?</p>
-            <a href="mailto:sales@apex-meridian.net" className="text-blue-600 hover:text-blue-800 font-medium">
-              sales@apex-meridian.net
+            <a href="mailto:sales@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
+              sales@apex-meridian.com
             </a>
           </div>
 
@@ -184,8 +184,8 @@ export default function ContactPage() {
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Technical Support</h3>
             <p className="text-gray-600 mb-2">Need help with our platform or services?</p>
-            <a href="mailto:support@apex-meridian.net" className="text-blue-600 hover:text-blue-800 font-medium">
-              support@apex-meridian.net
+            <a href="mailto:support@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
+              support@apex-meridian.com
             </a>
           </div>
 
@@ -195,8 +195,8 @@ export default function ContactPage() {
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Careers & HR</h3>
             <p className="text-gray-600 mb-2">Join our team and career opportunities</p>
-            <a href="mailto:careers@apex-meridian.net" className="text-blue-600 hover:text-blue-800 font-medium">
-              careers@apex-meridian.net
+            <a href="mailto:careers@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
+              careers@apex-meridian.com
             </a>
           </div>
         </div>

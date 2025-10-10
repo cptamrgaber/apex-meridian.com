@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { AuthProvider } from "@/lib/auth-context";
+import { LanguageProvider } from "@/lib/language-context";
+import { ThemeProvider } from "@/lib/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Apex-Meridian | Leading AI Technology Solutions",
     description: "Transform your industry with cutting-edge AI solutions from Apex-Meridian",
-    url: "https://www.apex-meridian.net",
+    url: "https://www.apex-meridian.com",
     siteName: "Apex-Meridian",
     images: [
       {
@@ -54,17 +57,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/favicon.png" />
+        <link rel="icon" href="/assets/logo_blue.png" />
         <link rel="apple-touch-icon" href="/assets/logo.png" />
       </head>
       <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <LanguageProvider>
+            <AuthProvider>
+              <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+                <Header />
+                <main className="flex-grow">
+                  {children}
+                </main>
+                <Footer />
+              </div>
+            </AuthProvider>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

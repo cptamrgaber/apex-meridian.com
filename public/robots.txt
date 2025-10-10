@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Disallow employee and HR areas from search engines
+Disallow: /employees/
+Disallow: /hr/
+
+# Allow public pages
+Allow: /about/
+Allow: /solutions/
+Allow: /technology/
+Allow: /investors/
+Allow: /contact/
+
+Sitemap: https://www.apex-meridian.com/sitemap.xml

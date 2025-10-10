@@ -72,57 +72,150 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center group hover:scale-105 transition-transform duration-300">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
-                <Zap className="h-8 w-8 text-blue-600" />
+          {/* Revolutionary AI Solutions showcase */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* AeroMind - Aviation AI */}
+            <div className="group relative bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                      <Zap className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">AeroMind</h3>
+                      <p className="text-blue-200 text-sm">Aviation Intelligence Platform</p>
+                    </div>
+                  </div>
+                  <div className="w-24 h-24 relative">
+                    <Image
+                      src="/images/solutions/aviation-ai.jpg"
+                      alt="Aviation AI"
+                      fill
+                      className="rounded-xl object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <p className="text-blue-100 mb-6 leading-relaxed">
+                  Revolutionary flight operations AI that predicts maintenance needs, optimizes routes in real-time, and enhances passenger safety through intelligent automation.
+                </p>
+                <Link
+                  href="/solutions/aviation"
+                  className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 transition-all duration-300 group-hover:scale-105"
+                >
+                  Explore AeroMind
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Aviation AI</h3>
-              <p className="text-gray-600 mb-4">
-                Intelligent flight operations, passenger experience optimization, and safety compliance automation.
-              </p>
-              <Link href="/solutions/aviation" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
             </div>
 
-            <div className="text-center group hover:scale-105 transition-transform duration-300">
-              <div className="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors">
-                <Shield className="h-8 w-8 text-red-600" />
+            {/* CyberGuard - Cybersecurity AI */}
+            <div className="group relative bg-gradient-to-br from-red-900 to-red-700 p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-orange-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                      <Shield className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">CyberGuard</h3>
+                      <p className="text-red-200 text-sm">Intelligent Security Shield</p>
+                    </div>
+                  </div>
+                  <div className="w-24 h-24 relative">
+                    <Image
+                      src="/images/solutions/cybersecurity-ai.jpg"
+                      alt="Cybersecurity AI"
+                      fill
+                      className="rounded-xl object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <p className="text-red-100 mb-6 leading-relaxed">
+                  Next-generation cyber defense that anticipates threats before they materialize, using advanced AI to create an impenetrable digital fortress.
+                </p>
+                <Link
+                  href="/solutions/cybersecurity"
+                  className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 transition-all duration-300 group-hover:scale-105"
+                >
+                  Discover CyberGuard
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Cybersecurity</h3>
-              <p className="text-gray-600 mb-4">
-                Advanced threat detection, automated incident response, and predictive risk management.
-              </p>
-              <Link href="/solutions/cybersecurity" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
             </div>
 
-            <div className="text-center group hover:scale-105 transition-transform duration-300">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
-                <BookOpen className="h-8 w-8 text-green-600" />
+            {/* EduGenius - Education AI */}
+            <div className="group relative bg-gradient-to-br from-green-900 to-green-700 p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-emerald-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                      <BookOpen className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">EduGenius</h3>
+                      <p className="text-green-200 text-sm">Personalized Learning AI</p>
+                    </div>
+                  </div>
+                  <div className="w-24 h-24 relative">
+                    <Image
+                      src="/images/solutions/education-ai.jpg"
+                      alt="Education AI"
+                      fill
+                      className="rounded-xl object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <p className="text-green-100 mb-6 leading-relaxed">
+                  Adaptive learning companion that understands each student's unique learning style, creating personalized educational journeys that maximize potential.
+                </p>
+                <Link
+                  href="/solutions/education"
+                  className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 transition-all duration-300 group-hover:scale-105"
+                >
+                  Experience EduGenius
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Education</h3>
-              <p className="text-gray-600 mb-4">
-                Personalized learning paths, intelligent tutoring systems, and adaptive educational content.
-              </p>
-              <Link href="/solutions/education" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
             </div>
 
-            <div className="text-center group hover:scale-105 transition-transform duration-300">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
-                <Brain className="h-8 w-8 text-purple-600" />
+            {/* MeridianAGI - AGI Development */}
+            <div className="group relative bg-gradient-to-br from-purple-900 to-purple-700 p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                      <Brain className="h-8 w-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">MeridianAGI</h3>
+                      <p className="text-purple-200 text-sm">Artificial General Intelligence</p>
+                    </div>
+                  </div>
+                  <div className="w-24 h-24 relative">
+                    <Image
+                      src="/images/solutions/agi-development.jpg"
+                      alt="AGI Development"
+                      fill
+                      className="rounded-xl object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <p className="text-purple-100 mb-6 leading-relaxed">
+                  The future of artificial intelligence - a general intelligence system that thinks, learns, and adapts like humans, but with unlimited potential.
+                </p>
+                <Link
+                  href="/solutions/agi"
+                  className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 transition-all duration-300 group-hover:scale-105"
+                >
+                  Enter MeridianAGI
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">AGI Development</h3>
-              <p className="text-gray-600 mb-4">
-                Research platform for artificial general intelligence with ethical AI development frameworks.
-              </p>
-              <Link href="/solutions/agi" className="text-blue-600 hover:text-blue-800 font-medium">
-                Learn More →
-              </Link>
             </div>
           </div>
         </div>
