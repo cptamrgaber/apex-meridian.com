@@ -45,15 +45,15 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/assets/logo_white.png"
                 alt="Apex-Meridian Logo"
-                width={40}
+                width={120}
                 height={40}
-                className="h-10 w-auto"
+                className="w-auto h-10"
+                style={{ aspectRatio: 'auto' }}
               />
-              <span className="text-white text-xl font-bold hidden sm:block">Apex-Meridian</span>
             </Link>
           </div>
 
