@@ -12,7 +12,7 @@ import DramaticCTA from '@/components/DramaticCTA';
 
 export default function HomePage() {
   return (
-    <div className="relative">
+    <div className="relative min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <AnimatedBackground />
       
       <DramaticHero />

@@ -214,7 +214,7 @@ const AnimatedBackground: React.FC = () => {
       <canvas
         ref={canvasRef}
         className="fixed inset-0 pointer-events-none z-0"
-        style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%)' }} // Much lighter background
+        style={{ background: 'transparent' }}
       />
       
       {/* Additional CSS-based effects */}

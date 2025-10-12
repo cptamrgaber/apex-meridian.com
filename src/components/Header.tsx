@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Menu, X, ChevronDown, Globe, Sun, Moon } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
 import { useTheme } from '@/lib/theme-context';
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -16,10 +17,16 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleDropdownEnter = (dropdown: string) => {
+    setActiveDropdown(dropdown);
+  };
 
+  const handleDropdownLeave = () => {
+    setActiveDropdown(null);
+  };
 
   return (
-    <header className="bg-white/95 dark:bg-cyber-gradient shadow-lg dark:shadow-cyber relative z-50 overflow-hidden border-b border-gray-200 dark:border-neon-blue/30 backdrop-blur-sm transition-colors duration-300">
+    <header className="bg-white/95 dark:bg-cyber-gradient shadow-lg dark:shadow-cyber relative z-[100] overflow-hidden border-b border-gray-200 dark:border-neon-blue/30 backdrop-blur-sm transition-colors duration-300">
       {/* Dramatic Tech Background */}
       <div className="absolute inset-0 bg-cyber-gradient overflow-hidden">
         {/* Matrix-style falling particles */}
@@ -84,155 +91,149 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-             <nav className="hidden md:flex space-x-8">
-            <div className="relative group">
-              <button
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-neon-cyan px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300"
-                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                onMouseEnter={() => setActiveDropdown('about')}
-              >
-                {t('about')}
+          <nav className="hidden md:flex space-x-8">
+            {/* About Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => handleDropdownEnter('about')}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                {t('nav.about')}
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              {activeDropdown === 'about' && (
-                <div
-                  className="absolute left-0 mt-2 w-48 bg-white/90 dark:bg-tech-black/70 backdrop-blur-md border border-gray-200 dark:border-neon-blue/30 rounded-xl shadow-2xl py-2 z-50"
-                  style={{ backdropFilter: 'blur(12px)' }}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <Link href="/about/overview" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
-                    {t('overview')}
-                  </Link>
-                  <Link href="/about/leadership" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
-                    {t('leadership')}
-                  </Link>
-                  <Link href="/about/history" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    {t('history')}
-                  </Link>
-                  <Link href="/about/careers" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    {t('careers')}
-                  </Link>
-                </div>
-              )}
+              <div className={`absolute left-0 mt-2 w-48 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border border-gray-200 dark:border-blue-500/30 rounded-xl shadow-2xl py-2 z-[200] transition-all duration-300 ${
+                activeDropdown === 'about' ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}
+                   style={{ backdropFilter: 'blur(12px)' }}>
+                <Link href="/about/overview" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('overview')}
+                </Link>
+                <Link href="/about/leadership" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('leadership')}
+                </Link>
+                <Link href="/about/history" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('history')}
+                </Link>
+                <Link href="/about/careers" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('careers')}
+                </Link>
+              </div>
             </div>
 
             {/* Solutions Dropdown */}
-            <div className="relative group">
-              <button
-                className="flex items-center text-gray-300 hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                onMouseEnter={() => setActiveDropdown('solutions')}
-              >
-                Solutions
+            <div 
+              className="relative group"
+              onMouseEnter={() => handleDropdownEnter('solutions')}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                {t('nav.solutions')}
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              {activeDropdown === 'solutions' && (
-                <div
-                  className="absolute left-0 mt-2 w-48 bg-white/90 dark:bg-tech-black/70 backdrop-blur-md border border-gray-200 dark:border-neon-blue/30 rounded-xl shadow-2xl py-2 z-50"
-                  style={{ backdropFilter: 'blur(12px)' }}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <Link href="/solutions/aviation" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    Aviation Solutions
-                  </Link>
-                  <Link href="/solutions/cybersecurity" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    Cybersecurity
-                  </Link>
-                  <Link href="/solutions/education" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    Education
-                  </Link>
-                  <Link href="/solutions/agi" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    AGI Solutions
-                  </Link>
-                </div>
-              )}
+              <div className={`absolute left-0 mt-2 w-48 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border border-gray-200 dark:border-blue-500/30 rounded-xl shadow-2xl py-2 z-[200] transition-all duration-300 ${
+                activeDropdown === 'solutions' ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}
+                   style={{ backdropFilter: 'blur(12px)' }}>
+                <Link href="/solutions/aviation" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('aviation')}
+                </Link>
+                <Link href="/solutions/cybersecurity" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('cybersecurity')}
+                </Link>
+                <Link href="/solutions/education" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('education')}
+                </Link>
+                <Link href="/solutions/agi" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('agi')}
+                </Link>
+              </div>
             </div>
 
             {/* Technology Dropdown */}
-            <div className="relative group">
-              <button
-                className="flex items-center text-gray-300 hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                onMouseEnter={() => setActiveDropdown('technology')}
-              >
-                Technology
+            <div 
+              className="relative group"
+              onMouseEnter={() => handleDropdownEnter('technology')}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                {t('nav.technology')}
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              {activeDropdown === 'technology' && (
-                <div
-                  className="absolute left-0 mt-2 w-48 bg-white/90 dark:bg-tech-black/70 backdrop-blur-md border border-gray-200 dark:border-neon-blue/30 rounded-xl shadow-2xl py-2 z-50"
-                  style={{ backdropFilter: 'blur(12px)' }}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <Link href="/technology/platform" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    MeridianAI Platform
-                  </Link>
-                </div>
-              )}
+              <div className={`absolute left-0 mt-2 w-48 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border border-gray-200 dark:border-blue-500/30 rounded-xl shadow-2xl py-2 z-[200] transition-all duration-300 ${
+                activeDropdown === 'technology' ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}
+                   style={{ backdropFilter: 'blur(12px)' }}>
+                <Link href="/technology/platform" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('platform')}
+                </Link>
+              </div>
             </div>
 
             {/* Investors Dropdown */}
-            <div className="relative group">
-              <button
-                className="flex items-center text-gray-300 hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                onMouseEnter={() => setActiveDropdown('investors')}
-              >
-                Investors
+            <div 
+              className="relative group"
+              onMouseEnter={() => handleDropdownEnter('investors')}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium flex items-center transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                {t('nav.investors')}
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              {activeDropdown === 'investors' && (
-                <div
-                  className="absolute left-0 mt-2 w-48 bg-white/90 dark:bg-tech-black/70 backdrop-blur-md border border-gray-200 dark:border-neon-blue/30 rounded-xl shadow-2xl py-2 z-50"
-                  style={{ backdropFilter: 'blur(12px)' }}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <Link href="/investors/opportunity" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    Investment Opportunity
-                  </Link>
-                  <Link href="/investors/financials" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    Financial Information
-                  </Link>
-                  <Link href="/investors/governance" className="block px-4 py-3 text-sm text-gray-300 hover:bg-neon-blue/20 hover:text-neon-cyan transition-all duration-300"
-                        style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                    Governance
-                  </Link>
-                </div>
-              )}
+              <div className={`absolute left-0 mt-2 w-48 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border border-gray-200 dark:border-blue-500/30 rounded-xl shadow-2xl py-2 z-[200] transition-all duration-300 ${
+                activeDropdown === 'investors' ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}
+                   style={{ backdropFilter: 'blur(12px)' }}>
+                <Link href="/investors/opportunity" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('opportunity')}
+                </Link>
+                <Link href="/investors/financials" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('financials')}
+                </Link>
+                <Link href="/investors/governance" className="block px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-neon-blue/20 hover:text-blue-600 dark:hover:text-neon-cyan transition-all duration-300"
+                      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+                  {t('governance')}
+                </Link>
+              </div>
             </div>
 
-            <Link href="/vision" className="text-gray-300 hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-              AI Vision
+            {/* Regular Navigation Links */}
+            <Link href="/vision" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
+                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+              {t('nav.vision')}
             </Link>
-            <Link href="/documents" className="text-gray-300 hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-              Documents
+            <Link href="/documents" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
+                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+              {t('nav.documents')}
             </Link>
-            <Link href="/sitemap" className="text-neon-blue hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-              Sitemap
+            <Link href="/sitemap" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
+                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
+              {t('nav.sitemap')}
             </Link>
-            <Link href="/contact" className="text-gray-300 hover:text-neon-cyan px-3 py-2 text-sm font-medium transition-colors"
-                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+            <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
+                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
               {t('nav.contact')}
             </Link>
             
             {/* Language Toggle */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-              className="flex items-center space-x-2 text-white hover:text-blue-200 px-3 py-2 text-sm font-medium transition-colors"
+              className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
             >
               <Globe className="w-4 h-4" />
               <span>{t('nav.language')}</span>
@@ -241,12 +242,12 @@ const Header: React.FC = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="text-white hover:text-blue-200 px-3 py-2 text-sm font-medium transition-colors"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors"
             >
               {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
             </button>
             
-            <Link href="/employees/login" className="bg-white text-blue-900 px-4 py-2 text-sm font-medium rounded-md hover:bg-blue-50 transition-colors shadow-md">
+            <Link href="/employees/login" className="bg-blue-600 text-white px-4 py-2 text-sm font-medium rounded-md hover:bg-blue-700 transition-colors shadow-md">
               {t('nav.employeeLogin')}
             </Link>
           </nav>
@@ -255,7 +256,7 @@ const Header: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-blue-200 focus:outline-none focus:text-blue-200"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -265,33 +266,52 @@ const Header: React.FC = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-800/95 border-t border-blue-700">
-              <Link href="/about" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                About
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 dark:bg-gray-800/95 border-t border-gray-200 dark:border-gray-700 backdrop-blur-sm">
+              <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.about')}
               </Link>
-              <Link href="/solutions" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                Solutions
+              <Link href="/solutions" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.solutions')}
               </Link>
-              <Link href="/technology" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                Technology
+              <Link href="/technology" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.technology')}
               </Link>
-              <Link href="/investors" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                Investors
+              <Link href="/investors" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.investors')}
               </Link>
-              <Link href="/vision" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                AI Vision
+              <Link href="/vision" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.vision')}
               </Link>
-              <Link href="/documents" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                Documents
+              <Link href="/documents" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.documents')}
               </Link>
-              <Link href="/sitemap" className="block px-3 py-2 text-base font-medium text-neon-blue hover:text-neon-cyan">
-                Sitemap
+              <Link href="/sitemap" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.sitemap')}
               </Link>
-              <Link href="/contact" className="block px-3 py-2 text-base font-medium text-white hover:text-blue-200">
-                Contact
+              <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {t('nav.contact')}
               </Link>
-              <Link href="/employees/login" className="block px-3 py-2 text-base font-medium text-blue-900 bg-white rounded-md mx-3 mt-2 text-center hover:bg-blue-50">
-                Employee Login
+              
+              {/* Mobile Language Toggle */}
+              <button
+                onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
+                className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 w-full text-left"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{t('nav.language')}</span>
+              </button>
+              
+              {/* Mobile Theme Toggle */}
+              <button
+                onClick={toggleTheme}
+                className="flex items-center space-x-2 px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 w-full text-left"
+              >
+                {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+                <span>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
+              </button>
+              
+              <Link href="/employees/login" className="block px-3 py-2 text-base font-medium text-white bg-blue-600 rounded-md mx-3 mt-2 text-center hover:bg-blue-700">
+                {t('nav.employeeLogin')}
               </Link>
             </div>
           </div>

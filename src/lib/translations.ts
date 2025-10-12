@@ -13,6 +13,7 @@ export const translations = {
     'nav.aiVision': 'AI Vision',
     'nav.documents': 'Documents',
     'nav.sitemap': 'Sitemap',
+    'nav.vision': 'AI Vision',
 
     // About dropdown
     'about': 'About',
@@ -46,6 +47,7 @@ export const translations = {
     'hero.subtitle': 'Advanced AI solutions transforming aviation, cybersecurity, education, and AGI development. Join us in shaping tomorrow\'s intelligent world.',
     'hero.exploreBtn': 'Explore Solutions',
     'hero.getStartedBtn': 'Get Started',
+    'hero.startBtn': 'Get Started',
 
     // Stats
     'stats.aiModels': 'AI Models',
@@ -133,6 +135,7 @@ export const translations = {
     'nav.aiVision': 'رؤية الذكاء الاصطناعي',
     'nav.documents': 'الوثائق',
     'nav.sitemap': 'خريطة الموقع',
+    'nav.vision': 'رؤية الذكاء الاصطناعي',
 
     // About dropdown
     'about': 'حول',
@@ -166,6 +169,7 @@ export const translations = {
     'hero.subtitle': 'حلول الذكاء الاصطناعي المتقدمة التي تحول الطيران والأمن السيبراني والتعليم وتطوير الذكاء العام. انضم إلينا في تشكيل عالم الغد الذكي.',
     'hero.exploreBtn': 'استكشف الحلول',
     'hero.getStartedBtn': 'ابدأ الآن',
+    'hero.startBtn': 'ابدأ الآن',
 
     // Stats
     'stats.aiModels': 'نماذج الذكاء الاصطناعي',

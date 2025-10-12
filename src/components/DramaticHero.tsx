@@ -4,16 +4,18 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Zap, Eye, Brain, Shield } from 'lucide-react';
+import { useLanguage } from '@/lib/language-context';
 
 const DramaticHero: React.FC = () => {
+  const { t } = useLanguage();
   const [glitchActive, setGlitchActive] = useState(false);
   const [currentText, setCurrentText] = useState(0);
 
   const heroTexts = [
-    "Pioneering the Future of Artificial Intelligence",
-    "Unleashing the Power of Digital Evolution",
-    "Where Technology Meets Tomorrow",
-    "Redefining Intelligence, Reshaping Reality"
+    t('hero.title1'),
+    t('hero.title2'), 
+    t('hero.title3'),
+    t('hero.title4')
   ];
 
   useEffect(() => {
@@ -168,8 +170,7 @@ const DramaticHero: React.FC = () => {
                animationDelay: '1s',
                textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' 
              }}>
-            Advanced AI solutions transforming aviation, cybersecurity, education, and AGI development. 
-            Join us in shaping tomorrow&apos;s intelligent world.
+            {t('hero.subtitle')}
           </p>
         </div>
 
@@ -181,7 +182,7 @@ const DramaticHero: React.FC = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             <Zap className="mr-3 h-6 w-6 group-hover:animate-spin" />
-            Explore Solutions
+            {t('hero.exploreBtn')}
             <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
           </Link>
           
@@ -190,17 +191,17 @@ const DramaticHero: React.FC = () => {
             className="group relative inline-flex items-center px-10 py-4 border-2 border-neon-blue text-neon-blue font-bold rounded-lg hover:bg-neon-blue hover:text-tech-black transition-all duration-300 shadow-neon hover:shadow-neon-lg transform hover:scale-105"
           >
             <Eye className="mr-3 h-6 w-6 group-hover:animate-pulse" />
-            Get Started
+            {t('hero.startBtn')}
           </Link>
         </div>
 
         {/* Tech stats with dramatic counters */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto" style={{ animationDelay: '2s' }}>
           {[
-            { icon: Brain, label: 'AI Models', value: '50+', color: 'text-neon-blue' },
-            { icon: Shield, label: 'Security Level', value: '99.9%', color: 'text-neon-cyan' },
-            { icon: Zap, label: 'Processing Speed', value: '<1ms', color: 'text-neon-purple' },
-            { icon: Eye, label: 'Vision Accuracy', value: '99.8%', color: 'text-neon-pink' },
+            { icon: Brain, label: t('stats.aiModels'), value: '50+', color: 'text-neon-blue' },
+            { icon: Shield, label: t('stats.securityLevel'), value: '99.9%', color: 'text-neon-cyan' },
+            { icon: Zap, label: t('stats.processingSpeed'), value: '<1ms', color: 'text-neon-purple' },
+            { icon: Eye, label: t('stats.visionAccuracy'), value: '99.8%', color: 'text-neon-pink' },
           ].map((stat, index) => (
             <div
               key={stat.label}

@@ -4,98 +4,100 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Zap, Shield, BookOpen, Brain, Eye, Lock, Cpu, Rocket } from 'lucide-react';
+import { useLanguage } from '@/lib/language-context';
 
 interface Solution {
   id: string;
-  name: string;
-  tagline: string;
-  description: string;
+  nameKey: string;
+  taglineKey: string;
+  descriptionKey: string;
   icon: React.ComponentType<any>;
   href: string;
   gradient: string;
   glowColor: string;
-  features: string[];
-  stats: { label: string; value: string }[];
+  featureKeys: string[];
+  stats: { labelKey: string; value: string }[];
 }
 
-const solutions: Solution[] = [
-  {
-    id: 'aeromind',
-    name: 'AeroMind',
-    tagline: 'Aviation Intelligence Platform',
-    description: 'Revolutionary flight operations AI that predicts maintenance needs, optimizes routes in real-time, and enhances passenger safety through intelligent automation.',
-    icon: Zap,
-    href: '/solutions/aviation',
-    gradient: 'from-blue-900 via-blue-800 to-cyan-900',
-    glowColor: '#00d4ff',
-    features: ['Predictive Maintenance', 'Route Optimization', 'Safety Enhancement', 'Real-time Analytics'],
-    stats: [
-      { label: 'Efficiency Gain', value: '35%' },
-      { label: 'Cost Reduction', value: '28%' }
-    ]
-  },
-  {
-    id: 'cyberguard',
-    name: 'CyberGuard',
-    tagline: 'Intelligent Security Shield',
-    description: 'Next-generation cyber defense that anticipates threats before they materialize, using advanced AI to create an impenetrable digital fortress.',
-    icon: Shield,
-    href: '/solutions/cybersecurity',
-    gradient: 'from-red-900 via-red-800 to-orange-900',
-    glowColor: '#ff073a',
-    features: ['Threat Prediction', 'Zero-Day Protection', 'Behavioral Analysis', 'Quantum Encryption'],
-    stats: [
-      { label: 'Threat Detection', value: '99.9%' },
-      { label: 'Response Time', value: '<100ms' }
-    ]
-  },
-  {
-    id: 'edugenius',
-    name: 'EduGenius',
-    tagline: 'Personalized Learning AI',
-    description: 'Adaptive learning companion that understands each student\'s unique learning style, creating personalized educational journeys that maximize potential.',
-    icon: BookOpen,
-    href: '/solutions/education',
-    gradient: 'from-green-900 via-green-800 to-emerald-900',
-    glowColor: '#00ff88',
-    features: ['Adaptive Learning', 'Progress Tracking', 'Skill Assessment', 'Content Generation'],
-    stats: [
-      { label: 'Learning Speed', value: '3x Faster' },
-      { label: 'Retention Rate', value: '94%' }
-    ]
-  },
-  {
-    id: 'meridianagi',
-    name: 'MeridianAGI',
-    tagline: 'Artificial General Intelligence',
-    description: 'The future of artificial intelligence - a general intelligence system that thinks, learns, and adapts like humans, but with unlimited potential.',
-    icon: Brain,
-    href: '/solutions/agi',
-    gradient: 'from-purple-900 via-purple-800 to-pink-900',
-    glowColor: '#8b5cf6',
-    features: ['General Intelligence', 'Self-Learning', 'Creative Problem Solving', 'Ethical Reasoning'],
-    stats: [
-      { label: 'IQ Equivalent', value: '200+' },
-      { label: 'Learning Rate', value: '1000x Human' }
-    ]
-  }
-];
-
 const ThrillerSolutions: React.FC = () => {
+  const { t } = useLanguage();
   const [hoveredSolution, setHoveredSolution] = useState<string | null>(null);
   const [activeParticles, setActiveParticles] = useState<number[]>([]);
 
+  const solutions: Solution[] = [
+    {
+      id: 'aeromind',
+      nameKey: 'aeromind.name',
+      taglineKey: 'aeromind.tagline',
+      descriptionKey: 'aeromind.description',
+      icon: Zap,
+      href: '/solutions/aviation',
+      gradient: 'from-blue-900 via-blue-800 to-cyan-900',
+      glowColor: '#00d4ff',
+      featureKeys: ['aeromind.features.1', 'aeromind.features.2', 'aeromind.features.3', 'aeromind.features.4'],
+      stats: [
+        { labelKey: 'Efficiency Gain', value: '35%' },
+        { labelKey: 'Cost Reduction', value: '28%' }
+      ]
+    },
+    {
+      id: 'cyberguard',
+      nameKey: 'cyberguard.name',
+      taglineKey: 'cyberguard.tagline',
+      descriptionKey: 'cyberguard.description',
+      icon: Shield,
+      href: '/solutions/cybersecurity',
+      gradient: 'from-red-900 via-red-800 to-orange-900',
+      glowColor: '#ff073a',
+      featureKeys: ['cyberguard.features.1', 'cyberguard.features.2', 'cyberguard.features.3', 'cyberguard.features.4'],
+      stats: [
+        { labelKey: 'Threat Detection', value: '99.9%' },
+        { labelKey: 'Response Time', value: '<100ms' }
+      ]
+    },
+    {
+      id: 'edugenius',
+      nameKey: 'edugenius.name',
+      taglineKey: 'edugenius.tagline',
+      descriptionKey: 'edugenius.description',
+      icon: BookOpen,
+      href: '/solutions/education',
+      gradient: 'from-green-900 via-green-800 to-emerald-900',
+      glowColor: '#10b981',
+      featureKeys: ['edugenius.features.1', 'edugenius.features.2', 'edugenius.features.3', 'edugenius.features.4'],
+      stats: [
+        { labelKey: 'Learning Speed', value: '3x Faster' },
+        { labelKey: 'Retention Rate', value: '94%' }
+      ]
+    },
+    {
+      id: 'meridianagi',
+      nameKey: 'meridianagi.name',
+      taglineKey: 'meridianagi.tagline',
+      descriptionKey: 'meridianagi.description',
+      icon: Brain,
+      href: '/solutions/agi',
+      gradient: 'from-purple-900 via-purple-800 to-indigo-900',
+      glowColor: '#8b5cf6',
+      featureKeys: ['meridianagi.features.1', 'meridianagi.features.2', 'meridianagi.features.3', 'meridianagi.features.4'],
+      stats: [
+        { labelKey: 'IQ Equivalent', value: '200+' },
+        { labelKey: 'Learning Rate', value: '1000x Human' }
+      ]
+    }
+  ];
+
   useEffect(() => {
-    // Create random particle animations
     const interval = setInterval(() => {
       setActiveParticles(prev => {
         const newParticles = [...prev];
-        // Add new particle
         if (newParticles.length < 20) {
           newParticles.push(Math.random());
+        } else {
+          newParticles.shift();
+          newParticles.push(Math.random());
         }
-        // Remove old particles
-        return newParticles.slice(-15);
+        return newParticles;
       });
     }, 300);
 
@@ -137,7 +139,9 @@ const ThrillerSolutions: React.FC = () => {
             ))}
           </div>
         </div>
-        
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 relative">
           {/* Background for better contrast */}
           <div className="absolute inset-0 bg-tech-black/50 backdrop-blur-sm rounded-3xl mx-auto max-w-6xl"></div>
@@ -155,14 +159,14 @@ const ThrillerSolutions: React.FC = () => {
               style={{ 
                 textShadow: '0 0 20px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 212, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.8)' 
               }}>
-            AI Solutions Across Industries
+            {t('solutions.title')}
           </h2>
           
           <p className="relative text-xl text-white max-w-3xl mx-auto animate-flicker pb-8"
              style={{ 
                textShadow: '0 0 10px rgba(0, 212, 255, 0.6), 1px 1px 2px rgba(0, 0, 0, 0.8)' 
              }}>
-            Transforming complex challenges into intelligent opportunities with cutting-edge artificial intelligence
+            {t('solutions.subtitle')}
           </p>     
           {/* Dramatic underline */}
           <div className="mt-8 flex justify-center">
@@ -196,14 +200,18 @@ const ThrillerSolutions: React.FC = () => {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <solution.icon className="h-8 w-8 text-white group-hover:animate-pulse" />
+                    <div className={`p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20`}>
+                      <solution.icon className="h-8 w-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white group-hover:text-neon-blue transition-colors duration-300">
-                        {solution.name}
+                      <h3 className="text-2xl font-bold text-white mb-1"
+                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                        {t(solution.nameKey as any)}
                       </h3>
-                      <p className="text-gray-300 text-sm" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{solution.tagline}</p>
+                      <p className="text-white/80 text-sm font-medium"
+                         style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
+                        {t(solution.taglineKey as any)}
+                      </p>
                     </div>
                   </div>
                   
@@ -211,87 +219,65 @@ const ThrillerSolutions: React.FC = () => {
                   <div className="text-right">
                     {solution.stats.map((stat, statIndex) => (
                       <div key={statIndex} className="mb-1">
-                        <div className="text-lg font-bold text-neon-blue">{stat.value}</div>
-                        <div className="text-xs text-gray-300" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{stat.label}</div>
+                        <div className="text-2xl font-bold text-white"
+                             style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
+                          {stat.value}
+                        </div>
+                        <div className="text-xs text-white/70"
+                             style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
+                          {stat.labelKey}
+                        </div>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-300 mb-6 leading-relaxed group-hover:text-white transition-colors duration-300" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
-                  {solution.description}
+                <p className="text-white/90 mb-6 leading-relaxed"
+                   style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
+                  {t(solution.descriptionKey as any)}
                 </p>
 
                 {/* Features */}
-                <div className="grid grid-cols-2 gap-2 mb-6">
-                  {solution.features.map((feature, featureIndex) => (
-                    <div
-                      key={featureIndex}
-                      className="flex items-center space-x-2 text-sm text-gray-300 group-hover:text-white transition-colors duration-300"
-                      style={{ 
-                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)',
-                        animationDelay: `${featureIndex * 0.1}s` 
-                      }}
-                    >
-                      <div className="w-1.5 h-1.5 bg-neon-blue rounded-full animate-pulse"></div>
-                      <span>{feature}</span>
+                <div className="grid grid-cols-2 gap-3 mb-6">
+                  {solution.featureKeys.map((featureKey, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                      <span className="text-white/80 text-sm"
+                            style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
+                        {t(featureKey as any)}
+                      </span>
                     </div>
                   ))}
                 </div>
 
-                {/* Action Button */}
+                {/* CTA Button */}
                 <Link
                   href={solution.href}
-                  className="group/btn relative inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-lg hover:bg-white/30 transition-all duration-300 overflow-hidden"
+                  className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 group-hover:scale-105"
+                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
-                  <span className="relative z-10">Explore {solution.name}</span>
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform relative z-10" />
+                  <span>Explore {t(solution.nameKey as any)}</span>
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Link>
               </div>
-
-              {/* Floating particles */}
-              {hoveredSolution === solution.id && (
-                <div className="absolute inset-0 pointer-events-none">
-                  {Array.from({ length: 8 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="absolute w-1 h-1 bg-white rounded-full animate-ping"
-                      style={{
-                        left: `${Math.random() * 100}%`,
-                        top: `${Math.random() * 100}%`,
-                        animationDelay: `${Math.random() * 2}s`,
-                        animationDuration: `${1 + Math.random()}s`,
-                      }}
-                    />
-                  ))}
-                </div>
-              )}
             </div>
           ))}
         </div>
 
-        {/* Call to Action */}
+        {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-4 mb-6">
-            <div className="w-12 h-px bg-gradient-to-r from-transparent to-neon-blue"></div>
-            <Brain className="h-8 w-8 text-neon-blue animate-pulse" />
-            <div className="w-12 h-px bg-gradient-to-l from-transparent to-neon-blue"></div>
+          <div className="relative inline-block">
+            <div className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-blue rounded-2xl blur-lg opacity-50 animate-pulse"></div>
+            <Link
+              href="/solutions"
+              className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-neon-blue to-neon-cyan text-tech-black px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}
+            >
+              <span>{t('cta.button')}</span>
+              <ArrowRight className="h-6 w-6" />
+            </Link>
           </div>
-          
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Ready to Transform Your Industry?
-          </h3>
-          
-          <Link
-            href="/contact"
-            className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-tech-black font-bold rounded-lg hover:from-neon-cyan hover:to-neon-blue transition-all duration-300 shadow-neon hover:shadow-neon-lg transform hover:scale-105"
-          >
-            <Rocket className="mr-3 h-6 w-6 group-hover:animate-bounce" />
-            Start Your AI Journey
-            <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-          </Link>
         </div>
       </div>
     </section>
