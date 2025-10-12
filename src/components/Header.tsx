@@ -75,18 +75,18 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/assets/Apex-Meridianlogofull.png"
-                alt="Apex-Meridian Logo"
-                width={180}
-                height={50}
-                className="h-12 w-auto object-contain"
-                style={{ 
-                  aspectRatio: 'auto',
-                  maxWidth: '180px'
-                }}
-              />
+            <Link href="/" className="flex items-center group transition-all duration-300 hover:scale-105">
+              <div className="relative">
+                {/* Glowing background effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/20 to-neon-cyan/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                {/* Text logo */}
+                <div className="relative px-4 py-2 bg-gradient-to-r from-neon-blue/10 to-neon-cyan/10 rounded-lg border border-neon-blue/30 backdrop-blur-sm">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-neon-blue to-neon-cyan bg-clip-text text-transparent animate-glow">
+                    Apex-Meridian
+                  </span>
+                </div>
+              </div>
             </Link>
           </div>
 
