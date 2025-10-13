@@ -7,7 +7,12 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Contact Apex-Meridian
+            Contact <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
+              <span>A p e x</span>
+              <span className="mx-1">•</span>
+              <span>M e r i d i a n</span>
+              <sup className="text-lg ml-1">®</sup>
+            </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to transform your industry with AI? Get in touch with our team to discuss your specific needs and explore how our solutions can drive your success.
@@ -43,7 +48,12 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Headquarters</h3>
                   <p className="text-gray-600">
-                    Apex-Meridian Technologies<br />
+                    <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
+                      <span>A p e x</span>
+                      <span className="mx-1">•</span>
+                      <span>M e r i d i a n</span>
+                      <sup className="text-xs ml-1">®</sup>
+                    </span> Technologies<br />
                     New Cairo, Cairo Governorate<br />
                     Egypt
                   </p>

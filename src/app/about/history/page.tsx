@@ -13,7 +13,12 @@ export default function CompanyHistoryPage() {
               Our Journey
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              From a small research lab to a leading AI company, discover how Apex-Meridian has evolved to become a pioneer in artificial intelligence solutions.
+              From a small research lab to a leading AI company, discover how <span className="font-semibold tracking-wider" style={{ letterSpacing: '0.15em' }}>
+                <span>A p e x</span>
+                <span className="mx-1">•</span>
+                <span>M e r i d i a n</span>
+                <sup className="text-sm ml-1">®</sup>
+              </span> has evolved to become a pioneer in artificial intelligence solutions.
             </p>
           </div>
         </div>
@@ -44,7 +49,12 @@ export default function CompanyHistoryPage() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Company Founded</h3>
                     <p className="text-gray-600">
-                      Dr. Sarah Chen and Michael Rodriguez establish Apex-Meridian in San Francisco with a vision to create ethical, beneficial AI. Initial focus on aviation safety systems.
+                      Dr. Sarah Chen and Michael Rodriguez establish <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
+                        <span>A p e x</span>
+                        <span className="mx-1">•</span>
+                        <span>M e r i d i a n</span>
+                        <sup className="text-xs ml-1">®</sup>
+                      </span> in San Francisco with a vision to create ethical, beneficial AI. Initial focus on aviation safety systems.
                     </p>
                   </div>
                 </div>

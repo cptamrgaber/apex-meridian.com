@@ -25,7 +25,12 @@ export default function InvestorsPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Investment Highlights</h2>
             <p className="text-lg text-gray-600">
-              Why Apex-Meridian represents a compelling investment opportunity
+              Why <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
+                <span>A p e x</span>
+                <span className="mx-1">•</span>
+                <span>M e r i d i a n</span>
+                <sup className="text-xs ml-1">®</sup>
+              </span> represents a compelling investment opportunity
             </p>
           </div>
           
@@ -164,7 +169,12 @@ export default function InvestorsPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Massive Market Opportunity</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              The AI market is experiencing unprecedented growth, and Apex-Meridian is positioned to capture significant market share across multiple verticals.
+              The AI market is experiencing unprecedented growth, and <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
+                <span>A p e x</span>
+                <span className="mx-1">•</span>
+                <span>M e r i d i a n</span>
+                <sup className="text-xs ml-1">®</sup>
+              </span> is positioned to capture significant market share across multiple verticals.
             </p>
           </div>
           

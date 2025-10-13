@@ -13,7 +13,12 @@ export default function FinancialInformationPage() {
               Financial Information
             </h1>
             <p className="text-xl text-green-200 max-w-3xl mx-auto">
-              Access comprehensive financial data, performance metrics, and reports to make informed investment decisions about Apex-Meridian.
+              Access comprehensive financial data, performance metrics, and reports to make informed investment decisions about <span className="font-semibold tracking-wider" style={{ letterSpacing: '0.15em' }}>
+                <span>A p e x</span>
+                <span className="mx-1">•</span>
+                <span>M e r i d i a n</span>
+                <sup className="text-sm ml-1">®</sup>
+              </span>.
             </p>
           </div>
         </div>
