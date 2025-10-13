@@ -329,11 +329,11 @@ const DocumentsPage: React.FC = () => {
                           </p>
                           <div className="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
                             <span>{doc.category}</span>
-                            <span>•</span>
+                            
                             <span>{doc.size}</span>
-                            <span>•</span>
+                            
                             <span>Modified {doc.lastModified}</span>
-                            <span>•</span>
+                            
                             <span>{doc.downloadCount} downloads</span>
                           </div>
                         </div>

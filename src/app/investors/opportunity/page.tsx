@@ -15,7 +15,7 @@ export default function InvestmentOpportunityPage() {
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
               Join us in revolutionizing artificial intelligence across multiple industries. Discover why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A p e x</span>
-                <span className="mx-1">•</span>
+                
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span> represents a compelling investment opportunity in the rapidly growing AI market.
@@ -102,7 +102,7 @@ export default function InvestmentOpportunityPage() {
             <p className="text-lg text-gray-600">
               What sets <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A p e x</span>
-                <span className="mx-1">•</span>
+                
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span> apart in the competitive AI landscape

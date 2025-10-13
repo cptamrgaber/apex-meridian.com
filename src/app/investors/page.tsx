@@ -27,7 +27,7 @@ export default function InvestorsPage() {
             <p className="text-lg text-gray-600">
               Why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A p e x</span>
-                <span className="mx-1">•</span>
+                
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span> represents a compelling investment opportunity
@@ -171,7 +171,7 @@ export default function InvestorsPage() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               The AI market is experiencing unprecedented growth, and <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A p e x</span>
-                <span className="mx-1">•</span>
+                
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span> is positioned to capture significant market share across multiple verticals.

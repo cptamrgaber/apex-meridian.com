@@ -31,18 +31,15 @@ export const ApexMeridianBrand: React.FC<ApexMeridianBrandProps> = ({
   };
 
   const baseClasses = `
-    font-semibold 
-    tracking-wider 
+    font-light 
     ${sizeClasses[size]} 
     ${colorClasses[color]}
     ${className}
   `;
 
   return (
-    <span className={baseClasses} style={{ letterSpacing: '0.15em' }}>
-      <span>A p e x</span>
-      <span className="mx-1">•</span>
-      <span>M e r i d i a n</span>
+    <span className={baseClasses} style={{ letterSpacing: '0.2em' }}>
+      <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
       {showRegistered && (
         <sup className="text-xs ml-1">®</sup>
       )}
@@ -73,7 +70,7 @@ export const apexMeridianText = (options?: {
     gradient: 'bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent'
   };
 
-  return `font-semibold tracking-wider ${sizeClasses[size]} ${colorClasses[color]}`;
+  return `font-light ${sizeClasses[size]} ${colorClasses[color]}`;
 };
 
 export default ApexMeridianBrand;
