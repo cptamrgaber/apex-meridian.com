@@ -5,14 +5,14 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300 border-t border-gray-200 dark:border-gray-800">
+    <footer className="relative z-50 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/assets/A  p  e  x  M  e  r  i  d  i  a  nTXTlogo.png"
+                src="/assets/Apex-MeridianTXTlogo.png"
                 alt="A  p  e  x  M  e  r  i  d  i  a  n Logo"
                 width={180}
                 height={50}

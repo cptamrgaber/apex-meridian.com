@@ -46,7 +46,7 @@ const DramaticCTA: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-tech-black via-tech-darker to-tech-black relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-tech-black via-tech-darker to-tech-black relative">
       {/* Background Effects */}
       <div className="absolute inset-0">
         {/* Holographic grid */}

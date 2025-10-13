@@ -213,12 +213,12 @@ const AnimatedBackground: React.FC = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0"
+        className="fixed inset-0 pointer-events-none z-[-1]"
         style={{ background: 'transparent' }}
       />
       
       {/* Additional CSS-based effects */}
-      <div className="fixed inset-0 pointer-events-none z-0">
+      <div className="fixed inset-0 pointer-events-none z-[-1]">
         {/* Subtle orbs */}
         {Array.from({ length: 3 }).map((_, i) => (
           <div
