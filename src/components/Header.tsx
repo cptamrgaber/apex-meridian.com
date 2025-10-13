@@ -24,17 +24,17 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-slate-900 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+        <div className="flex justify-between items-center h-20">
+          {/* Logo - Increased Size */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <div className="relative">
                 <Image
                   src="/assets/Apex-MeridianTXTlogo.png"
                   alt="Apex-Meridian"
-                  width={180}
-                  height={54}
-                  className="h-12 w-auto object-contain"
+                  width={240}
+                  height={72}
+                  className="h-16 w-auto object-contain"
                   priority
                   style={{ aspectRatio: '280/84' }}
                 />
@@ -43,7 +43,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-8">
             {/* About Dropdown */}
             <div 
               className="relative group"
@@ -154,7 +154,7 @@ export default function Header() {
           </nav>
 
           {/* Controls - Right Side */}
-          <div className="flex items-center space-x-3 ml-8">
+          <div className="flex items-center space-x-4 ml-10">
             {/* Language Toggle */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}

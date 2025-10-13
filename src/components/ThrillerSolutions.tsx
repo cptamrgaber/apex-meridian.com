@@ -179,7 +179,7 @@ const ThrillerSolutions: React.FC = () => {
           {solutions.map((solution, index) => (
             <div
               key={solution.id}
-              className={`group relative bg-gradient-to-br ${solution.gradient} p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-700 transform hover:-translate-y-4 overflow-hidden animate-fade-in`}
+              className={`group relative bg-gradient-to-br ${solution.gradient} p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-700 transform hover:-translate-y-4 overflow-hidden animate-fade-in h-full flex flex-col`}
               style={{ 
                 animationDelay: `${index * 0.2}s`,
                 boxShadow: hoveredSolution === solution.id ? `0 0 40px ${solution.glowColor}40` : undefined
@@ -252,14 +252,16 @@ const ThrillerSolutions: React.FC = () => {
                 </div>
 
                 {/* CTA Button */}
-                <Link
-                  href={solution.href}
-                  className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 group-hover:scale-105"
-                  style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
-                >
-                  <span>Explore {t(solution.nameKey as any)}</span>
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Link>
+                <div className="mt-auto pt-6">
+                  <Link
+                    href={solution.href}
+                    className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 group-hover:scale-105"
+                    style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
+                  >
+                    <span>Explore {t(solution.nameKey as any)}</span>
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
