@@ -70,7 +70,15 @@ export default function CompanyOverviewPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Apex-Meridian by the Numbers</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
+                <span>A p e x</span>
+                <span className="mx-1">•</span>
+                <span>M e r i d i a n</span>
+                <sup className="text-sm ml-1">®</sup>
+              </span>
+              <span className="text-gray-900"> by the Numbers</span>
+            </h2>
             <p className="text-lg text-gray-600">Our growth and impact across industries</p>
           </div>
           
@@ -142,7 +150,12 @@ export default function CompanyOverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-            Discover how Apex-Meridian can transform your industry with cutting-edge AI solutions.
+            Discover how <span className="font-semibold tracking-wider" style={{ letterSpacing: '0.15em' }}>
+              <span>A p e x</span>
+              <span className="mx-1">•</span>
+              <span>M e r i d i a n</span>
+              <sup className="text-sm ml-1">®</sup>
+            </span> can transform your industry with cutting-edge AI solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

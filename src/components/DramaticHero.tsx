@@ -77,8 +77,11 @@ const DramaticHero: React.FC = () => {
         {/* Professional Text Logo */}
         <div className="flex items-center justify-center mb-8 animate-slide-up">
           <div className="relative">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-white to-blue-300 bg-clip-text text-transparent drop-shadow-2xl">
-              Apex-Meridian
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-white to-blue-300 bg-clip-text text-transparent drop-shadow-2xl" style={{ letterSpacing: '0.15em' }}>
+              <span>A p e x</span>
+              <span className="mx-2">•</span>
+              <span>M e r i d i a n</span>
+              <sup className="text-2xl md:text-3xl ml-2">®</sup>
             </h1>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></div>
           </div>
