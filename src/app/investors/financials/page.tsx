@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { TrendingUp, DollarSign, BarChart3, PieChart, ArrowRight, Download } from 'lucide-react';
+import { TrendingUp, DollarSign, BarChart3, PieChart, FileText, Download } from 'lucide-react';
+import VisualChart from '@/components/VisualChart';
 
 export default function FinancialInformationPage() {
   return (
@@ -73,24 +74,42 @@ export default function FinancialInformationPage() {
           </div>
 
           {/* Revenue Breakdown */}
-          <div className="bg-gray-50 rounded-lg p-8">
+          <div className="bg-gray-50 rounded-lg p-8 mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Revenue Breakdown by Segment</h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600 mb-2">$12.6M</div>
+                <div className="text-2xl font-bold text-blue-600 mb-2">Target: $12.6M</div>
                 <p className="text-gray-600 font-medium">Aviation Solutions</p>
-                <p className="text-sm text-gray-500">45% of total revenue</p>
+                <p className="text-sm text-gray-500">45% of projected revenue</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-red-600 mb-2">$9.8M</div>
+                <div className="text-2xl font-bold text-red-600 mb-2">Target: $9.8M</div>
                 <p className="text-gray-600 font-medium">Cybersecurity</p>
-                <p className="text-sm text-gray-500">35% of total revenue</p>
+                <p className="text-sm text-gray-500">35% of projected revenue</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-600 mb-2">$5.6M</div>
+                <div className="text-2xl font-bold text-green-600 mb-2">Target: $5.6M</div>
                 <p className="text-gray-600 font-medium">Education</p>
-                <p className="text-sm text-gray-500">20% of total revenue</p>
+                <p className="text-sm text-gray-500">20% of projected revenue</p>
               </div>
+            </div>
+            
+            {/* Financial Charts */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <VisualChart 
+                type="pie" 
+                title="Revenue Distribution" 
+                data={[45, 35, 20]} 
+                labels={['Aviation', 'Cybersecurity', 'Education']}
+                color="#3B82F6"
+              />
+              <VisualChart 
+                type="growth" 
+                title="Projected Revenue Growth" 
+                data={[5, 12, 18, 25, 28]} 
+                labels={['2020', '2021', '2022', '2023', '2024']}
+                color="#10B981"
+              />
             </div>
           </div>
         </div>

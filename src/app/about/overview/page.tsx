@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Target, Users, Globe, Award } from 'lucide-react';
+import { Award, Users, Globe, TrendingUp, Target, ArrowRight } from 'lucide-react';
+import VisualChart from '@/components/VisualChart';
 
 export default function CompanyOverviewPage() {
   return (
@@ -82,23 +83,41 @@ export default function CompanyOverviewPage() {
             <p className="text-lg text-gray-600">Our growth and impact across industries</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">500K+</div>
-              <p className="text-gray-600">Active Users</p>
+              <div className="text-4xl font-bold text-blue-600 mb-2">Growing</div>
+              <p className="text-gray-600">User Base</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">150+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">Expanding</div>
               <p className="text-gray-600">Enterprise Clients</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">99.9%</div>
-              <p className="text-gray-600">Platform Uptime</p>
+              <div className="text-4xl font-bold text-blue-600 mb-2">Enterprise-Grade</div>
+              <p className="text-gray-600">Platform Reliability</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">25+</div>
-              <p className="text-gray-600">Countries Served</p>
+              <div className="text-4xl font-bold text-blue-600 mb-2">Global</div>
+              <p className="text-gray-600">Market Presence</p>
             </div>
+          </div>
+          
+          {/* Growth Chart */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <VisualChart 
+              type="growth" 
+              title="User Growth Trajectory" 
+              data={[20, 45, 65, 80, 95]} 
+              labels={['2020', '2021', '2022', '2023', '2024']}
+              color="#3B82F6"
+            />
+            <VisualChart 
+              type="bar" 
+              title="Market Expansion" 
+              data={[30, 60, 85, 70, 90]} 
+              labels={['Aviation', 'Cyber', 'Education', 'AGI', 'Platform']}
+              color="#10B981"
+            />
           </div>
         </div>
       </section>
