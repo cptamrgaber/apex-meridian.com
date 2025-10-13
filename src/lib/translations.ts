@@ -17,6 +17,10 @@ export const translations = {
 
     // About dropdown
     'about': 'About',
+    'nav.overview': 'Overview',
+    'nav.leadership': 'Leadership',
+    'nav.history': 'History',
+    'nav.careers': 'Careers',
     'overview': 'Overview',
     'leadership': 'Leadership',
     'history': 'History',
@@ -24,6 +28,10 @@ export const translations = {
 
     // Solutions dropdown
     'solutions': 'Solutions',
+    'nav.aviation': 'Aviation',
+    'nav.cybersecurity': 'Cybersecurity',
+    'nav.education': 'Education',
+    'nav.agi': 'AGI Solutions',
     'aviation': 'Aviation',
     'cybersecurity': 'Cybersecurity',
     'education': 'Education',
@@ -31,10 +39,14 @@ export const translations = {
 
     // Technology dropdown
     'technology': 'Technology',
+    'nav.platform': 'MeridianAI Platform',
     'platform': 'MeridianAI Platform',
 
     // Investors dropdown
     'investors': 'Investors',
+    'nav.opportunity': 'Investment Opportunity',
+    'nav.financials': 'Financial Information',
+    'nav.governance': 'Governance',
     'opportunity': 'Investment Opportunity',
     'financials': 'Financial Information',
     'governance': 'Governance',
@@ -139,6 +151,10 @@ export const translations = {
 
     // About dropdown
     'about': 'حول',
+    'nav.overview': 'نظرة عامة',
+    'nav.leadership': 'القيادة',
+    'nav.history': 'التاريخ',
+    'nav.careers': 'الوظائف',
     'overview': 'نظرة عامة',
     'leadership': 'القيادة',
     'history': 'التاريخ',
@@ -146,6 +162,10 @@ export const translations = {
 
     // Solutions dropdown
     'solutions': 'الحلول',
+    'nav.aviation': 'الطيران',
+    'nav.cybersecurity': 'الأمن السيبراني',
+    'nav.education': 'التعليم',
+    'nav.agi': 'حلول الذكاء العام',
     'aviation': 'الطيران',
     'cybersecurity': 'الأمن السيبراني',
     'education': 'التعليم',
@@ -153,10 +173,14 @@ export const translations = {
 
     // Technology dropdown
     'technology': 'التكنولوجيا',
+    'nav.platform': 'منصة ميريديان للذكاء الاصطناعي',
     'platform': 'منصة ميريديان للذكاء الاصطناعي',
 
     // Investors dropdown
     'investors': 'المستثمرون',
+    'nav.opportunity': 'فرصة الاستثمار',
+    'nav.financials': 'المعلومات المالية',
+    'nav.governance': 'الحوكمة',
     'opportunity': 'فرصة الاستثمار',
     'financials': 'المعلومات المالية',
     'governance': 'الحوكمة',
