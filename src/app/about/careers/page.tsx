@@ -24,11 +24,9 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why <span className="font-semibold tracking-wider text-blue-600" style={{ letterSpacing: '0.15em' }}>
-                <span>A p e x</span>
-                <span className="mx-1">•</span>
-                <span>M e r i d i a n</span>
-                <sup className="text-sm ml-1">®</sup>
+              Why <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+                <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
+                <sup className="text-xs ml-1">®</sup>
               </span>?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">

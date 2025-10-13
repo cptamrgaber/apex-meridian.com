@@ -154,7 +154,7 @@ export default function Header() {
           </nav>
 
           {/* Controls - Right Side */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 ml-8">
             {/* Language Toggle */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
