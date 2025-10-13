@@ -24,7 +24,7 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+              Why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span>?

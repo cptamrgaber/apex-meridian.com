@@ -45,7 +45,7 @@ export default function DramaticHero() {
         <div className="flex items-center justify-center mb-8 animate-slide-up">
           <div className="relative">
             <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2">
-              <span className="font-light text-blue-400 text-lg" style={{ letterSpacing: '0.2em' }}>
+              <span className="font-light text-blue-400 text-2xl" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span>

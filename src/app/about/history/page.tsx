@@ -13,7 +13,7 @@ export default function CompanyHistoryPage() {
               Our Journey
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              From a small research lab to a leading AI company, discover how <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+              From a small research lab to a leading AI company, discover how <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span> has evolved to become a pioneer in artificial intelligence solutions.
@@ -47,7 +47,7 @@ export default function CompanyHistoryPage() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Company Founded</h3>
                     <p className="text-gray-600">
-                      Dr. Sarah Chen and Michael Rodriguez establish <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+                      Dr. Sarah Chen and Michael Rodriguez establish <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                         <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
                         <sup className="text-xs ml-1">®</sup>
                       </span> in San Francisco with a vision to create ethical, beneficial AI. Initial focus on aviation safety systems.

@@ -14,7 +14,7 @@ export default function FinancialInformationPage() {
               Financial Information
             </h1>
             <p className="text-xl text-green-200 max-w-3xl mx-auto">
-              Access comprehensive financial data, performance metrics, and reports to make informed investment decisions about <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+              Access comprehensive financial data, performance metrics, and reports to make informed investment decisions about <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A p e x</span>
                 <span className="mx-1">•</span>
                 <span>M e r i d i a n</span>

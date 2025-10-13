@@ -262,7 +262,7 @@ export default function LeadershipPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Join Our Leadership Team</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-            We&apos;re building a world-class team of leaders who share our vision for the future of AI. Explore leadership opportunities at <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+            We&apos;re building a world-class team of leaders who share our vision for the future of AI. Explore leadership opportunities at <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
               <span>A p e x</span>
               <span className="mx-1">•</span>
               <span>M e r i d i a n</span>

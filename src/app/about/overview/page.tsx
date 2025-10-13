@@ -72,7 +72,7 @@ export default function CompanyOverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+              <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A p e x</span>
                 <span className="mx-1">•</span>
                 <span>M e r i d i a n</span>
@@ -169,7 +169,7 @@ export default function CompanyOverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-            Discover how <span className="font-light text-blue-600 text-sm" style={{ letterSpacing: '0.2em' }}>
+            Discover how <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
               <span>A p e x</span>
               <span className="mx-1">•</span>
               <span>M e r i d i a n</span>
