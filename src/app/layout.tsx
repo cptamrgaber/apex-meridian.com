@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Apex-Meridian",
     images: [
       {
-        url: "/assets/logo_blue.png",
+        url: "/assets/Apex-Meridianlogoicon.png",
         width: 1200,
         height: 630,
         alt: "Apex-Meridian Logo",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Apex-Meridian | Leading AI Technology Solutions",
     description: "Transform your industry with cutting-edge AI solutions from Apex-Meridian",
-    images: ["/assets/logo_blue.png"],
+    images: ["/assets/Apex-Meridianlogoicon.png"],
   },
   robots: {
     index: true,
@@ -47,6 +47,16 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/Apex-Meridianlogoicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/Apex-Meridianlogoicon.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/Apex-Meridianlogoicon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/Apex-Meridianlogoicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -57,8 +67,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/logo_blue.png" />
-        <link rel="apple-touch-icon" href="/assets/logo.png" />
+        <link rel="icon" href="/Apex-Meridianlogoicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/Apex-Meridianlogoicon.png" />
+        <link rel="shortcut icon" href="/Apex-Meridianlogoicon.png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ChevronDown, Globe, Sun, Moon } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
 import { useTheme } from '@/lib/theme-context';
@@ -28,14 +29,18 @@ const Header: React.FC = () => {
     <header className="bg-white/95 dark:bg-slate-900/95 shadow-lg backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-300 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Professional Text Logo */}
+          {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center group transition-all duration-300 hover:scale-105">
               <div className="relative">
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
-                  Apex-Meridian
-                </span>
-                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <Image
+                  src="/assets/Apex-MeridianTXTlogo.png"
+                  alt="Apex-Meridian"
+                  width={200}
+                  height={60}
+                  className="h-12 w-auto object-contain"
+                  priority
+                />
               </div>
             </Link>
           </div>

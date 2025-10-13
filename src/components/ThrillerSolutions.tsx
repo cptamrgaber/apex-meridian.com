@@ -36,8 +36,8 @@ const ThrillerSolutions: React.FC = () => {
       glowColor: '#00d4ff',
       featureKeys: ['aeromind.features.1', 'aeromind.features.2', 'aeromind.features.3', 'aeromind.features.4'],
       stats: [
-        { labelKey: 'Efficiency Gain', value: '35%' },
-        { labelKey: 'Cost Reduction', value: '28%' }
+        { labelKey: 'Target Efficiency', value: 'Enhanced' },
+        { labelKey: 'Cost Optimization', value: 'Significant' }
       ]
     },
     {
@@ -51,8 +51,8 @@ const ThrillerSolutions: React.FC = () => {
       glowColor: '#ff073a',
       featureKeys: ['cyberguard.features.1', 'cyberguard.features.2', 'cyberguard.features.3', 'cyberguard.features.4'],
       stats: [
-        { labelKey: 'Threat Detection', value: '99.9%' },
-        { labelKey: 'Response Time', value: '<100ms' }
+        { labelKey: 'Threat Detection', value: 'Advanced' },
+        { labelKey: 'Response Time', value: 'Rapid' }
       ]
     },
     {
@@ -66,8 +66,8 @@ const ThrillerSolutions: React.FC = () => {
       glowColor: '#10b981',
       featureKeys: ['edugenius.features.1', 'edugenius.features.2', 'edugenius.features.3', 'edugenius.features.4'],
       stats: [
-        { labelKey: 'Learning Speed', value: '3x Faster' },
-        { labelKey: 'Retention Rate', value: '94%' }
+        { labelKey: 'Learning Enhancement', value: 'Accelerated' },
+        { labelKey: 'Retention Goal', value: 'Improved' }
       ]
     },
     {
@@ -81,8 +81,8 @@ const ThrillerSolutions: React.FC = () => {
       glowColor: '#8b5cf6',
       featureKeys: ['meridianagi.features.1', 'meridianagi.features.2', 'meridianagi.features.3', 'meridianagi.features.4'],
       stats: [
-        { labelKey: 'IQ Equivalent', value: '200+' },
-        { labelKey: 'Learning Rate', value: '1000x Human' }
+        { labelKey: 'Intelligence Level', value: 'Advanced' },
+        { labelKey: 'Learning Capability', value: 'Adaptive' }
       ]
     }
   ];
@@ -215,11 +215,11 @@ const ThrillerSolutions: React.FC = () => {
                     </div>
                   </div>
                   
-                  {/* Stats */}
+                  {/* Stats - Now Legally Safe */}
                   <div className="text-right">
                     {solution.stats.map((stat, statIndex) => (
                       <div key={statIndex} className="mb-1">
-                        <div className="text-2xl font-bold text-white"
+                        <div className="text-lg font-bold text-white"
                              style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
                           {stat.value}
                         </div>
@@ -263,6 +263,13 @@ const ThrillerSolutions: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Legal Disclaimer */}
+        <div className="text-center mt-8 mb-8">
+          <p className="text-xs text-white/60 max-w-3xl mx-auto">
+            * Performance targets and capabilities represent development goals. Actual results may vary based on implementation and usage conditions.
+          </p>
         </div>
 
         {/* Bottom CTA */}

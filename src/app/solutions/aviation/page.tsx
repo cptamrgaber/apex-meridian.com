@@ -129,12 +129,12 @@ const AviationPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Performance Metrics */}
+      {/* Performance Targets - Legally Safe */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Proven Results</h2>
-            <p className="text-xl text-blue-200">AeroMind delivers measurable improvements across all aviation metrics</p>
+            <h2 className="text-4xl font-bold mb-4">Development Targets</h2>
+            <p className="text-xl text-blue-200">AeroMind aims to deliver significant improvements across aviation operations</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -142,30 +142,84 @@ const AviationPage: React.FC = () => {
               <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <BarChart3 className="w-10 h-10 text-white" />
               </div>
-              <div className="text-4xl font-bold mb-2">35%</div>
-              <div className="text-blue-200">Fuel Savings</div>
+              <div className="text-4xl font-bold mb-2">Enhanced</div>
+              <div className="text-blue-200">Fuel Efficiency</div>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-10 h-10 text-white" />
               </div>
-              <div className="text-4xl font-bold mb-2">60%</div>
-              <div className="text-blue-200">Reduced Delays</div>
+              <div className="text-4xl font-bold mb-2">Reduced</div>
+              <div className="text-blue-200">Operational Delays</div>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-10 h-10 text-white" />
               </div>
-              <div className="text-4xl font-bold mb-2">99.9%</div>
-              <div className="text-blue-200">Safety Score</div>
+              <div className="text-4xl font-bold mb-2">Advanced</div>
+              <div className="text-blue-200">Safety Systems</div>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-10 h-10 text-white" />
               </div>
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-blue-200">Passenger Satisfaction</div>
+              <div className="text-4xl font-bold mb-2">Improved</div>
+              <div className="text-blue-200">Passenger Experience</div>
             </div>
+          </div>
+
+          {/* Compliance Section */}
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold mb-8">Global Aviation Compliance</h3>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="font-bold text-lg">IATA</div>
+                <div className="text-sm text-blue-200">Standards</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="font-bold text-lg">ICAO</div>
+                <div className="text-sm text-blue-200">Regulations</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="font-bold text-lg">EASA</div>
+                <div className="text-sm text-blue-200">Compliance</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="font-bold text-lg">ECARS</div>
+                <div className="text-sm text-blue-200">Reporting</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="font-bold text-lg">FAA</div>
+                <div className="text-sm text-blue-200">Standards</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Competitive Advantage */}
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold mb-8">Advanced Scheduling & Rostering System</h3>
+            <p className="text-blue-200 mb-6">Competing with industry leaders through AI-powered optimization</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h4 className="font-bold text-lg mb-2">vs. Jeppesen</h4>
+                <p className="text-sm text-blue-200">Enhanced AI-powered flight planning and navigation solutions</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h4 className="font-bold text-lg mb-2">vs. AIMS</h4>
+                <p className="text-sm text-blue-200">Advanced Aviation Information Management with predictive analytics</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h4 className="font-bold text-lg mb-2">vs. Lido</h4>
+                <p className="text-sm text-blue-200">Superior operational systems with real-time optimization</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Legal Disclaimer */}
+          <div className="text-center mt-8">
+            <p className="text-xs text-blue-300 max-w-3xl mx-auto">
+              * Performance targets represent development goals and expected improvements. Actual results may vary based on implementation, operational conditions, and regulatory requirements.
+            </p>
           </div>
         </div>
       </section>

@@ -141,13 +141,13 @@ const DramaticHero: React.FC = () => {
           </Link>
         </div>
 
-        {/* Clean Stats Section */}
+        {/* Clean Stats Section - Legally Safe Targets */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto" style={{ animationDelay: '2s' }}>
           {[
-            { icon: Brain, label: t('stats.aiModels'), value: '50+', color: 'text-blue-400' },
-            { icon: Shield, label: t('stats.securityLevel'), value: '99.9%', color: 'text-cyan-400' },
-            { icon: Zap, label: t('stats.processingSpeed'), value: '<1ms', color: 'text-purple-400' },
-            { icon: Eye, label: t('stats.visionAccuracy'), value: '99.8%', color: 'text-pink-400' },
+            { icon: Brain, label: t('stats.aiModels'), value: 'Advanced', color: 'text-blue-400' },
+            { icon: Shield, label: t('stats.securityLevel'), value: 'Enterprise', color: 'text-cyan-400' },
+            { icon: Zap, label: t('stats.processingSpeed'), value: 'High-Speed', color: 'text-purple-400' },
+            { icon: Eye, label: t('stats.visionAccuracy'), value: 'Precision', color: 'text-pink-400' },
           ].map((stat, index) => (
             <div
               key={stat.label}
@@ -159,6 +159,13 @@ const DramaticHero: React.FC = () => {
               <div className="text-sm text-gray-300" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>{stat.label}</div>
             </div>
           ))}
+        </div>
+
+        {/* Legal Disclaimer */}
+        <div className="mt-8 text-center">
+          <p className="text-xs text-gray-400 max-w-2xl mx-auto">
+            * Performance targets and capabilities are goals based on ongoing development. Actual results may vary.
+          </p>
         </div>
       </div>
 
