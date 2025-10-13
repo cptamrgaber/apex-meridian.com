@@ -18,7 +18,10 @@ export default function Header() {
   };
 
   const handleDropdownLeave = () => {
-    setActiveDropdown(null);
+    // Add a small delay to prevent accidental closing
+    setTimeout(() => {
+      setActiveDropdown(null);
+    }, 100);
   };
 
   return (
@@ -50,12 +53,16 @@ export default function Header() {
               onMouseEnter={() => handleDropdownEnter('about')}
               onMouseLeave={handleDropdownLeave}
             >
-              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
+              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap py-2">
                 {t('nav.about')}
                 <ChevronDown className="ml-1 h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" />
               </button>
               {activeDropdown === 'about' && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50">
+                <div 
+                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
+                  onMouseEnter={() => setActiveDropdown('about')}
+                  onMouseLeave={handleDropdownLeave}
+                >
                   <Link href="/about/overview" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.overview')}
                   </Link>
@@ -78,12 +85,16 @@ export default function Header() {
               onMouseEnter={() => handleDropdownEnter('solutions')}
               onMouseLeave={handleDropdownLeave}
             >
-              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
+              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap py-2">
                 {t('nav.solutions')}
                 <ChevronDown className="ml-1 h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" />
               </button>
               {activeDropdown === 'solutions' && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50">
+                <div 
+                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
+                  onMouseEnter={() => setActiveDropdown('solutions')}
+                  onMouseLeave={handleDropdownLeave}
+                >
                   <Link href="/solutions/aviation" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.aviation')}
                   </Link>
@@ -106,12 +117,16 @@ export default function Header() {
               onMouseEnter={() => handleDropdownEnter('technology')}
               onMouseLeave={handleDropdownLeave}
             >
-              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
+              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap py-2">
                 {t('nav.technology')}
                 <ChevronDown className="ml-1 h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" />
               </button>
               {activeDropdown === 'technology' && (
-                <div className="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50">
+                <div 
+                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
+                  onMouseEnter={() => setActiveDropdown('technology')}
+                  onMouseLeave={handleDropdownLeave}
+                >
                   <Link href="/technology/platform" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.platform')}
                   </Link>
@@ -125,12 +140,16 @@ export default function Header() {
               onMouseEnter={() => handleDropdownEnter('investors')}
               onMouseLeave={handleDropdownLeave}
             >
-              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
+              <button className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap py-2">
                 {t('nav.investors')}
                 <ChevronDown className="ml-1 h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" />
               </button>
               {activeDropdown === 'investors' && (
-                <div className="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50">
+                <div 
+                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
+                  onMouseEnter={() => setActiveDropdown('investors')}
+                  onMouseLeave={handleDropdownLeave}
+                >
                   <Link href="/investors/opportunity" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.opportunity')}
                   </Link>
@@ -144,42 +163,56 @@ export default function Header() {
               )}
             </div>
 
-            {/* Direct Links */}
-            <Link href="/vision" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap text-sm">
+            {/* AI Vision Link */}
+            <Link href="/vision" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
               {t('nav.vision')}
             </Link>
+
+            {/* Pricing Link */}
+            <Link href="/pricing" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
+              Pricing
+            </Link>
+
+            {/* Support Link */}
+            <Link href="/support" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
+              Support
+            </Link>
+
+            {/* Contact Link */}
             <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
               {t('nav.contact')}
             </Link>
           </nav>
 
-          {/* Controls - Right Side */}
-          <div className="flex items-center space-x-4 ml-10">
+          {/* Controls - Language and Theme Toggle */}
+          <div className="hidden lg:flex items-center space-x-4 ml-8">
             {/* Language Toggle */}
             <button
               onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-              className="hidden lg:flex items-center px-3 py-1.5 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
+              className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
             >
-              <Globe className="h-4 w-4 mr-1.5" />
-              <span className="text-xs font-medium">{language === 'en' ? 'العربية' : 'English'}</span>
+              <Globe className="h-4 w-4 mr-1" />
+              {language === 'en' ? 'العربية' : 'English'}
             </button>
 
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="hidden lg:flex p-1.5 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
               aria-label="Toggle theme"
             >
               {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </button>
+          </div>
 
-            {/* Mobile menu button */}
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
+              className="p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -188,22 +221,31 @@ export default function Header() {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200 dark:border-gray-700">
             <div className="space-y-2">
-              <Link href="/about" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200">
+              <Link href="/about" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.about')}
               </Link>
-              <Link href="/solutions" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200">
+              <Link href="/solutions" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.solutions')}
               </Link>
-              <Link href="/technology" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200">
+              <Link href="/technology" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.technology')}
               </Link>
-              <Link href="/investors" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200">
+              <Link href="/investors" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.investors')}
               </Link>
-              <Link href="/vision" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200">
+              <Link href="/vision" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.vision')}
               </Link>
-              <Link href="/contact" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg transition-colors duration-200">
+              <Link href="/pricing" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                Pricing
+              </Link>
+              <Link href="/support" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                Support
+              </Link>
+              <Link href="/faq" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                FAQ
+              </Link>
+              <Link href="/contact" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.contact')}
               </Link>
               
@@ -211,9 +253,9 @@ export default function Header() {
               <div className="flex items-center justify-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700 mt-4">
                 <button
                   onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-                  className="flex items-center px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
+                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
                 >
-                  <Globe className="h-4 w-4 mr-2" />
+                  <Globe className="h-4 w-4 mr-1" />
                   {language === 'en' ? 'العربية' : 'English'}
                 </button>
                 <button
