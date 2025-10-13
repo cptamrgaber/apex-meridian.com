@@ -55,7 +55,7 @@ export default function CompanyOverviewPage() {
             </div>
             <div>
               <Image
-                src="/assets/Apex-Meridian_drawing.png"
+                src="/assets/Apex-Meridian_tree_not-glowing.png"
                 alt="Apex-Meridian Vision"
                 width={600}
                 height={400}

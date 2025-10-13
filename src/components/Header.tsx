@@ -29,17 +29,18 @@ const Header: React.FC = () => {
     <header className="bg-white/95 dark:bg-slate-900/95 shadow-lg backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-300 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
+          {/* Logo - Increased Size */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center group transition-all duration-300 hover:scale-105">
               <div className="relative">
                 <Image
                   src="/assets/Apex-MeridianTXTlogo.png"
                   alt="Apex-Meridian"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto object-contain"
+                  width={280}
+                  height={84}
+                  className="h-16 w-auto object-contain sm:h-18 md:h-20"
                   priority
+                  style={{ aspectRatio: '280/84' }}
                 />
               </div>
             </Link>
