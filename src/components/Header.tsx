@@ -33,8 +33,8 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <div className="relative">
                 <Image
-                  src="/assets/Apex-MeridianTXTlogo.png"
-                  alt="Apex-Meridian"
+                  src="/assets/A  p  e  x  M  e  r  i  d  i  a  nTXTlogo.png"
+                  alt="A  p  e  x  M  e  r  i  d  i  a  n"
                   width={240}
                   height={72}
                   className="h-16 w-auto object-contain"

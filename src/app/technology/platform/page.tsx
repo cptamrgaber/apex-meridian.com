@@ -18,7 +18,7 @@ export default function PlatformPage() {
             </p>
             <div className="flex justify-center">
               <Image
-                src="/assets/Apex-Meridian_tree_not-glowing.png"
+                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
                 alt="MeridianAI Platform Architecture"
                 width={400}
                 height={300}
@@ -188,7 +188,7 @@ export default function PlatformPage() {
             </div>
             <div>
               <Image
-                src="/assets/Apex-Meridian_tree_not-glowing.png"
+                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
                 alt="Platform Infrastructure"
                 width={600}
                 height={400}

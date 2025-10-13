@@ -8,7 +8,7 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Contact <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-              <span>A p e x</span>
+              <span>A  p  e  x</span>
               
               <span>M e r i d i a n</span>
               <sup className="text-lg ml-1">®</sup>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-medium text-gray-900">Headquarters</h3>
                   <p className="text-gray-600">
                     <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                      <span>A p e x</span>
+                      <span>A  p  e  x</span>
                       
                       <span>M e r i d i a n</span>
                       <sup className="text-xs ml-1">®</sup>

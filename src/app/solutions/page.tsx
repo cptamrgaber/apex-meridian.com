@@ -205,7 +205,7 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Industry?</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
-            Join leading organizations already leveraging Apex-Meridian&apos;s AI solutions to drive innovation and growth.
+            Join leading organizations already leveraging A  p  e  x  M  e  r  i  d  i  a  n&apos;s AI solutions to drive innovation and growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

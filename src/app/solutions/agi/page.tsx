@@ -13,7 +13,7 @@ export default function AGISolutionsPage() {
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <Image
-                src="/assets/Apex-Meridian_tree_not-glowing.png"
+                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
                 alt="AGI Tree of Knowledge"
                 width={150}
                 height={150}

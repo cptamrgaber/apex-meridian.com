@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/assets/Apex-MeridianTXTlogo.png"
-                alt="Apex-Meridian Logo"
+                src="/assets/A  p  e  x  M  e  r  i  d  i  a  nTXTlogo.png"
+                alt="A  p  e  x  M  e  r  i  d  i  a  n Logo"
                 width={180}
                 height={50}
                 className="h-12 w-auto object-contain"

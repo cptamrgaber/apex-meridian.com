@@ -44,10 +44,10 @@ export default function DramaticHero() {
         {/* Professional Text Logo */}
         <div className="flex items-center justify-center mb-8 animate-slide-up">
           <div className="relative">
-            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2">
-              <span className="font-light text-blue-400 text-2xl" style={{ letterSpacing: '0.2em' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2">
+              <span className="font-light text-blue-400 text-3xl md:text-4xl lg:text-5xl" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
-                <sup className="text-xs ml-1">®</sup>
+                <sup className="text-lg md:text-xl lg:text-2xl ml-2">®</sup>
               </span>
             </h1>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></div>
@@ -60,7 +60,7 @@ export default function DramaticHero() {
             <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl group-hover:bg-blue-500/30 transition-all duration-300"></div>
             <div className="relative bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-full p-8 border border-blue-500/20 group-hover:border-blue-400/40 transition-all duration-300">
               <Image
-                src="/assets/Apex-Meridian_tree_not-glowing.png"
+                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
                 alt="AI Technology"
                 width={120}
                 height={120}

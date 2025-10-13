@@ -14,7 +14,7 @@ const AIPage: React.FC = () => {
             The Future is Intelligent
           </h1>
           <p className="mt-6 text-xl md:text-2xl text-blue-200 max-w-3xl mx-auto">
-            At Apex-Meridian, we are not just building AI; we are architecting the future of intelligence. Our vision is to create a world where AI is a seamless extension of human potential, solving the world's most complex challenges and elevating everyday life.
+            At A  p  e  x  M  e  r  i  d  i  a  n, we are not just building AI; we are architecting the future of intelligence. Our vision is to create a world where AI is a seamless extension of human potential, solving the world's most complex challenges and elevating everyday life.
           </p>
         </div>
       </section>

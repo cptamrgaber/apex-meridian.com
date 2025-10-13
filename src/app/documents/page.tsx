@@ -39,7 +39,7 @@ const DocumentsPage: React.FC = () => {
       size: '2.4 MB',
       lastModified: '2024-01-15',
       accessLevel: 'public',
-      description: 'Comprehensive overview of Apex-Meridian\'s mission, vision, and core values.',
+      description: 'Comprehensive overview of A  p  e  x  M  e  r  i  d  i  a  n\'s mission, vision, and core values.',
       downloadCount: 1247,
       status: 'active'
     },
