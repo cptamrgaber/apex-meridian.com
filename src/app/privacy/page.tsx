@@ -96,8 +96,8 @@ export default function PrivacyPolicy() {
               <div className="mt-4 p-4 bg-gray-100 dark:bg-slate-700 rounded-lg">
                 <p className="text-gray-700 dark:text-gray-300">
                   Email: privacy@apex-meridian.com<br />
-                  Address: [Company Address]<br />
-                  Phone: [Company Phone]
+                  Address: New Cairo, Cairo Governorate, Egypt<br />
+                  Phone: +201200929092
                 </p>
               </div>
             </section>
