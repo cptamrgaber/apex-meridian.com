@@ -38,7 +38,7 @@ export default function Header() {
                 height={162}
                 className="h-24 w-auto object-contain"
                 style={{ 
-                  filter: 'drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white)',
+                  filter: 'drop-shadow(0.5px 0.5px 0 white) drop-shadow(-0.5px -0.5px 0 white) drop-shadow(0.5px -0.5px 0 white) drop-shadow(-0.5px 0.5px 0 white)',
                   aspectRatio: '280/84'
                 }}
                 priority
