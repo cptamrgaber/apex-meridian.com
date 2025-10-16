@@ -305,7 +305,7 @@ export default function CybersecuritySolutionsPage() {
                     &quot;A  p  e  x  M  e  r  i  d  i  a  n&apos;s AI saved us from what could have been a catastrophic breach. Their technology is years ahead of anything else we&apos;ve seen.&quot;
                   </p>
                   <p className="text-sm font-medium text-gray-900 mt-2">
-                    - Mark Stevens, CISO, GlobalTech Corp
+                    - Chief Information Security Officer, GlobalTech Corp
                   </p>
                 </div>
               </div>

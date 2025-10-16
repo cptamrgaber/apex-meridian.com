@@ -47,7 +47,7 @@ export default function CompanyHistoryPage() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Company Founded</h3>
                     <p className="text-gray-600">
-                      Dr. Sarah Chen and Michael Rodriguez establish <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
+                      The company was established <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                         <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
                         <sup className="text-xs ml-1">®</sup>
                       </span> in San Francisco with a vision to create ethical, beneficial AI. Initial focus on aviation safety systems.

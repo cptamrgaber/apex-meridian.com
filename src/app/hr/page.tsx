@@ -30,16 +30,16 @@ function HRDashboardContent() {
 
   // Mock employee data
   const employees = [
-    { id: 1, name: 'John Doe', department: 'Engineering', role: 'Senior Developer', status: 'Active', joinDate: '2023-01-15' },
-    { id: 2, name: 'Jane Smith', department: 'Marketing', role: 'Marketing Manager', status: 'Active', joinDate: '2023-03-20' },
-    { id: 3, name: 'Mike Johnson', department: 'Sales', role: 'Sales Representative', status: 'Active', joinDate: '2023-06-10' },
-    { id: 4, name: 'Sarah Wilson', department: 'HR', role: 'HR Specialist', status: 'Active', joinDate: '2023-02-28' },
+    { id: 1, name: 'Employee #001', department: 'Engineering', role: 'Senior Developer', status: 'Active', joinDate: '2023-01-15' },
+    { id: 2, name: 'Employee #002', department: 'Marketing', role: 'Marketing Manager', status: 'Active', joinDate: '2023-03-20' },
+    { id: 3, name: 'Employee #003', department: 'Sales', role: 'Sales Representative', status: 'Active', joinDate: '2023-06-10' },
+    { id: 4, name: 'Employee #004', department: 'HR', role: 'HR Specialist', status: 'Active', joinDate: '2023-02-28' },
   ];
 
   const leaveRequests = [
-    { id: 1, employee: 'John Doe', type: 'Vacation', dates: 'Dec 25-26, 2024', status: 'Pending', submitted: '2024-12-01' },
-    { id: 2, employee: 'Jane Smith', type: 'Sick Leave', dates: 'Dec 15, 2024', status: 'Approved', submitted: '2024-12-14' },
-    { id: 3, employee: 'Mike Johnson', type: 'Personal', dates: 'Jan 2-3, 2025', status: 'Pending', submitted: '2024-12-05' },
+    { id: 1, employee: 'Employee #001', type: 'Vacation', dates: 'Dec 25-26, 2024', status: 'Pending', submitted: '2024-12-01' },
+    { id: 2, employee: 'Employee #002', type: 'Sick Leave', dates: 'Dec 15, 2024', status: 'Approved', submitted: '2024-12-14' },
+    { id: 3, employee: 'Employee #003', type: 'Personal', dates: 'Jan 2-3, 2025', status: 'Pending', submitted: '2024-12-05' },
   ];
 
   return (

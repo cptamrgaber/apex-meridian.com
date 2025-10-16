@@ -293,7 +293,7 @@ export default function EducationSolutionsPage() {
                     &quot;Our students are more engaged and achieving better results than ever before. The AI tutoring has been a game-changer for personalized learning.&quot;
                   </p>
                   <p className="text-sm font-medium text-gray-900 mt-2">
-                    - Dr. Maria Rodriguez, Principal, Lincoln High School
+                    - Principal, Lincoln High School
                   </p>
                 </div>
               </div>
