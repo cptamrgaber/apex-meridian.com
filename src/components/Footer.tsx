@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/assets/Apex-MeridianTXTlogo.png"
+                src="/assets/Apex-Meridianlogofullfinal.png"
                 alt="A  p  e  x  M  e  r  i  d  i  a  n Logo"
                 width={180}
                 height={50}
@@ -165,6 +165,15 @@ const Footer: React.FC = () => {
             </Link>
             <Link href="/terms" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Terms of Service
+            </Link>
+            <Link href="/legal/llc-responsibility" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              LLC Responsibility
+            </Link>
+            <Link href="/legal/liability" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              Liability
+            </Link>
+            <Link href="/legal/licenses" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              Licenses
             </Link>
             <Link href="/sitemap" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Sitemap

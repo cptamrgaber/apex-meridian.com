@@ -18,7 +18,8 @@ import {
   Building,
   UserCheck,
   Globe,
-  ChevronRight
+  ChevronRight,
+  Scale
 } from 'lucide-react';
 
 interface SitemapSection {
@@ -39,6 +40,9 @@ const sitemapData: SitemapSection[] = [
       { title: 'Homepage', href: '/', description: 'Main landing page with company overview' },
       { title: 'About Us', href: '/about', description: 'Company information and mission' },
       { title: 'Contact', href: '/contact', description: 'Get in touch with our team' },
+      { title: 'Pricing', href: '/pricing', description: 'Service pricing and plans' },
+      { title: 'Support', href: '/support', description: 'Help center and support resources' },
+      { title: 'FAQ', href: '/faq', description: 'Frequently asked questions' },
     ]
   },
   {
@@ -46,9 +50,9 @@ const sitemapData: SitemapSection[] = [
     icon: Info,
     links: [
       { title: 'Company Overview', href: '/about/overview', description: 'Detailed company information' },
-      { title: 'Our Mission', href: '/about/mission', description: 'Our vision and goals' },
-      { title: 'Leadership Team', href: '/about/team', description: 'Meet our executive team' },
+      { title: 'Leadership Team', href: '/about/leadership', description: 'Meet our executive team' },
       { title: 'Company History', href: '/about/history', description: 'Our journey and milestones' },
+      { title: 'Careers', href: '/about/careers', description: 'Join our team' },
     ]
   },
   {
@@ -77,29 +81,39 @@ const sitemapData: SitemapSection[] = [
     icon: TrendingUp,
     links: [
       { title: 'Investor Relations', href: '/investors', description: 'Information for current and potential investors' },
-      { title: 'Financial Reports', href: '/investors/reports', description: 'Quarterly and annual reports' },
-      { title: 'Investment Opportunities', href: '/investors/opportunities', description: 'Current investment options' },
-      { title: 'Shareholder Information', href: '/investors/shareholders', description: 'Resources for shareholders' },
+      { title: 'Financial Reports', href: '/investors/financials', description: 'Quarterly and annual reports' },
+      { title: 'Investment Opportunities', href: '/investors/opportunity', description: 'Current investment options' },
+      { title: 'Corporate Governance', href: '/investors/governance', description: 'Governance and compliance information' },
     ]
   },
   {
     title: 'Resources',
     icon: FileText,
     links: [
-      { title: 'AI Vision', href: '/ai-vision', description: 'Our vision for artificial intelligence' },
+      { title: 'AI Vision', href: '/vision', description: 'Our vision for artificial intelligence' },
       { title: 'Documents', href: '/documents', description: 'Important company documents' },
-      { title: 'News & Updates', href: '/news', description: 'Latest company news and announcements' },
-      { title: 'Case Studies', href: '/case-studies', description: 'Success stories and implementations' },
+      { title: 'Support Center', href: '/support', description: 'Help and support resources' },
+      { title: 'FAQ', href: '/faq', description: 'Frequently asked questions' },
     ]
   },
   {
     title: 'Employee Portal',
     icon: UserCheck,
     links: [
-      { title: 'Employee Login', href: '/employee-login', description: 'Secure access for employees' },
+      { title: 'Employee Portal', href: '/employees', description: 'Employee access and resources' },
+      { title: 'Employee Login', href: '/employees/login', description: 'Secure login for employees' },
       { title: 'HR Resources', href: '/hr', description: 'Human resources and employee services' },
-      { title: 'Internal Tools', href: '/tools', description: 'Employee productivity tools' },
-      { title: 'Training Portal', href: '/training', description: 'Employee development and training' },
+    ]
+  },
+  {
+    title: 'Legal & Compliance',
+    icon: Shield,
+    links: [
+      { title: 'Privacy Policy', href: '/privacy', description: 'Data privacy and protection policy' },
+      { title: 'Terms of Service', href: '/terms', description: 'Terms and conditions of service' },
+      { title: 'LLC Responsibility', href: '/legal/llc-responsibility', description: 'Company responsibility and governance' },
+      { title: 'Liability Information', href: '/legal/liability', description: 'Liability limitations and coverage' },
+      { title: 'Licenses & IP', href: '/legal/licenses', description: 'Software licenses and intellectual property' },
     ]
   }
 ];

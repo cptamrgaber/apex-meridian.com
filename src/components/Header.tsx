@@ -33,7 +33,7 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <div className="relative">
                 <Image
-                  src="/assets/Apex-MeridianTXTlogo.png"
+                  src="/assets/Apex-Meridianlogofullfinal.png"
                   alt="A  p  e  x  M  e  r  i  d  i  a  n"
                   width={240}
                   height={72}
@@ -178,6 +178,41 @@ export default function Header() {
               Support
             </Link>
 
+            {/* Legal Dropdown */}
+            <div className="relative">
+              <button
+                className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap"
+                onMouseEnter={() => handleDropdownEnter('legal')}
+                onMouseLeave={handleDropdownLeave}
+              >
+                Legal
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              {activeDropdown === 'legal' && (
+                <div
+                  className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
+                  onMouseEnter={() => handleDropdownEnter('legal')}
+                  onMouseLeave={handleDropdownLeave}
+                >
+                  <Link href="/privacy" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                    Privacy Policy
+                  </Link>
+                  <Link href="/terms" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                    Terms of Service
+                  </Link>
+                  <Link href="/legal/llc-responsibility" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                    LLC Responsibility
+                  </Link>
+                  <Link href="/legal/liability" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                    Liability
+                  </Link>
+                  <Link href="/legal/licenses" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                    Licenses & IP
+                  </Link>
+                </div>
+              )}
+            </div>
+
             {/* Contact Link */}
             <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap">
               {t('nav.contact')}
@@ -248,6 +283,28 @@ export default function Header() {
               <Link href="/contact" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.contact')}
               </Link>
+              
+              {/* Legal Section */}
+              <div className="border-t border-gray-200 dark:border-gray-700 mt-2 pt-2">
+                <div className="px-4 py-2 text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                  Legal
+                </div>
+                <Link href="/privacy" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                  Terms of Service
+                </Link>
+                <Link href="/legal/llc-responsibility" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                  LLC Responsibility
+                </Link>
+                <Link href="/legal/liability" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                  Liability
+                </Link>
+                <Link href="/legal/licenses" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                  Licenses & IP
+                </Link>
+              </div>
               
               {/* Mobile Controls */}
               <div className="flex items-center justify-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700 mt-4">

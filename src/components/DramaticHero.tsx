@@ -60,7 +60,7 @@ export default function DramaticHero() {
             <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl group-hover:bg-blue-500/30 transition-all duration-300"></div>
             <div className="relative bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-full p-8 border border-blue-500/20 group-hover:border-blue-400/40 transition-all duration-300">
               <Image
-                src="/assets/ai-technology-hero.png"
+                src="/assets/Apex-Meridian_tree_drowing.png"
                 alt="AI Technology"
                 width={120}
                 height={120}
