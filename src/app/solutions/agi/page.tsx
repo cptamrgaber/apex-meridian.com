@@ -13,11 +13,11 @@ export default function AGISolutionsPage() {
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <Image
-                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
-                alt="AGI Tree of Knowledge"
-                width={150}
-                height={150}
-                className="h-32 w-auto rounded-full bg-white/10 p-6 shadow-2xl shadow-purple-400/50 animate-pulse"
+                src="/assets/Apex-Meridiantreefull.png"
+                alt="Apex-Meridian AGI Tree of Knowledge"
+                width={200}
+                height={80}
+                className="h-20 w-auto bg-white/10 p-4 rounded-lg shadow-2xl shadow-purple-400/50"
               />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
