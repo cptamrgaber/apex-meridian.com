@@ -181,7 +181,7 @@ export default function SitemapPage() {
           {sitemapData.map((section, sectionIndex) => (
             <div
               key={section.title}
-              className="bg-tech-black/60 backdrop-blur-sm border border-neon-blue/30 rounded-2xl p-6 hover:border-neon-blue/50 transition-all duration-300 animate-fade-in"
+              className="bg-gray-900/90 backdrop-blur-sm border border-blue-400/30 rounded-2xl p-6 hover:border-blue-400/50 transition-all duration-300 animate-fade-in shadow-lg"
               style={{ animationDelay: `${sectionIndex * 0.1}s` }}
             >
               {/* Section Header */}
@@ -198,15 +198,15 @@ export default function SitemapPage() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="group block p-3 rounded-lg bg-tech-darker/50 hover:bg-tech-darker border border-transparent hover:border-neon-blue/30 transition-all duration-300"
+                    className="group block p-3 rounded-lg bg-gray-800/70 hover:bg-gray-700/80 border border-transparent hover:border-blue-400/30 transition-all duration-300"
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <h3 className="font-semibold text-white group-hover:text-neon-blue transition-colors">
+                      <h3 className="font-semibold text-white group-hover:text-blue-300 transition-colors">
                         {link.title}
                       </h3>
-                      <ChevronRight className="h-4 w-4 text-white/40 group-hover:text-neon-blue group-hover:translate-x-1 transition-all" />
+                      <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-blue-300 group-hover:translate-x-1 transition-all" />
                     </div>
-                    <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
+                    <p className="text-sm text-gray-300 group-hover:text-white transition-colors">
                       {link.description}
                     </p>
                   </Link>
