@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/assets/Apex-Meridianlogofullfinal.png"
+                src="/assets/Apex-Meridianlogofull_red_1.png"
                 alt="A  p  e  x  M  e  r  i  d  i  a  n Logo"
-                width={270}
-                height={75}
-                className="h-18 w-auto object-contain"
+                width={405}
+                height={112}
+                className="h-28 w-auto object-contain"
                 style={{ aspectRatio: 'auto' }}
               />
             </div>
@@ -181,6 +181,17 @@ const Footer: React.FC = () => {
             <Link href="/sitemap" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               Sitemap
             </Link>
+          </div>
+          
+          {/* Powered By */}
+          <div className="text-center mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Powered and designed by{' '}
+              <span className="font-medium text-blue-600 dark:text-blue-400">
+                <span className="inline-block">A  p  e  x</span>
+                <span className="inline-block ml-1">M  e  r  i  d  i  a  n</span><sup className="text-xs">®</sup>
+              </span>
+            </p>
           </div>
         </div>
       </div>

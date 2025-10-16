@@ -46,15 +46,23 @@ const AviationPage: React.FC = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Operation Management & Control</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Fleet Management & Optimization</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Smart Scheduling & Routing</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>ADS-B Flight Following</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
                     <span>Predictive Maintenance AI</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Real-time Route Optimization</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Passenger Experience Enhancement</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
@@ -72,9 +80,18 @@ const AviationPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Intelligent Aviation Solutions</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               AeroMind transforms every aspect of aviation operations with cutting-edge AI technology
             </p>
+            <div className="flex justify-center">
+              <Image
+                src="/assets/aviation-ai-analytics.png"
+                alt="Aviation AI Analytics Dashboard"
+                width={900}
+                height={600}
+                className="rounded-lg shadow-xl"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -82,15 +99,15 @@ const AviationPage: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Plane className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Flight Operations</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Operation Management</h3>
               <p className="text-gray-600 mb-4">
-                AI-powered flight planning, weather analysis, and real-time adjustments for optimal performance and safety.
+                Comprehensive operation control with AI-powered flight planning, smart scheduling, and real-time fleet management.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Dynamic route optimization</li>
-                <li>• Weather pattern prediction</li>
-                <li>• Fuel efficiency maximization</li>
-                <li>• Air traffic coordination</li>
+                <li>• Smart scheduling & routing systems</li>
+                <li>• Fleet management & optimization</li>
+                <li>• ADS-B flight following & tracking</li>
+                <li>• Operation control center integration</li>
               </ul>
             </div>
 

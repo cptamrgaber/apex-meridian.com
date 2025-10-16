@@ -36,10 +36,19 @@ export default function PlatformPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Enterprise-Grade AI Infrastructure
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               MeridianAI provides the foundation for deploying, managing, and scaling AI solutions 
               across your organization with enterprise-level security and reliability.
             </p>
+            <div className="flex justify-center">
+              <Image
+                src="/assets/ai-technology-dashboard.png"
+                alt="AI Technology Dashboard"
+                width={800}
+                height={500}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">

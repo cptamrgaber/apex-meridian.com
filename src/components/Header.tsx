@@ -31,17 +31,15 @@ export default function Header() {
           {/* Logo - Increased Size */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="relative">
-                <Image
-                  src="/assets/Apex-Meridianlogofullfinal.png"
-                  alt="A  p  e  x  M  e  r  i  d  i  a  n"
-                  width={360}
-                  height={108}
-                  className="h-24 w-auto object-contain"
-                  priority
-                  style={{ aspectRatio: '280/84' }}
-                />
-              </div>
+              <Image
+                src="/assets/Apex-Meridianlogofull_red_1.png"
+                alt="A  p  e  x  M  e  r  i  d  i  a  n"
+                width={360}
+                height={108}
+                className="h-16 w-auto object-contain"
+                priority
+                style={{ aspectRatio: '280/84' }}
+              />
             </Link>
           </div>
 

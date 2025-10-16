@@ -1,6 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-import { BookOpen, Brain, Users, TrendingUp, ArrowRight, CheckCircle } from 'lucide-react';
+import { BookOpen, Users, TrendingUp, Award, ArrowRight, CheckCircle, Brain } from 'lucide-react';
 
 export default function EducationSolutionsPage() {
   return (
@@ -98,9 +99,18 @@ export default function EducationSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Proven Learning Outcomes</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mb-8">
               Educational institutions using our AI see significant improvements in student performance
             </p>
+            <div className="flex justify-center">
+              <Image
+                src="/assets/education-learning-analytics.png"
+                alt="Education Learning Analytics Dashboard"
+                width={900}
+                height={600}
+                className="rounded-lg shadow-xl"
+              />
+            </div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
