@@ -14,9 +14,9 @@ const Footer: React.FC = () => {
               <Image
                 src="/assets/Apex-Meridianlogofullfinal.png"
                 alt="A  p  e  x  M  e  r  i  d  i  a  n Logo"
-                width={180}
-                height={50}
-                className="h-12 w-auto object-contain"
+                width={270}
+                height={75}
+                className="h-18 w-auto object-contain"
                 style={{ aspectRatio: 'auto' }}
               />
             </div>

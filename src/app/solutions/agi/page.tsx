@@ -15,9 +15,9 @@ export default function AGISolutionsPage() {
               <Image
                 src="/assets/Apex-Meridiantreefull.png"
                 alt="Apex-Meridian AGI Tree of Knowledge"
-                width={200}
-                height={80}
-                className="h-20 w-auto bg-white/10 p-4 rounded-lg shadow-2xl shadow-purple-400/50"
+                width={300}
+                height={120}
+                className="h-30 w-auto bg-white/10 p-6 rounded-lg shadow-2xl shadow-purple-400/50"
               />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">

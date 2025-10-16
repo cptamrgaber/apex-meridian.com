@@ -62,9 +62,9 @@ export default function DramaticHero() {
               <Image
                 src="/assets/Apex-Meridian_tree_drowing.png"
                 alt="AI Technology"
-                width={120}
-                height={120}
-                className="w-24 h-24 md:w-32 md:h-32 object-contain group-hover:scale-110 transition-transform duration-300"
+                width={180}
+                height={180}
+                className="w-36 h-36 md:w-48 md:h-48 object-contain group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
