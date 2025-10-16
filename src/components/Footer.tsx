@@ -16,8 +16,11 @@ const Footer: React.FC = () => {
                 alt="A  p  e  x  M  e  r  i  d  i  a  n Logo"
                 width={405}
                 height={112}
-                className="h-28 w-auto object-contain drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]"
-                style={{ aspectRatio: 'auto' }}
+                className="h-28 w-auto object-contain"
+                style={{ 
+                  filter: 'drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white)',
+                  aspectRatio: 'auto'
+                }}
               />
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-md">

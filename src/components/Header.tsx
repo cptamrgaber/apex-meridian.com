@@ -36,9 +36,12 @@ export default function Header() {
                 alt="A  p  e  x  M  e  r  i  d  i  a  n"
                 width={540}
                 height={162}
-                className="h-24 w-auto object-contain drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]"
+                className="h-24 w-auto object-contain"
+                style={{ 
+                  filter: 'drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px 1px 0 white)',
+                  aspectRatio: '280/84'
+                }}
                 priority
-                style={{ aspectRatio: '280/84' }}
               />
             </Link>
           </div>
