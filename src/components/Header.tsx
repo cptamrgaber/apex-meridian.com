@@ -34,9 +34,9 @@ export default function Header() {
               <Image
                 src="/assets/Apex-Meridianlogofull_red_1.png"
                 alt="A  p  e  x  M  e  r  i  d  i  a  n"
-                width={360}
-                height={108}
-                className="h-16 w-auto object-contain"
+                width={540}
+                height={162}
+                className="h-24 w-auto object-contain drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]"
                 priority
                 style={{ aspectRatio: '280/84' }}
               />
