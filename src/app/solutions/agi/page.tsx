@@ -12,13 +12,21 @@ export default function AGISolutionsPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-8">
-              <Image
-                src="/assets/Apex-Meridiantreefull.png"
-                alt="Apex-Meridian AGI Tree of Knowledge"
-                width={300}
-                height={120}
-                className="h-30 w-auto bg-white/10 p-6 rounded-lg shadow-2xl shadow-purple-400/50"
-              />
+              <a 
+                href="https://apex-meridian.net" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:scale-105 transition-transform duration-300"
+                title="Visit Apex-Meridian AI LLM & Agent Platform"
+              >
+                <Image
+                  src="/assets/Apex-Meridian_tree_drowing.png"
+                  alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
+                  width={600}
+                  height={600}
+                  className="h-60 w-60 object-contain"
+                />
+              </a>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Artificial General Intelligence
