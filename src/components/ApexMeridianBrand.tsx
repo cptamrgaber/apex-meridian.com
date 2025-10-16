@@ -39,7 +39,10 @@ export const ApexMeridianBrand: React.FC<ApexMeridianBrandProps> = ({
 
   return (
     <span className={baseClasses} style={{ letterSpacing: '0.2em' }}>
-      <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
+      <span className="whitespace-nowrap">
+        <span className="inline-block">A  p  e  x</span>
+        <span className="inline-block ml-2">M  e  r  i  d  i  a  n</span>
+      </span>
       {showRegistered && (
         <sup className="text-sm ml-1">®</sup>
       )}

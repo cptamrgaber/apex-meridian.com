@@ -141,7 +141,10 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-300 dark:border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center mb-4">
             <div className="text-gray-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 <span className="font-light tracking-wider text-blue-600 dark:text-blue-400">A  p  e  x  M  e  r  i  d  i  a  n<sup className="text-xs">®</sup></span>. All rights reserved.
+              © 2025 <span className="font-light tracking-wider text-blue-600 dark:text-blue-400 whitespace-nowrap">
+                <span className="inline-block">A  p  e  x</span>
+                <span className="inline-block ml-1">M  e  r  i  d  i  a  n</span><sup className="text-xs">®</sup>
+              </span>. All rights reserved.
             </div>
             
             {/* Social Links */}
