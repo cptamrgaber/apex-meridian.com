@@ -56,7 +56,7 @@ export default function CompanyOverviewPage() {
             </div>
             <div>
               <Image
-                src="/assets/A  p  e  x    M  e  r  i  d  i  a  n_tree_not-glowing.png"
+                src="/assets/Apex-Meridian_tree_drowing.png"
                 alt="A  p  e  x    M  e  r  i  d  i  a  n Vision"
                 width={600}
                 height={400}
@@ -73,9 +73,7 @@ export default function CompanyOverviewPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x</span>
-                
-                <span>M e r i d i a n</span>
+                <span>A  p  e  x    M  e  r  i  d  i  a  n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span>
               <span className="text-gray-900"> by the Numbers</span>
@@ -170,9 +168,7 @@ export default function CompanyOverviewPage() {
           <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
             Discover how <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-              <span>A  p  e  x</span>
-              
-              <span>M e r i d i a n</span>
+              <span>A  p  e  x    M  e  r  i  d  i  a  n</span>
               <sup className="text-xs ml-1">®</sup>
             </span> can transform your industry with cutting-edge AI solutions.
           </p>
