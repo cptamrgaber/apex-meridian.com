@@ -7,41 +7,80 @@ export default function AGISolutionsPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-purple-900 to-indigo-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+      <section className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 text-white py-24 sm:py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <Image
+            src="/images/solutions/agi-development.jpg"
+            alt="AGI Development Background"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-8">
-              <a 
-                href="https://apex-meridian.net" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:scale-105 transition-transform duration-300"
-                title="Visit Apex-Meridian AI LLM & Agent Platform"
-              >
-                <Image
-                  src="/assets/Apex-Meridian_tree_drowing.png"
-                  alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
-                  width={600}
-                  height={600}
-                  className="h-60 w-60 object-contain"
-                />
-              </a>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                  <Brain className="h-10 w-10 text-white" />
+                </div>
+                <div>
+                  <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">MeridianAGI</h1>
+                  <p className="text-xl text-purple-200">Artificial General Intelligence</p>
+                </div>
+              </div>
+              <p className="text-xl md:text-2xl text-purple-100 mb-8 leading-relaxed">
+                Pioneering the future of artificial intelligence with advanced reasoning, multi-modal understanding, and autonomous problem-solving capabilities that adapt and learn like human intelligence.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <button className="px-8 py-4 bg-white text-purple-900 rounded-xl font-semibold hover:bg-purple-50 transition-all duration-300 transform hover:scale-105">
+                  Request Demo
+                </button>
+                <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-white/30 transition-all duration-300">
+                  View Research
+                </button>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Artificial General Intelligence
-            </h1>
-            <p className="text-xl md:text-2xl text-purple-200 max-w-4xl mx-auto mb-8">
-              Pioneering the next frontier of AI with ethical, safe, and beneficial AGI development that augments human intelligence and creativity.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-900 bg-white hover:bg-gray-100 transition-colors"
-              >
-                Explore AGI Research
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-6">AGI Capabilities</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Multi-Modal Reasoning</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Autonomous Learning</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Creative Problem Solving</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                    <span>Ethical Decision Making</span>
+                  </div>
+                </div>
+                <div className="mt-8 text-center">
+                  <a 
+                    href="https://apex-meridian.net" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block hover:scale-105 transition-transform duration-300"
+                    title="Visit Apex-Meridian AI LLM & Agent Platform"
+                  >
+                    <Image
+                      src="/assets/Apex-Meridian_tree_drowing.png"
+                      alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
+                      width={200}
+                      height={200}
+                      className="h-32 w-32 object-contain mx-auto"
+                    />
+                    <p className="text-sm text-purple-200 mt-2">Visit AI Platform</p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
