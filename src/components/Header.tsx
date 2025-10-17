@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronDown, Globe, Sun, Moon, Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
 import { useTheme } from '@/lib/theme-context';
 
@@ -220,27 +220,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Controls - Language and Theme Toggle */}
-          <div className="hidden lg:flex items-center space-x-4 ml-8">
-            {/* Language Toggle */}
-            <button
-              onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-              className="flex items-center px-3 py-2 text-sm font-medium text-light-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
-            >
-              <Globe className="h-4 w-4 mr-1" />
-              {language === 'en' ? 'العربية' : 'English'}
-            </button>
-
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 text-light-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </button>
-          </div>
-
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <button
@@ -256,24 +235,6 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200 dark:border-gray-700 max-h-96 overflow-y-auto">
-            {/* Mobile Controls - Moved to Top */}
-            <div className="flex items-center justify-center space-x-4 pb-4 border-b border-gray-200 dark:border-gray-700 mb-4">
-              <button
-                onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-                className="flex items-center px-3 py-2 text-sm font-medium text-light-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
-              >
-                <Globe className="h-4 w-4 mr-1" />
-                {language === 'en' ? 'العربية' : 'English'}
-              </button>
-              <button
-                onClick={toggleTheme}
-                className="p-2 text-light-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-              </button>
-            </div>
-            
             <div className="space-y-2">
               <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-light-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 hover:bg-light-muted dark:hover:bg-dark-muted rounded-md transition-colors duration-200">
                 {t('nav.about')}

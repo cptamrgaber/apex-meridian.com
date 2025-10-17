@@ -1,13 +1,26 @@
+'use client';
+
 import React from 'react';
+import { useTheme } from '@/lib/theme-context';
 import Image from 'next/image';
 import { Brain, Zap, Shield, Globe, Database, Cpu, Network, Lock } from 'lucide-react';
 
 export default function PlatformPage() {
+  const { theme } = useTheme();
+  
   return (
-    <div className="bg-white">
+    <div className="bg-light-bg dark:bg-dark-bg min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-24">
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <Image
+          src="/assets/technology-hero.jpg"
+          alt="Technology Infrastructure Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               MeridianAI Platform
@@ -22,7 +35,7 @@ export default function PlatformPage() {
                 alt="MeridianAI Platform Architecture"
                 width={400}
                 height={300}
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl bg-white/10 backdrop-blur-sm p-4"
               />
             </div>
           </div>
@@ -30,20 +43,20 @@ export default function PlatformPage() {
       </section>
 
       {/* Platform Overview */}
-      <section className="py-16 sm:py-24">
+      <section className="py-16 sm:py-24 bg-light-surface dark:bg-dark-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-light-text dark:text-dark-text mb-4">
               Enterprise-Grade AI Infrastructure
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-light-muted dark:text-dark-muted max-w-3xl mx-auto mb-8">
               MeridianAI provides the foundation for deploying, managing, and scaling AI solutions 
               across your organization with enterprise-level security and reliability.
             </p>
             <div className="flex justify-center">
               <Image
-                src="/assets/ai-technology-dashboard.png"
-                alt="AI Technology Dashboard"
+                src="/assets/ai-datacenter.jpg"
+                alt="AI Data Center Infrastructure"
                 width={800}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -52,34 +65,34 @@ export default function PlatformPage() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-lg p-8">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <div className="bg-light-bg dark:bg-dark-bg rounded-lg p-8 shadow-lg">
+              <div className="bg-light-muted dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <Brain className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Advanced AI Models</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-4">Advanced AI Models</h3>
+              <p className="text-light-muted dark:text-dark-muted">
                 Pre-trained and custom AI models for natural language processing, computer vision, 
                 predictive analytics, and decision support systems.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-8">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <div className="bg-light-bg dark:bg-dark-bg rounded-lg p-8 shadow-lg">
+              <div className="bg-light-muted dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <Zap className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Real-time Processing</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-4">Real-time Processing</h3>
+              <p className="text-light-muted dark:text-dark-muted">
                 Sub-second response times with distributed computing architecture designed 
                 for mission-critical applications and high-throughput scenarios.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-8">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <div className="bg-light-bg dark:bg-dark-bg rounded-lg p-8 shadow-lg">
+              <div className="bg-light-muted dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <Shield className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Enterprise Security</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-4">Enterprise Security</h3>
+              <p className="text-light-muted dark:text-dark-muted">
                 End-to-end encryption, role-based access control, and compliance with 
                 industry standards including SOC 2, GDPR, and HIPAA.
               </p>
@@ -197,7 +210,7 @@ export default function PlatformPage() {
             </div>
             <div>
               <Image
-                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
+                src="/assets/infrastructure.jpg"
                 alt="Platform Infrastructure"
                 width={600}
                 height={400}

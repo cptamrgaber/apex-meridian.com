@@ -10,7 +10,7 @@ const AviationPage: React.FC = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <Image
-            src="/images/solutions/aviation-ai.jpg"
+            src="/assets/aviation-hero.jpg"
             alt="Aviation AI Background"
             fill
             className="object-cover"
