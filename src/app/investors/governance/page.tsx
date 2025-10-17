@@ -87,13 +87,13 @@ export default function CorporateGovernancePage() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-xl">DR</span>
+                  <span className="text-blue-600 font-bold text-xl">CEO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Dr. Sarah Chen</h3>
+                <h3 className="text-xl font-bold text-gray-900">Position Available</h3>
                 <p className="text-gray-600">Chairman & CEO</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
-                Former VP of AI Research at Google. PhD in Computer Science from Stanford. 15+ years in AI and machine learning.
+Seeking qualified candidate with PhD in Computer Science and 15+ years experience in AI and machine learning research.
               </p>
               <div className="text-xs text-gray-500">
                 <p>• Board member since 2020</p>
@@ -105,13 +105,13 @@ export default function CorporateGovernancePage() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-green-600 font-bold text-xl">MJ</span>
+                  <span className="text-green-600 font-bold text-xl">ID</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Michael Johnson</h3>
+                <h3 className="text-xl font-bold text-gray-900">Position Available</h3>
                 <p className="text-gray-600">Independent Director</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
-                Former CFO of Tesla. CPA with 20+ years in finance and operations. Expert in scaling technology companies.
+Seeking qualified CPA with 20+ years in finance and operations, with expertise in scaling technology companies.
               </p>
               <div className="text-xs text-gray-500">
                 <p>• Board member since 2021</p>
@@ -123,13 +123,13 @@ export default function CorporateGovernancePage() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-purple-600 font-bold text-xl">AP</span>
+                  <span className="text-purple-600 font-bold text-xl">ID</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Dr. Aisha Patel</h3>
+                <h3 className="text-xl font-bold text-gray-900">Position Available</h3>
                 <p className="text-gray-600">Independent Director</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
-                Former Chief Technology Officer at OpenAI. PhD in Artificial Intelligence from MIT. Pioneer in AGI research.
+Seeking qualified candidate with PhD in Artificial Intelligence and pioneering experience in AGI research.
               </p>
               <div className="text-xs text-gray-500">
                 <p>• Board member since 2022</p>
@@ -141,13 +141,13 @@ export default function CorporateGovernancePage() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-orange-600 font-bold text-xl">RW</span>
+                  <span className="text-orange-600 font-bold text-xl">ID</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Robert Williams</h3>
+                <h3 className="text-xl font-bold text-gray-900">Position Available</h3>
                 <p className="text-gray-600">Independent Director</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
-                Former General Counsel at Microsoft. JD from Harvard Law. Expert in technology law and regulatory compliance.
+Seeking qualified candidate with JD degree and expertise in technology law and regulatory compliance.
               </p>
               <div className="text-xs text-gray-500">
                 <p>• Board member since 2023</p>
@@ -159,13 +159,13 @@ export default function CorporateGovernancePage() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-red-600 font-bold text-xl">LM</span>
+                  <span className="text-red-600 font-bold text-xl">ID</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Lisa Martinez</h3>
+                <h3 className="text-xl font-bold text-gray-900">Position Available</h3>
                 <p className="text-gray-600">Independent Director</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
-                Former VP of Strategy at Amazon. MBA from Wharton. 18+ years in strategic planning and business development.
+Seeking qualified candidate with MBA and 18+ years experience in strategic planning and business development.
               </p>
               <div className="text-xs text-gray-500">
                 <p>• Board member since 2023</p>
@@ -177,13 +177,13 @@ export default function CorporateGovernancePage() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-teal-600 font-bold text-xl">JL</span>
+                  <span className="text-teal-600 font-bold text-xl">IR</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">James Liu</h3>
+                <h3 className="text-xl font-bold text-gray-900">Position Available</h3>
                 <p className="text-gray-600">Investor Representative</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
-                Managing Partner at Sequoia Capital. 12+ years in venture capital and technology investments.
+Seeking qualified candidate with 12+ years experience in venture capital and technology investments.
               </p>
               <div className="text-xs text-gray-500">
                 <p>• Board member since 2022</p>
