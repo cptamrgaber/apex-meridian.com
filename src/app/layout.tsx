@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "A  p  e  x    M  e  r  i  d  i  a  n",
     images: [
       {
-        url: "/assets/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png",
+        url: "/Apex-Meridianlogoicon.png",
         width: 1200,
         height: 630,
         alt: "A  p  e  x    M  e  r  i  d  i  a  n Logo",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
     description: "Transform your industry with cutting-edge AI solutions from A  p  e  x    M  e  r  i  d  i  a  n",
-    images: ["/assets/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png"],
+    images: ["/Apex-Meridianlogoicon.png"],
   },
   robots: {
     index: true,
@@ -68,9 +68,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png" />
-        <link rel="shortcut icon" href="/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
