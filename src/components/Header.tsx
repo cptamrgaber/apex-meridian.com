@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-slate-900 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center h-20 justify-start lg:justify-between">
+        <div className="flex items-center h-16 justify-between">
           {/* Logo - Increased Size */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
@@ -36,7 +36,7 @@ export default function Header() {
                 alt="A  p  e  x  M  e  r  i  d  i  a  n"
                 width={540}
                 height={162}
-                className="h-24 w-auto object-contain"
+                className="h-16 w-auto object-contain"
                 style={{ 
                   filter: 'drop-shadow(0.5px 0.5px 0 white) drop-shadow(-0.5px -0.5px 0 white) drop-shadow(0.5px -0.5px 0 white) drop-shadow(-0.5px 0.5px 0 white)',
                   aspectRatio: '280/84'
@@ -47,7 +47,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center space-x-6 flex-1 justify-center max-w-4xl mx-4">
+          <nav className="hidden lg:flex items-center space-x-4 flex-1 justify-end mr-4">
             {/* About Dropdown */}
             <div 
               className="relative group"
