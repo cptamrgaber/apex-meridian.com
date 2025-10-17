@@ -1,9 +1,15 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Globe, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../lib/theme-context';
+import { useLanguage } from '../lib/language-context';
 
 const Footer: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+  const { language, setLanguage } = useLanguage();
+  
   return (
     <footer className="relative z-50 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -150,17 +156,38 @@ const Footer: React.FC = () => {
               </span>. All rights reserved.
             </div>
             
-            {/* Social Links */}
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                <Github className="h-5 w-5" />
-              </a>
+            {/* Controls and Social Links */}
+            <div className="flex items-center space-x-4">
+              {/* Language Toggle */}
+              <button
+                onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
+                className="flex items-center px-3 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
+              >
+                <Globe className="h-4 w-4 mr-1" />
+                {language === 'en' ? 'العربية' : 'English'}
+              </button>
+
+              {/* Theme Toggle */}
+              <button
+                onClick={toggleTheme}
+                className="p-2 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </button>
+
+              {/* Social Links */}
+              <div className="flex space-x-4 ml-4">
+                <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <Twitter className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <Github className="h-5 w-5" />
+                </a>
+              </div>
             </div>
           </div>
           
