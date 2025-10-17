@@ -11,11 +11,29 @@ export default function AGISolutionsPage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <Image
-            src="/images/solutions/agi-development.jpg"
-            alt="AGI Development Background"
+            src="/images/solutions/agi-neural-network.jpg"
+            alt="Neural Network Background"
             fill
             className="object-cover"
           />
+          {/* Integrated Tree Logo */}
+          <div className="absolute top-1/2 right-8 transform -translate-y-1/2 z-10">
+            <a 
+              href="https://apex-meridian.net" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block hover:scale-110 transition-transform duration-300"
+              title="Visit Apex-Meridian AI LLM & Agent Platform"
+            >
+              <Image
+                src="/assets/Apex-Meridian_tree_drowing.png"
+                alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
+                width={300}
+                height={300}
+                className="h-40 w-40 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
+            </a>
+          </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -62,24 +80,7 @@ export default function AGISolutionsPage() {
                     <span>Ethical Decision Making</span>
                   </div>
                 </div>
-                <div className="mt-8 text-center">
-                  <a 
-                    href="https://apex-meridian.net" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block hover:scale-105 transition-transform duration-300"
-                    title="Visit Apex-Meridian AI LLM & Agent Platform"
-                  >
-                    <Image
-                      src="/assets/Apex-Meridian_tree_drowing.png"
-                      alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
-                      width={200}
-                      height={200}
-                      className="h-32 w-32 object-contain mx-auto"
-                    />
-                    <p className="text-sm text-purple-200 mt-2">Visit AI Platform</p>
-                  </a>
-                </div>
+
               </div>
             </div>
           </div>
