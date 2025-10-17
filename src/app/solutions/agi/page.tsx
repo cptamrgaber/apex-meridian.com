@@ -17,7 +17,7 @@ export default function AGISolutionsPage() {
             className="object-cover"
           />
           {/* Integrated Tree Logo */}
-          <div className="absolute top-1/2 right-18 transform -translate-y-1/2 z-10">
+          <div className="absolute top-1/2 right-22 transform -translate-y-1/2 z-10">
             <a 
               href="https://apex-meridian.net" 
               target="_blank" 
