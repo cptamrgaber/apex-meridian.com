@@ -99,7 +99,7 @@ export default function Pricing() {
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Choose the perfect AI solution for your organization with{' '}
             <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-              A  p  e  x  M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+              A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
             </span>
           </p>
 

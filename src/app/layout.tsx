@@ -10,21 +10,21 @@ import { ThemeProvider } from "@/lib/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "A  p  e  x  M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
-  description: "A  p  e  x  M  e  r  i  d  i  a  n delivers cutting-edge AI solutions across aviation, cybersecurity, education, and AGI development. Transform your industry with our advanced artificial intelligence platform.",
+  title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
+  description: "A  p  e  x    M  e  r  i  d  i  a  n delivers cutting-edge AI solutions across aviation, cybersecurity, education, and AGI development. Transform your industry with our advanced artificial intelligence platform.",
   keywords: "AI, artificial intelligence, aviation, cybersecurity, education, AGI, technology solutions",
-  authors: [{ name: "A  p  e  x  M  e  r  i  d  i  a  n" }],
+  authors: [{ name: "A  p  e  x    M  e  r  i  d  i  a  n" }],
   openGraph: {
-    title: "A  p  e  x  M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
-    description: "Transform your industry with cutting-edge AI solutions from A  p  e  x  M  e  r  i  d  i  a  n",
+    title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
+    description: "Transform your industry with cutting-edge AI solutions from A  p  e  x    M  e  r  i  d  i  a  n",
     url: "https://www.apex-meridian.com",
-    siteName: "A  p  e  x  M  e  r  i  d  i  a  n",
+    siteName: "A  p  e  x    M  e  r  i  d  i  a  n",
     images: [
       {
-        url: "/assets/A  p  e  x  M  e  r  i  d  i  a  nlogoicon.png",
+        url: "/assets/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png",
         width: 1200,
         height: 630,
-        alt: "A  p  e  x  M  e  r  i  d  i  a  n Logo",
+        alt: "A  p  e  x    M  e  r  i  d  i  a  n Logo",
       },
     ],
     locale: "en_US",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A  p  e  x  M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
-    description: "Transform your industry with cutting-edge AI solutions from A  p  e  x  M  e  r  i  d  i  a  n",
-    images: ["/assets/A  p  e  x  M  e  r  i  d  i  a  nlogoicon.png"],
+    title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
+    description: "Transform your industry with cutting-edge AI solutions from A  p  e  x    M  e  r  i  d  i  a  n",
+    images: ["/assets/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png"],
   },
   robots: {
     index: true,
@@ -68,9 +68,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/A  p  e  x  M  e  r  i  d  i  a  nlogoicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/A  p  e  x  M  e  r  i  d  i  a  nlogoicon.png" />
-        <link rel="shortcut icon" href="/A  p  e  x  M  e  r  i  d  i  a  nlogoicon.png" />
+        <link rel="icon" href="/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png" />
+        <link rel="shortcut icon" href="/A  p  e  x    M  e  r  i  d  i  a  nlogoicon.png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>

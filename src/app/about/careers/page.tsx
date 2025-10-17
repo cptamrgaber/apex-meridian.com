@@ -385,7 +385,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x  M  e  r  i  d  i  a  n</span>
+                <span>A  p  e  x    M  e  r  i  d  i  a  n</span>
                 <sup className="text-xs ml-1">®</sup>
               </span>?
             </h2>
@@ -562,7 +562,7 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Shape the Future?</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-3xl mx-auto">
-            Join <span className="font-light" style={{ letterSpacing: '0.2em' }}>A  p  e  x  M  e  r  i  d  i  a  n</span> and be part of the most important technological advancement in human history.
+            Join <span className="font-light" style={{ letterSpacing: '0.2em' }}>A  p  e  x    M  e  r  i  d  i  a  n</span> and be part of the most important technological advancement in human history.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

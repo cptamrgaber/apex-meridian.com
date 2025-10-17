@@ -56,8 +56,8 @@ export default function CompanyOverviewPage() {
             </div>
             <div>
               <Image
-                src="/assets/A  p  e  x  M  e  r  i  d  i  a  n_tree_not-glowing.png"
-                alt="A  p  e  x  M  e  r  i  d  i  a  n Vision"
+                src="/assets/A  p  e  x    M  e  r  i  d  i  a  n_tree_not-glowing.png"
+                alt="A  p  e  x    M  e  r  i  d  i  a  n Vision"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-lg shadow-lg"

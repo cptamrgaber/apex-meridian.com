@@ -163,7 +163,7 @@ export default function SitemapPage() {
              style={{ 
                textShadow: '0 0 10px rgba(0, 212, 255, 0.6), 1px 1px 2px rgba(0, 0, 0, 0.8)' 
              }}>
-            Navigate through all sections of the A  p  e  x  M  e  r  i  d  i  a  n website. Find exactly what you&apos;re looking for with our comprehensive site organization.
+            Navigate through all sections of the A  p  e  x    M  e  r  i  d  i  a  n website. Find exactly what you&apos;re looking for with our comprehensive site organization.
           </p>
           
           {/* Breadcrumb */}

@@ -24,7 +24,7 @@ export default function CompanyLiability() {
               </h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-                  A  p  e  x  M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+                  A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
                 </span> operates under Egyptian Limited Liability Company (LLC) structure, 
                 which provides specific protections and limitations regarding company liability.
               </p>

@@ -25,7 +25,7 @@ export default function TermsOfService() {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 By accessing and using the services provided by{' '}
                 <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-                  A  p  e  x  M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+                  A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
                 </span>, you accept and agree to be bound by the terms and provision of this agreement.
               </p>
             </section>
@@ -76,7 +76,7 @@ export default function TermsOfService() {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 In no event shall{' '}
                 <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-                  A  p  e  x  M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+                  A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
                 </span>{' '}
                 or its suppliers be liable for any damages arising out of the use or inability to use our services.
               </p>
