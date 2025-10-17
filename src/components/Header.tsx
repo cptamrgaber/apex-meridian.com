@@ -18,10 +18,10 @@ export default function Header() {
   };
 
   const handleDropdownLeave = () => {
-    // Add a small delay to prevent accidental closing
+    // Add a delay to allow users to move mouse to dropdown
     setTimeout(() => {
       setActiveDropdown(null);
-    }, 100);
+    }, 300);
   };
 
   return (
@@ -60,9 +60,7 @@ export default function Header() {
               </button>
               {activeDropdown === 'about' && (
                 <div 
-                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
-                  onMouseEnter={() => setActiveDropdown('about')}
-                  onMouseLeave={handleDropdownLeave}
+                  className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
                 >
                   <Link href="/about/overview" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.overview')}
@@ -92,9 +90,7 @@ export default function Header() {
               </button>
               {activeDropdown === 'solutions' && (
                 <div 
-                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
-                  onMouseEnter={() => setActiveDropdown('solutions')}
-                  onMouseLeave={handleDropdownLeave}
+                  className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
                 >
                   <Link href="/solutions/aviation" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.aviation')}
@@ -124,9 +120,7 @@ export default function Header() {
               </button>
               {activeDropdown === 'technology' && (
                 <div 
-                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
-                  onMouseEnter={() => setActiveDropdown('technology')}
-                  onMouseLeave={handleDropdownLeave}
+                  className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
                 >
                   <Link href="/technology/platform" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.platform')}
@@ -147,9 +141,7 @@ export default function Header() {
               </button>
               {activeDropdown === 'investors' && (
                 <div 
-                  className="absolute top-full left-0 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
-                  onMouseEnter={() => setActiveDropdown('investors')}
-                  onMouseLeave={handleDropdownLeave}
+                  className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 py-2 z-50"
                 >
                   <Link href="/investors/opportunity" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.opportunity')}
@@ -180,20 +172,20 @@ export default function Header() {
             </Link>
 
             {/* Legal Dropdown */}
-            <div className="relative">
+            <div 
+              className="relative"
+              onMouseEnter={() => handleDropdownEnter('legal')}
+              onMouseLeave={handleDropdownLeave}
+            >
               <button
                 className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 whitespace-nowrap"
-                onMouseEnter={() => handleDropdownEnter('legal')}
-                onMouseLeave={handleDropdownLeave}
               >
                 Legal
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {activeDropdown === 'legal' && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
-                  onMouseEnter={() => handleDropdownEnter('legal')}
-                  onMouseLeave={handleDropdownLeave}
+                  className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50"
                 >
                   <Link href="/privacy" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     Privacy Policy
