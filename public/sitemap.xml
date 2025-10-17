@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.apex-meridian.com/about/organization-chart/</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.apex-meridian.com/solutions/</loc>
     <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>

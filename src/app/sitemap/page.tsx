@@ -53,6 +53,7 @@ const sitemapData: SitemapSection[] = [
       { title: 'Leadership Team', href: '/about/leadership', description: 'Meet our executive team' },
       { title: 'Company History', href: '/about/history', description: 'Our journey and milestones' },
       { title: 'Careers', href: '/about/careers', description: 'Join our team' },
+      { title: 'Organization Chart', href: '/about/organization-chart', description: 'Complete organizational structure with contacts' },
     ]
   },
   {

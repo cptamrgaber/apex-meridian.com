@@ -89,6 +89,9 @@ export default function Header() {
                   <Link href="/about/careers" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
                     {t('nav.careers')}
                   </Link>
+                  <Link href="/about/organization-chart" className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                    {t('nav.organizationChart')}
+                  </Link>
                 </div>
               )}
             </div>
@@ -247,6 +250,9 @@ export default function Header() {
             <div className="space-y-2">
               <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.about')}
+              </Link>
+              <Link href="/about/organization-chart" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
+                {t('nav.organizationChart')}
               </Link>
               <Link href="/solutions" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-md transition-colors duration-200">
                 {t('nav.solutions')}
