@@ -5,9 +5,17 @@ import { Shield, AlertTriangle, Eye, Lock, ArrowRight, CheckCircle } from 'lucid
 
 export default function CybersecuritySolutionsPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-light-bg dark:bg-dark-bg min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-900 to-orange-900 text-white py-16">
+      <section className="relative bg-gradient-to-r from-red-900 to-orange-900 text-white py-16">
+        <Image
+          src="/assets/cybersecurity-hero.jpg"
+          alt="Cybersecurity background"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-20"
+        />
+        <div className="relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
@@ -16,10 +24,11 @@ export default function CybersecuritySolutionsPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Cybersecurity AI Solutions
             </h1>
-            <p className="text-xl text-red-200 max-w-3xl mx-auto">
+            <p className="text-xl text-light-muted dark:text-red-200 max-w-3xl mx-auto">
               Protect your organization with advanced AI-driven threat detection, automated incident response, and predictive risk management that stays ahead of evolving cyber threats.
             </p>
           </div>
+        </div>
         </div>
       </section>
 
@@ -27,22 +36,22 @@ export default function CybersecuritySolutionsPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Next-Generation Cyber Defense</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-light-text dark:text-dark-text mb-4">Next-Generation Cyber Defense</h2>
+            <p className="text-lg text-light-muted dark:text-dark-muted max-w-3xl mx-auto">
               Our AI-powered cybersecurity platform provides comprehensive protection against sophisticated threats, from zero-day attacks to advanced persistent threats.
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div className="bg-light-muted dark:bg-red-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Eye className="h-6 w-6 text-red-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Threat Detection</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3">Threat Detection</h3>
+              <p className="text-light-muted dark:text-dark-muted mb-4">
                 Advanced AI algorithms detect known and unknown threats in real-time across your entire network infrastructure.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-light-muted dark:text-dark-muted space-y-1 mb-4">
                 <li>• Zero-day attack detection</li>
                 <li>• Behavioral anomaly analysis</li>
                 <li>• Network traffic monitoring</li>
@@ -53,15 +62,15 @@ export default function CybersecuritySolutionsPage() {
               </Link>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div className="bg-light-muted dark:bg-orange-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <AlertTriangle className="h-6 w-6 text-orange-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Incident Response</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3">Incident Response</h3>
+              <p className="text-light-muted dark:text-dark-muted mb-4">
                 Automated incident response and containment to minimize damage and reduce response times from hours to seconds.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-light-muted dark:text-dark-muted space-y-1 mb-4">
                 <li>• Automated threat containment</li>
                 <li>• Incident classification</li>
                 <li>• Response orchestration</li>
@@ -72,15 +81,15 @@ export default function CybersecuritySolutionsPage() {
               </Link>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+            <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div className="bg-light-muted dark:bg-purple-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Lock className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Risk Management</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3">Risk Management</h3>
+              <p className="text-light-muted dark:text-dark-muted mb-4">
                 Predictive risk assessment and vulnerability management to prevent attacks before they happen.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-light-muted dark:text-dark-muted space-y-1 mb-4">
                 <li>• Vulnerability prioritization</li>
                 <li>• Risk scoring algorithms</li>
                 <li>• Compliance monitoring</li>
@@ -95,11 +104,11 @@ export default function CybersecuritySolutionsPage() {
       </section>
 
       {/* Threat Landscape */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-light-surface dark:bg-dark-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Defending Against Modern Threats</h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <h2 className="text-3xl font-bold text-light-text dark:text-dark-text mb-4">Defending Against Modern Threats</h2>
+            <p className="text-lg text-light-muted dark:text-dark-muted mb-8">
               Our AI adapts to the evolving threat landscape, protecting against the latest attack vectors
             </p>
             <div className="flex justify-center">
@@ -116,26 +125,26 @@ export default function CybersecuritySolutionsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-red-600 mb-2">99.7%</div>
-              <p className="text-gray-600 font-medium">Threat Detection Rate</p>
-              <p className="text-sm text-gray-500 mt-1">Including zero-day attacks</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">Threat Detection Rate</p>
+              <p className="text-sm text-light-muted dark:text-dark-muted mt-1">Including zero-day attacks</p>
             </div>
             
             <div className="text-center">
               <div className="text-4xl font-bold text-orange-600 mb-2">&lt;30s</div>
-              <p className="text-gray-600 font-medium">Response Time</p>
-              <p className="text-sm text-gray-500 mt-1">Automated threat containment</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">Response Time</p>
+              <p className="text-sm text-light-muted dark:text-dark-muted mt-1">Automated threat containment</p>
             </div>
             
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-600 mb-2">85%</div>
-              <p className="text-gray-600 font-medium">False Positive Reduction</p>
-              <p className="text-sm text-gray-500 mt-1">Compared to traditional tools</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">False Positive Reduction</p>
+              <p className="text-sm text-light-muted dark:text-dark-muted mt-1">Compared to traditional tools</p>
             </div>
             
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
-              <p className="text-gray-600 font-medium">Continuous Monitoring</p>
-              <p className="text-sm text-gray-500 mt-1">AI-powered surveillance</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">Continuous Monitoring</p>
+              <p className="text-sm text-light-muted dark:text-dark-muted mt-1">AI-powered surveillance</p>
             </div>
           </div>
         </div>
@@ -145,59 +154,59 @@ export default function CybersecuritySolutionsPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Advanced AI Security Technology</h2>
-            <p className="text-lg text-gray-600">
+            <h2 className="text-3xl font-bold text-light-text dark:text-dark-text mb-4">Advanced AI Security Technology</h2>
+            <p className="text-lg text-light-muted dark:text-dark-muted">
               Powered by cutting-edge machine learning and behavioral analysis
             </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">How Our AI Works</h3>
+              <h3 className="text-2xl font-bold text-light-text dark:text-dark-text mb-6">How Our AI Works</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-red-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                  <div className="bg-light-muted dark:bg-red-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
                     <span className="text-red-600 font-bold text-sm">1</span>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Data Ingestion</h4>
-                    <p className="text-gray-600">
+                    <h4 className="text-lg font-semibold text-light-text dark:text-dark-text mb-2">Data Ingestion</h4>
+                    <p className="text-light-muted dark:text-dark-muted">
                       Collect and analyze data from network traffic, endpoints, logs, and threat intelligence feeds in real-time.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-orange-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                  <div className="bg-light-muted dark:bg-orange-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
                     <span className="text-orange-600 font-bold text-sm">2</span>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Behavioral Analysis</h4>
-                    <p className="text-gray-600">
+                    <h4 className="text-lg font-semibold text-light-text dark:text-dark-text mb-2">Behavioral Analysis</h4>
+                    <p className="text-light-muted dark:text-dark-muted">
                       Machine learning models establish baseline behaviors and detect anomalies that indicate potential threats.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-purple-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                  <div className="bg-light-muted dark:bg-purple-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
                     <span className="text-purple-600 font-bold text-sm">3</span>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Threat Classification</h4>
-                    <p className="text-gray-600">
+                    <h4 className="text-lg font-semibold text-light-text dark:text-dark-text mb-2">Threat Classification</h4>
+                    <p className="text-light-muted dark:text-dark-muted">
                       Advanced algorithms classify threats by severity, type, and potential impact to prioritize response efforts.
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                  <div className="bg-light-muted dark:bg-blue-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
                     <span className="text-blue-600 font-bold text-sm">4</span>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Automated Response</h4>
-                    <p className="text-gray-600">
+                    <h4 className="text-lg font-semibold text-light-text dark:text-dark-text mb-2">Automated Response</h4>
+                    <p className="text-light-muted dark:text-dark-muted">
                       Immediate containment and remediation actions are executed automatically to minimize damage and exposure.
                     </p>
                   </div>
@@ -205,32 +214,32 @@ export default function CybersecuritySolutionsPage() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-lg p-8">
-              <h4 className="text-xl font-bold text-gray-900 mb-6">Key AI Capabilities</h4>
+            <div className="bg-light-surface dark:bg-dark-surface rounded-lg p-8">
+              <h4 className="text-xl font-bold text-light-text dark:text-dark-text mb-6">Key AI Capabilities</h4>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Deep learning neural networks for pattern recognition</span>
+                  <span className="text-light-text dark:text-dark-text">Deep learning neural networks for pattern recognition</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Natural language processing for threat intelligence</span>
+                  <span className="text-light-text dark:text-dark-text">Natural language processing for threat intelligence</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Reinforcement learning for adaptive defense</span>
+                  <span className="text-light-text dark:text-dark-text">Reinforcement learning for adaptive defense</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Graph analytics for attack path analysis</span>
+                  <span className="text-light-text dark:text-dark-text">Graph analytics for attack path analysis</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Ensemble methods for improved accuracy</span>
+                  <span className="text-light-text dark:text-dark-text">Ensemble methods for improved accuracy</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Federated learning for privacy-preserving updates</span>
+                  <span className="text-light-text dark:text-dark-text">Federated learning for privacy-preserving updates</span>
                 </div>
               </div>
             </div>
@@ -239,82 +248,82 @@ export default function CybersecuritySolutionsPage() {
       </section>
 
       {/* Case Study */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-light-surface dark:bg-dark-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-red-50 rounded-lg p-8">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Success Story</h2>
-              <p className="text-lg text-gray-600">
+              <h2 className="text-3xl font-bold text-light-text dark:text-dark-text mb-4">Success Story</h2>
+              <p className="text-lg text-light-muted dark:text-dark-muted">
                 How GlobalTech Corp prevented a major cyber attack with A  p  e  x  M  e  r  i  d  i  a  n AI
               </p>
             </div>
             
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">The Threat</h3>
-                <p className="text-gray-600 mb-6">
+                <h3 className="text-2xl font-bold text-light-text dark:text-dark-text mb-4">The Threat</h3>
+                <p className="text-light-muted dark:text-dark-muted mb-6">
                   A sophisticated APT group launched a multi-stage attack targeting GlobalTech&apos;s intellectual property. Traditional security tools failed to detect the initial compromise.
                 </p>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Response</h3>
-                <p className="text-gray-600 mb-6">
+                <h3 className="text-2xl font-bold text-light-text dark:text-dark-text mb-4">Our Response</h3>
+                <p className="text-light-muted dark:text-dark-muted mb-6">
                   Our AI detected anomalous behavior patterns within 15 minutes of the initial breach, automatically contained the threat, and prevented data exfiltration.
                 </p>
                 
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Detected zero-day exploit in real-time</span>
+                    <span className="text-light-text dark:text-dark-text">Detected zero-day exploit in real-time</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Automatically isolated compromised systems</span>
+                    <span className="text-light-text dark:text-dark-text">Automatically isolated compromised systems</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Prevented $50M in potential damages</span>
+                    <span className="text-light-text dark:text-dark-text">Prevented $50M in potential damages</span>
                   </div>
                 </div>
               </div>
               
               <div className="bg-white rounded-lg p-6 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Attack Timeline</h3>
+                <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-4">Attack Timeline</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
                     <div>
-                      <span className="text-sm text-gray-500">00:00</span>
-                      <p className="text-gray-700">Initial phishing email delivered</p>
+                      <span className="text-sm text-light-muted dark:text-dark-muted">00:00</span>
+                      <p className="text-light-text dark:text-dark-text">Initial phishing email delivered</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
                     <div>
-                      <span className="text-sm text-gray-500">00:05</span>
-                      <p className="text-gray-700">Malicious payload executed</p>
+                      <span className="text-sm text-light-muted dark:text-dark-muted">00:05</span>
+                      <p className="text-light-text dark:text-dark-text">Malicious payload executed</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
                     <div>
-                      <span className="text-sm text-gray-500">00:15</span>
-                      <p className="text-gray-700">AI detects anomalous behavior</p>
+                      <span className="text-sm text-light-muted dark:text-dark-muted">00:15</span>
+                      <p className="text-light-text dark:text-dark-text">AI detects anomalous behavior</p>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
                     <div>
-                      <span className="text-sm text-gray-500">00:16</span>
-                      <p className="text-gray-700">Automatic containment activated</p>
+                      <span className="text-sm text-light-muted dark:text-dark-muted">00:16</span>
+                      <p className="text-light-text dark:text-dark-text">Automatic containment activated</p>
                     </div>
                   </div>
                 </div>
                 
-                <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-600 italic">
+                <div className="mt-6 p-4 bg-light-surface dark:bg-dark-surface rounded-lg">
+                  <p className="text-sm text-light-muted dark:text-dark-muted italic">
                     &quot;A  p  e  x  M  e  r  i  d  i  a  n&apos;s AI saved us from what could have been a catastrophic breach. Their technology is years ahead of anything else we&apos;ve seen.&quot;
                   </p>
-                  <p className="text-sm font-medium text-gray-900 mt-2">
+                  <p className="text-sm font-medium text-light-text dark:text-dark-text mt-2">
                     - Chief Information Security Officer, GlobalTech Corp
                   </p>
                 </div>
@@ -328,7 +337,7 @@ export default function CybersecuritySolutionsPage() {
       <section className="py-16 bg-red-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Secure Your Organization Today</h2>
-          <p className="text-xl text-red-200 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-light-muted dark:text-red-200 mb-8 max-w-3xl mx-auto">
             Don&apos;t wait for the next attack. Deploy AI-powered cybersecurity that adapts and evolves with the threat landscape.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

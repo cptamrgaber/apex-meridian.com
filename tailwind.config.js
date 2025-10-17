@@ -251,4 +251,21 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'light-bg': '#ffffff',
+        'light-surface': '#f8fafc',
+        'light-border': '#e2e8f0',
+        'light-text': '#1e293b',
+        'light-muted': '#64748b',
+        'dark-bg': '#0a0a0a',
+        'dark-surface': '#1a1a1a',
+        'dark-border': '#333333',
+        'dark-text': '#ededed',
+        'dark-muted': '#a0a0a0',
+      },
+    },
+  },
 }

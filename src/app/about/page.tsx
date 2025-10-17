@@ -9,15 +9,15 @@ export default function AboutPage() {
   const { t, isRTL } = useLanguage();
 
   return (
-    <div className={`bg-white dark:bg-gray-900 min-h-screen ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`bg-light-bg dark:bg-dark-bg min-h-screen ${isRTL ? 'rtl' : 'ltr'}`}>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
+      <section className="bg-light-surface dark:bg-gradient-to-r dark:from-blue-900 dark:to-indigo-900 text-light-text dark:text-dark-text py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {t('about.title')}
             </h1>
-            <p className="text-xl text-blue-200 max-w-3xl mx-auto">
+            <p className="text-xl text-light-muted dark:text-blue-200 max-w-3xl mx-auto">
               {t('about.subtitle')}
             </p>
           </div>
@@ -29,12 +29,12 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link href="/about/overview" className="group">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
-                <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
+              <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
+                <div className="bg-light-muted dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
                   <Building className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.overview.title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+                <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3 text-center">{t('about.overview.title')}</h3>
+                <p className="text-light-muted dark:text-dark-muted text-center mb-4">
                   {t('about.overview.description')}
                 </p>
                 <div className="flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:text-blue-800 dark:group-hover:text-blue-300">
@@ -45,12 +45,12 @@ export default function AboutPage() {
             </Link>
 
             <Link href="/about/leadership" className="group">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
-                <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 dark:group-hover:bg-green-800 transition-colors">
+              <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
+                <div className="bg-light-muted dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 dark:group-hover:bg-green-800 transition-colors">
                   <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.leadership.title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+                <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3 text-center">{t('about.leadership.title')}</h3>
+                <p className="text-light-muted dark:text-dark-muted text-center mb-4">
                   {t('about.leadership.description')}
                 </p>
                 <div className="flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:text-blue-800 dark:group-hover:text-blue-300">
@@ -61,12 +61,12 @@ export default function AboutPage() {
             </Link>
 
             <Link href="/about/history" className="group">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
-                <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800 transition-colors">
+              <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
+                <div className="bg-light-muted dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800 transition-colors">
                   <History className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.history.title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+                <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3 text-center">{t('about.history.title')}</h3>
+                <p className="text-light-muted dark:text-dark-muted text-center mb-4">
                   {t('about.history.description')}
                 </p>
                 <div className="flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:text-blue-800 dark:group-hover:text-blue-300">
@@ -77,12 +77,12 @@ export default function AboutPage() {
             </Link>
 
             <Link href="/about/careers" className="group">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
-                <div className="bg-orange-100 dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 dark:group-hover:bg-orange-800 transition-colors">
+              <div className="bg-light-surface dark:bg-dark-surface rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
+                <div className="bg-light-muted dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 dark:group-hover:bg-orange-800 transition-colors">
                   <Briefcase className="h-8 w-8 text-orange-600 dark:text-orange-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.careers.title')}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+                <h3 className="text-xl font-bold text-light-text dark:text-dark-text mb-3 text-center">{t('about.careers.title')}</h3>
+                <p className="text-light-muted dark:text-dark-muted text-center mb-4">
                   {t('about.careers.description')}
                 </p>
                 <div className="flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:text-blue-800 dark:group-hover:text-blue-300">
@@ -96,11 +96,11 @@ export default function AboutPage() {
       </section>
 
       {/* Quick Overview - Legally Safe */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-light-surface dark:bg-dark-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">{t('about.whyChoose.title')}</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-light-text dark:text-dark-text mb-4">{t('about.whyChoose.title')}</h2>
+            <p className="text-lg text-light-muted dark:text-dark-muted max-w-3xl mx-auto">
               {t('about.whyChoose.description')}
             </p>
           </div>
@@ -108,21 +108,21 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Growing</div>
-              <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.stats.users')}</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">{t('about.stats.users')}</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Trusted</div>
-              <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.stats.clients')}</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">{t('about.stats.clients')}</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">Reliable</div>
-              <p className="text-gray-600 dark:text-gray-300 font-medium">{t('about.stats.uptime')}</p>
+              <p className="text-light-muted dark:text-dark-muted font-medium">{t('about.stats.uptime')}</p>
             </div>
           </div>
 
           {/* Legal Disclaimer */}
           <div className="text-center mt-8">
-            <p className="text-xs text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xs text-light-muted dark:text-dark-muted max-w-2xl mx-auto">
               * Company metrics represent current development status and growth targets. Performance may vary.
             </p>
           </div>
@@ -130,23 +130,23 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-blue-900 text-dark-text">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">{t('about.cta.title')}</h2>
-          <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-light-muted dark:text-blue-200 mb-8 max-w-2xl mx-auto">
             {t('about.cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/solutions"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-light-bg hover:bg-light-muted transition-colors"
             >
               {t('about.cta.exploreSolutions')}
               <ArrowRight className={`h-5 w-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium border-dark-border text-dark-text hover:bg-dark-bg hover:text-blue-900ransition-colors"
             >
               {t('about.cta.contactUs')}
             </Link>

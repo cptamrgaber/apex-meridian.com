@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { useTheme } from '@/lib/theme-context';
 
 interface Particle {
   x: number;
@@ -14,6 +15,7 @@ interface Particle {
 }
 
 const AnimatedBackground: React.FC = () => {
+  const { theme } = useTheme();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const animationRef = useRef<number | null>(null);
@@ -37,7 +39,7 @@ const AnimatedBackground: React.FC = () => {
       const particles: Particle[] = [];
       const particleCount = Math.floor((canvas.width * canvas.height) / 15000); // Reduced from 8000 to 15000
 
-      const colors = ['#4dd0e1', '#87ceeb', '#5dade2', '#85c1e9', '#aed6f1']; // Lighter blue tones
+      const colors = theme === 'dark' ? ['#4dd0e1', '#87ceeb', '#5dade2', '#85c1e9', '#aed6f1'] : ['#1e293b', '#334155', '#475569', '#64748b', '#94a3b8']; // Lighter blue tones
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({
@@ -56,7 +58,7 @@ const AnimatedBackground: React.FC = () => {
 
     const animate = () => {
       // Create fade effect instead of clearing
-      ctx.fillStyle = 'rgba(10, 10, 10, 0.08)';
+      ctx.fillStyle = theme === 'dark' ? 'rgba(10, 10, 10, 0.08)' : 'rgba(255, 255, 255, 0.08)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Update glitch time
@@ -207,7 +209,7 @@ const AnimatedBackground: React.FC = () => {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, []);
+  }, [theme]);
 
   return (
     <>

@@ -105,7 +105,7 @@ const ThrillerSolutions: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-tech-darker relative overflow-hidden">
+    <section className="py-20 bg-light-bg dark:bg-tech-darker relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-matrix-bg opacity-20" />
@@ -155,14 +155,14 @@ const ThrillerSolutions: React.FC = () => {
             <Rocket className="h-8 w-8 text-neon-light-blue animate-bounce" style={{ animationDuration: '2s' }} />
           </div>
           
-          <h2 className="relative text-5xl md:text-6xl font-bold text-white mb-6 animate-glow"
+          <h2 className="relative text-5xl md:text-6xl font-bold text-light-text dark:text-dark-text mb-6 animate-glow"
               style={{ 
                 textShadow: '0 0 20px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 212, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.8)' 
               }}>
             {t('solutions.title')}
           </h2>
           
-          <p className="relative text-xl text-white max-w-3xl mx-auto animate-flicker pb-8"
+          <p className="relative text-xl text-light-text dark:text-dark-text max-w-3xl mx-auto animate-flicker pb-8"
              style={{ 
                textShadow: '0 0 10px rgba(0, 212, 255, 0.6), 1px 1px 2px rgba(0, 0, 0, 0.8)' 
              }}>
@@ -191,7 +191,7 @@ const ThrillerSolutions: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-white/10 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -skew-x-12"></div>
               
               {/* Animated border */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-white/20 transition-all duration-500"></div>
+              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-light-border dark:border-dark-border transition-all duration-500"></div>
               
               {/* Glitch effect overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -200,7 +200,7 @@ const ThrillerSolutions: React.FC = () => {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-4">
-                    <div className={`p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20`}>
+                    <div className={`p-3 rounded-xl bg-light-surface dark:bg-dark-surface backdrop-blur-sm border border-light-border dark:border-dark-border`}>
                       <solution.icon className="h-8 w-8 text-white" />
                     </div>
                     <div>
@@ -208,7 +208,7 @@ const ThrillerSolutions: React.FC = () => {
                           style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
                         {t(solution.nameKey as any)}
                       </h3>
-                      <p className="text-white/80 text-sm font-medium"
+                      <p className="text-light-muted dark:text-dark-muted text-sm font-medium"
                          style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
                         {t(solution.taglineKey as any)}
                       </p>
@@ -223,7 +223,7 @@ const ThrillerSolutions: React.FC = () => {
                              style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}>
                           {stat.value}
                         </div>
-                        <div className="text-xs text-white/70"
+                        <div className="text-xs text-light-muted dark:text-dark-muted"
                              style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
                           {stat.labelKey}
                         </div>
@@ -233,7 +233,7 @@ const ThrillerSolutions: React.FC = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-white/90 mb-6 leading-relaxed"
+                <p className="text-light-text dark:text-dark-text mb-6 leading-relaxed"
                    style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
                   {t(solution.descriptionKey as any)}
                 </p>
@@ -243,7 +243,7 @@ const ThrillerSolutions: React.FC = () => {
                   {solution.featureKeys.map((featureKey, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                      <span className="text-white/80 text-sm"
+                      <span className="text-light-muted dark:text-dark-muted text-sm"
                             style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.6)' }}>
                         {t(featureKey as any)}
                       </span>
@@ -255,7 +255,7 @@ const ThrillerSolutions: React.FC = () => {
                 <div className="mt-auto pt-6">
                   <Link
                     href={solution.href}
-                    className="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 group-hover:scale-105"
+                    className="inline-flex items-center space-x-2 bg-light-surface dark:bg-dark-surface hover:bg-light-muted dark:hover:bg-dark-muted backdrop-blur-sm border border-light-border dark:border-dark-border text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 group-hover:scale-105"
                     style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)' }}
                   >
                     <span>Explore {t(solution.nameKey as any)}</span>
@@ -269,7 +269,7 @@ const ThrillerSolutions: React.FC = () => {
 
         {/* Legal Disclaimer */}
         <div className="text-center mt-8 mb-8">
-          <p className="text-xs text-white/60 max-w-3xl mx-auto">
+          <p className="text-xs text-light-muted dark:text-dark-muted max-w-3xl mx-auto">
             * Performance targets and capabilities represent development goals. Actual results may vary based on implementation and usage conditions.
           </p>
         </div>
@@ -280,7 +280,7 @@ const ThrillerSolutions: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-blue rounded-2xl blur-lg opacity-50 animate-pulse"></div>
             <Link
               href="/solutions"
-              className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-neon-blue to-neon-cyan text-tech-black px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-text dark:text-light-text px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}
             >
               <span>{t('cta.button')}</span>

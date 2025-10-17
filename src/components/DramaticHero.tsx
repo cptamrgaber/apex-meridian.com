@@ -15,7 +15,7 @@ export default function DramaticHero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-light-bg dark:bg-gradient-to-br dark:from-slate-900 dark:via-blue-900 dark:to-slate-900">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
@@ -74,12 +74,12 @@ export default function DramaticHero() {
 
         {/* Main Heading */}
         <div className="mb-8 animate-slide-up" style={{ animationDelay: '1s' }}>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-light-text dark:text-dark-text mb-6 leading-tight">
             <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
               {t('hero.title1')}
             </span>
           </h2>
-          <p className="text-xl md:text-2xl text-blue-200 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-light-muted dark:text-blue-200 max-w-4xl mx-auto leading-relaxed">
             {t('hero.subtitle')}
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function DramaticHero() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-slide-up" style={{ animationDelay: '1.5s' }}>
           <Link
             href="/solutions"
-            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 hover:scale-105"
+            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-light-text dark:text-dark-text font-semibold rounded-full hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 hover:scale-105"
           >
             <span className="relative z-10">{t('hero.startBtn')}</span>
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -108,19 +108,19 @@ export default function DramaticHero() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '2s' }}>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-blue-400 mb-2">Enterprise-Grade</div>
-            <p className="text-blue-200 text-sm">Security Level</p>
+            <p className="text-light-muted dark:text-blue-200 text-sm">Security Level</p>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-cyan-400 mb-2">Lightning Fast</div>
-            <p className="text-blue-200 text-sm">Processing Speed</p>
+            <p className="text-light-muted dark:text-blue-200 text-sm">Processing Speed</p>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-blue-400 mb-2">Advanced</div>
-            <p className="text-blue-200 text-sm">Learning Capabilities</p>
+            <p className="text-light-muted dark:text-blue-200 text-sm">Learning Capabilities</p>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-cyan-400 mb-2">Global</div>
-            <p className="text-blue-200 text-sm">Market Reach</p>
+            <p className="text-light-muted dark:text-blue-200 text-sm">Market Reach</p>
           </div>
         </div>
       </div>

@@ -103,7 +103,7 @@ const TechPlatform: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-tech-black via-tech-darker to-tech-black relative overflow-hidden">
+    <section className="py-20 bg-light-bg dark:bg-gradient-to-br dark:from-tech-black dark:via-tech-darker dark:to-tech-black relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         {/* Circuit board pattern */}
@@ -153,14 +153,14 @@ const TechPlatform: React.FC = () => {
               <div className="inline-flex items-center space-x-2 mb-4">
                 <Database className="h-6 w-6 text-neon-blue animate-pulse" />
                 <div className="w-8 h-px bg-neon-blue"></div>
-                <Cloud className="h-6 w-6 text-neon-cyan animate-bounce" style={{ animationDuration: '2s' }} />
+                <Cloud className="h-6 w-6 text-light-muted dark:text-neon-cyan animate-bounce" style={{ animationDuration: '2s' }} />
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-glow">
+              <h2 className="text-4xl md:text-5xl font-bold text-light-text dark:text-dark-text mb-6 animate-glow">
                 {t('platform.title')}
               </h2>
               
-              <p className="text-xl text-neon-cyan mb-8 animate-flicker">
+              <p className="text-xl text-light-muted dark:text-neon-cyan mb-8 animate-flicker">
                 {t('platform.subtitle')}
               </p>
             </div>
@@ -170,11 +170,11 @@ const TechPlatform: React.FC = () => {
               {capabilities.map((capability, index) => (
                 <div
                   key={index}
-                  className="flex items-center space-x-3 p-3 bg-tech-darker/30 backdrop-blur-sm border border-neon-blue/20 rounded-lg hover:border-neon-blue/40 transition-all duration-300"
+                  className="flex items-center space-x-3 p-3 bg-light-surface dark:bg-tech-darker/30 backdrop-blur-sm border border-light-border dark:border-neon-blue/20 rounded-lg hover:border-light-border dark:hover:border-neon-blue/40 transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CheckCircle className="h-5 w-5 text-neon-blue flex-shrink-0" />
-                  <span className="text-white text-sm font-medium">{capability}</span>
+                  <span className="text-light-text dark:text-dark-text text-sm font-medium">{capability}</span>
                 </div>
               ))}
             </div>
@@ -184,7 +184,7 @@ const TechPlatform: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-neon-blue to-neon-cyan rounded-xl blur-lg opacity-50 animate-pulse"></div>
               <Link
                 href="/technology/platform"
-                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-neon-blue to-neon-cyan text-tech-black px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+                className="relative inline-flex items-center space-x-3 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-text dark:text-light-text px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
               >
                 <span>{t('platform.exploreBtn')}</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -195,7 +195,7 @@ const TechPlatform: React.FC = () => {
           {/* Right Column - Interactive Tech Display */}
           <div className="relative">
             {/* Main display container */}
-            <div className="relative bg-tech-darker/50 backdrop-blur-sm border border-neon-blue/30 rounded-2xl p-8 shadow-neon">
+            <div className="relative bg-light-surface dark:bg-tech-darker/50 backdrop-blur-sm border border-light-border dark:border-neon-blue/30 rounded-2xl p-8 shadow-neon">
               {/* Active feature display */}
               <div className="text-center mb-8">
                 <div className="relative inline-block mb-4">
@@ -219,10 +219,10 @@ const TechPlatform: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-white mb-2">
+                <h3 className="text-2xl font-bold text-light-text dark:text-dark-text mb-2">
                   {t(techFeatures[activeFeature].titleKey as any)}
                 </h3>
-                <p className="text-neon-cyan mb-4">
+                <p className="text-light-muted dark:text-neon-cyan mb-4">
                   {t(techFeatures[activeFeature].descriptionKey as any)}
                 </p>
                 <div 
@@ -242,7 +242,7 @@ const TechPlatform: React.FC = () => {
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === activeFeature 
                         ? 'bg-neon-blue shadow-neon' 
-                        : 'bg-white/20 hover:bg-white/40'
+                        : 'bg-light-muted dark:bg-dark-muted hover:bg-light-muted dark:hover:bg-dark-muted'
                     }`}
                   />
                 ))}
@@ -250,21 +250,21 @@ const TechPlatform: React.FC = () => {
             </div>
 
             {/* Floating stats */}
-            <div className="absolute -top-4 -right-4 bg-tech-darker/80 backdrop-blur-sm border border-neon-cyan/30 rounded-xl p-4 shadow-neon">
+            <div className="absolute -top-4 -right-4 bg-light-surface dark:bg-tech-darker/80 backdrop-blur-sm border border-light-border dark:border-neon-cyan/30 rounded-xl p-4 shadow-neon">
               <div className="flex items-center space-x-2">
-                <Activity className="h-5 w-5 text-neon-cyan animate-pulse" />
+                <Activity className="h-5 w-5 text-light-muted dark:text-neon-cyan animate-pulse" />
                 <div>
-                  <div className="text-lg font-bold text-white">10 PetaFLOPS</div>
-                  <div className="text-xs text-neon-cyan">Processing Power</div>
+                  <div className="text-lg font-bold text-light-text dark:text-dark-text">10 PetaFLOPS</div>
+                  <div className="text-xs text-light-muted dark:text-neon-cyan">Processing Power</div>
                 </div>
               </div>
             </div>
 
-            <div className="absolute -bottom-4 -left-4 bg-tech-darker/80 backdrop-blur-sm border border-neon-purple/30 rounded-xl p-4 shadow-neon">
+            <div className="absolute -bottom-4 -left-4 bg-light-surface dark:bg-tech-darker/80 backdrop-blur-sm border border-light-border dark:border-neon-purple/30 rounded-xl p-4 shadow-neon">
               <div className="flex items-center space-x-2">
                 <Globe className="h-5 w-5 text-neon-purple animate-spin" style={{ animationDuration: '3s' }} />
                 <div>
-                  <div className="text-lg font-bold text-white">99.99%</div>
+                  <div className="text-lg font-bold text-light-text dark:text-dark-text">99.99%</div>
                   <div className="text-xs text-neon-purple">Uptime</div>
                 </div>
               </div>
@@ -282,11 +282,11 @@ const TechPlatform: React.FC = () => {
           ].map((stat, index) => (
             <div
               key={index}
-              className="text-center p-4 bg-tech-darker/30 backdrop-blur-sm border border-neon-blue/20 rounded-xl hover:border-neon-blue/40 transition-all duration-300"
+              className="text-center p-4 bg-light-surface dark:bg-tech-darker/30 backdrop-blur-sm border border-light-border dark:border-neon-blue/20 rounded-xl hover:border-light-border dark:hover:border-neon-blue/40 transition-all duration-300"
             >
               <stat.icon className="h-8 w-8 text-neon-blue mx-auto mb-2 animate-pulse" />
-              <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-              <div className="text-sm text-neon-cyan">{stat.label}</div>
+              <div className="text-2xl font-bold text-light-text dark:text-dark-text mb-1">{stat.value}</div>
+              <div className="text-sm text-light-muted dark:text-neon-cyan">{stat.label}</div>
             </div>
           ))}
         </div>

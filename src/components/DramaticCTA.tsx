@@ -46,7 +46,7 @@ const DramaticCTA: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-tech-black via-tech-darker to-tech-black relative">
+    <section className="py-20 bg-light-bg dark:bg-gradient-to-br dark:from-tech-black dark:via-tech-darker dark:to-tech-black relative">
       {/* Background Effects */}
       <div className="absolute inset-0">
         {/* Holographic grid */}
@@ -55,7 +55,7 @@ const DramaticCTA: React.FC = () => {
             {Array.from({ length: 96 }).map((_, i) => (
               <div
                 key={i}
-                className="border border-neon-blue/20 animate-pulse-slow"
+                className="border border-light-border dark:border-neon-blue/20 animate-pulse-slow"
                 style={{
                   animationDelay: `${(i * 0.05) % 4}s`,
                 }}
@@ -96,13 +96,13 @@ const DramaticCTA: React.FC = () => {
           <div className="flex justify-center items-center space-x-6 mb-8">
             <Target className="h-8 w-8 text-neon-blue animate-pulse" />
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-neon-blue to-transparent"></div>
-            <Brain className="h-10 w-10 text-neon-cyan animate-glow" />
+            <Brain className="h-10 w-10 text-light-muted dark:text-neon-cyan animate-glow" />
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-neon-cyan to-transparent"></div>
             <Rocket className="h-8 w-8 text-neon-purple animate-bounce" style={{ animationDuration: '2s' }} />
           </div>
 
           {/* Main Headline */}
-          <h2 className={`text-4xl md:text-6xl font-bold text-white mb-6 animate-glow transition-all duration-300 ${
+          <h2 className={`text-4xl md:text-6xl font-bold text-light-text dark:text-dark-text mb-6 animate-glow transition-all duration-300 ${
             glitchActive ? 'animate-glitch' : ''
           }`}>
             {t('cta.title')}
@@ -114,31 +114,31 @@ const DramaticCTA: React.FC = () => {
               <h2 className="absolute inset-0 text-4xl md:text-6xl font-bold text-neon-pink animate-glow opacity-70 transform translate-x-1">
                 {t('cta.title')}
               </h2>
-              <h2 className="absolute inset-0 text-4xl md:text-6xl font-bold text-neon-cyan animate-glow opacity-50 transform -translate-x-1">
+              <h2 className="absolute inset-0 text-4xl md:text-6xl font-bold text-light-muted dark:text-neon-cyan animate-glow opacity-50 transform -translate-x-1">
                 {t('cta.title')}
               </h2>
             </>
           )}
 
           {/* Subtitle */}
-          <p className="text-xl text-neon-cyan max-w-4xl mx-auto animate-flicker">
+          <p className="text-xl text-light-muted dark:text-neon-cyan max-w-4xl mx-auto animate-flicker">
             {t('cta.subtitle')}
           </p>
         </div>
 
         {/* Dynamic Stats Display */}
         <div className="mb-16">
-          <div className="inline-flex items-center justify-center w-80 h-32 bg-tech-darker/50 backdrop-blur-sm border border-neon-blue/30 rounded-2xl shadow-neon">
+          <div className="inline-flex items-center justify-center w-80 h-32 bg-light-surface dark:bg-tech-darker/50 backdrop-blur-sm border border-light-border dark:border-neon-blue/30 rounded-2xl shadow-neon">
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
                 {React.createElement(stats[currentStat].icon, {
                   className: "h-8 w-8 text-neon-blue mr-3 animate-pulse"
                 })}
-                <div className="text-4xl font-bold text-white animate-glow">
+                <div className="text-4xl font-bold text-light-text dark:text-dark-text animate-glow">
                   {stats[currentStat].value}
                 </div>
               </div>
-              <div className="text-sm text-neon-cyan">
+              <div className="text-sm text-light-muted dark:text-neon-cyan">
                 {stats[currentStat].label}
               </div>
             </div>
@@ -152,7 +152,7 @@ const DramaticCTA: React.FC = () => {
           
           <Link
             href="/contact"
-            className="relative inline-flex items-center space-x-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-tech-black px-12 py-6 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl group"
+            className="relative inline-flex items-center space-x-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-dark-text dark:text-light-text px-12 py-6 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl group"
             style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}
           >
             <Rocket className="h-8 w-8 group-hover:animate-bounce" />
@@ -166,10 +166,10 @@ const DramaticCTA: React.FC = () => {
           {[Eye, Brain, Zap, Target].map((Icon, index) => (
             <div
               key={index}
-              className="p-4 bg-tech-darker/30 backdrop-blur-sm border border-neon-blue/20 rounded-xl animate-glow"
+              className="p-4 bg-light-surface dark:bg-tech-darker/30 backdrop-blur-sm border border-light-border dark:border-neon-blue/20 rounded-xl animate-glow"
               style={{ animationDelay: `${index * 0.5}s` }}
             >
-              <Icon className="h-6 w-6 text-neon-cyan" />
+              <Icon className="h-6 w-6 text-light-muted dark:text-neon-cyan" />
             </div>
           ))}
         </div>
