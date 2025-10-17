@@ -29,8 +29,8 @@ const AnimatedBackground: React.FC = () => {
     if (!ctx) return;
 
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = Math.min(window.innerWidth, document.documentElement.clientWidth);
+      canvas.height = Math.min(window.innerHeight, document.documentElement.clientHeight);
     };
 
     const createParticles = () => {
@@ -213,8 +213,8 @@ const AnimatedBackground: React.FC = () => {
     <>
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-[-1]"
-        style={{ background: 'transparent' }}
+        className="fixed inset-0 pointer-events-none z-[-1] overflow-hidden"
+        style={{ background: 'transparent', maxWidth: '100vw', maxHeight: '100vh' }}
       />
       
       {/* Additional CSS-based effects */}

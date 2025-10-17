@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-slate-900 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex items-center h-20 justify-start lg:justify-between">
           {/* Logo - Increased Size */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
@@ -47,7 +47,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6 flex-1 justify-center max-w-4xl mx-4">
             {/* About Dropdown */}
             <div 
               className="relative group"
