@@ -2,7 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #374151; /* Gray-700 for better contrast */
+  --muted: #6b7280; /* Gray-500 for secondary text */
+  --border: #e5e7eb; /* Gray-200 for borders */
+  --card-bg: #f9fafb; /* Gray-50 for cards */
+  --hover-bg: #f3f4f6; /* Gray-100 for hover states */
 }
 
 @theme inline {
@@ -12,10 +16,25 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Dark mode colors with proper contrast */
+.dark {
+  --background: #111827; /* Gray-900 */
+  --foreground: #e5e7eb; /* Gray-200 for excellent contrast */
+  --muted: #9ca3af; /* Gray-400 for secondary text */
+  --border: #374151; /* Gray-700 for borders */
+  --card-bg: #1f2937; /* Gray-800 for cards */
+  --hover-bg: #374151; /* Gray-700 for hover states */
+}
+
+/* System preference support */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not(.light) {
+    --background: #111827;
+    --foreground: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #374151;
+    --card-bg: #1f2937;
+    --hover-bg: #374151;
   }
 }
 
@@ -23,6 +42,95 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Universal text color fixes for better contrast */
+.text-gray-900 {
+  color: var(--foreground) !important;
+}
+
+.text-gray-800 {
+  color: var(--foreground) !important;
+}
+
+.text-gray-700 {
+  color: var(--foreground) !important;
+}
+
+.text-gray-600 {
+  color: var(--muted) !important;
+}
+
+.text-gray-500 {
+  color: var(--muted) !important;
+}
+
+.text-gray-400 {
+  color: var(--muted) !important;
+}
+
+/* Background colors that adapt to theme */
+.bg-white {
+  background-color: var(--background) !important;
+}
+
+.bg-gray-50 {
+  background-color: var(--card-bg) !important;
+}
+
+.bg-gray-100 {
+  background-color: var(--hover-bg) !important;
+}
+
+/* Border colors */
+.border-gray-200,
+.border-gray-300 {
+  border-color: var(--border) !important;
+}
+
+/* Card and surface colors */
+.bg-white.shadow,
+.bg-white.shadow-lg,
+.bg-white.shadow-xl {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border);
+}
+
+/* Hover states */
+.hover\:bg-gray-50:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+/* Focus states for better accessibility */
+.focus\:ring-blue-500:focus {
+  --tw-ring-color: #3b82f6;
+}
+
+.dark .focus\:ring-blue-500:focus {
+  --tw-ring-color: #60a5fa;
+}
+
+/* Ensure proper contrast for links */
+a.text-blue-600 {
+  color: #2563eb !important;
+}
+
+.dark a.text-blue-600 {
+  color: #60a5fa !important;
+}
+
+/* Button hover states */
+.hover\:text-blue-600:hover {
+  color: #2563eb !important;
+}
+
+.dark .hover\:text-blue-600:hover {
+  color: #60a5fa !important;
 }
 
 /* Prevent horizontal overflow */
@@ -40,4 +148,18 @@ html, body {
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Ensure text is always readable */
+.dark .text-black {
+  color: var(--foreground) !important;
+}
+
+.dark .text-white {
+  color: var(--foreground) !important;
 }
