@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 import { useLanguage } from '@/lib/language-context';
 
 interface FAQItem {
@@ -97,9 +98,10 @@ export default function FAQ() {
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             Find answers to common questions about{' '}
-            <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-              A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
-            </span>{' '}
+            <BrandName 
+              className="font-light"
+              style={{ letterSpacing: '0.2em' }}
+            />{' '}
             AI solutions
           </p>
         </div>

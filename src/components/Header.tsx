@@ -41,7 +41,7 @@ export default function Header() {
   }, []);
   return (
     <header className="bg-white dark:bg-slate-900 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex items-center h-16 justify-between">
           {/* Logo - Increased Size */}
           <div className="flex-shrink-0">
@@ -51,9 +51,8 @@ export default function Header() {
                 alt="A  p  e  x    M  e  r  i  d  i  a  n"
                 width={540}
                 height={162}
-                className="h-16 w-auto object-contain"
+                className="h-12 sm:h-14 md:h-16 w-auto object-contain max-w-[200px] sm:max-w-[240px] md:max-w-none"
                 style={{ 
-                  filter: 'drop-shadow(0.5px 0.5px 0 white) drop-shadow(-0.5px -0.5px 0 white) drop-shadow(0.5px -0.5px 0 white) drop-shadow(-0.5px 0.5px 0 white)',
                   aspectRatio: '280/84'
                 }}
                 priority

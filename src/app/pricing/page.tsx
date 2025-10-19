@@ -1,7 +1,7 @@
 'use client';
-
-import { useState } from 'react';
-import { Check, Star, ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Check, ArrowRight, Star } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 import { useLanguage } from '@/lib/language-context';
 
 export default function Pricing() {
@@ -98,9 +98,10 @@ export default function Pricing() {
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Choose the perfect AI solution for your organization with{' '}
-            <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-              A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
-            </span>
+            <BrandName 
+              className="font-light"
+              style={{ letterSpacing: '0.2em' }}
+            />
           </p>
 
           {/* Billing Toggle */}
