@@ -12,7 +12,7 @@ export default function Infographic({ type, title }: InfographicProps) {
     return (
       <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-800 dark:to-slate-900 rounded-xl p-8">
         {title && (
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
+          <h3 className="text-2xl font-bold text-center text-white mb-8">
             {title}
           </h3>
         )}
@@ -22,28 +22,28 @@ export default function Infographic({ type, title }: InfographicProps) {
               <TrendingUp className="h-8 w-8 text-white" />
             </div>
             <div className="text-3xl font-bold text-blue-600 mb-2">250%</div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">Growth Rate</div>
+            <div className="text-sm text-gray-300">Growth Rate</div>
           </div>
           <div className="text-center">
             <div className="bg-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Users className="h-8 w-8 text-white" />
             </div>
             <div className="text-3xl font-bold text-green-600 mb-2">50K+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">Active Users</div>
+            <div className="text-sm text-gray-300">Active Users</div>
           </div>
           <div className="text-center">
             <div className="bg-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Globe className="h-8 w-8 text-white" />
             </div>
             <div className="text-3xl font-bold text-purple-600 mb-2">25+</div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">Countries</div>
+            <div className="text-sm text-gray-300">Countries</div>
           </div>
           <div className="text-center">
             <div className="bg-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Zap className="h-8 w-8 text-white" />
             </div>
             <div className="text-3xl font-bold text-orange-600 mb-2">99.9%</div>
-            <div className="text-sm text-gray-600 dark:text-gray-300">Uptime</div>
+            <div className="text-sm text-gray-300">Uptime</div>
           </div>
         </div>
       </div>
@@ -52,9 +52,9 @@ export default function Infographic({ type, title }: InfographicProps) {
 
   if (type === 'process') {
     return (
-      <div className="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-lg">
+      <div className="bg-slate-800 rounded-xl p-8 shadow-lg">
         {title && (
-          <h3 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8">
+          <h3 className="text-2xl font-bold text-center text-white mb-8">
             {title}
           </h3>
         )}
@@ -63,8 +63,8 @@ export default function Infographic({ type, title }: InfographicProps) {
             <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-20 h-20 flex items-center justify-center mb-4">
               <Brain className="h-10 w-10 text-blue-600" />
             </div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Analyze</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">AI processes data patterns</p>
+            <h4 className="font-semibold text-white mb-2">Analyze</h4>
+            <p className="text-sm text-gray-300">AI processes data patterns</p>
           </div>
           
           <div className="hidden lg:block">
@@ -75,8 +75,8 @@ export default function Infographic({ type, title }: InfographicProps) {
             <div className="bg-green-100 dark:bg-green-900 rounded-full w-20 h-20 flex items-center justify-center mb-4">
               <Zap className="h-10 w-10 text-green-600" />
             </div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Process</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">Advanced algorithms work</p>
+            <h4 className="font-semibold text-white mb-2">Process</h4>
+            <p className="text-sm text-gray-300">Advanced algorithms work</p>
           </div>
           
           <div className="hidden lg:block">
@@ -87,8 +87,8 @@ export default function Infographic({ type, title }: InfographicProps) {
             <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-20 h-20 flex items-center justify-center mb-4">
               <Shield className="h-10 w-10 text-purple-600" />
             </div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Secure</h4>
-            <p className="text-sm text-gray-600 dark:text-gray-300">Results delivered safely</p>
+            <h4 className="font-semibold text-white mb-2">Secure</h4>
+            <p className="text-sm text-gray-300">Results delivered safely</p>
           </div>
         </div>
       </div>

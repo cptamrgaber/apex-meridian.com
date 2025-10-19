@@ -140,8 +140,8 @@ export default function VisualChart({
   }, [type, data, labels, color, height]);
 
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 text-center">
+    <div className="bg-slate-800 rounded-lg shadow-lg p-6">
+      <h3 className="text-lg font-semibold text-white mb-4 text-center">
         {title}
       </h3>
       <canvas
