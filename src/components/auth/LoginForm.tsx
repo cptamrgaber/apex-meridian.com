@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { useAuth } from '@/lib/auth-context';
-import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
+iimport { Eye, EyeOff, Lock, Mail } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 
 interface LoginFormProps {
   onSuccess?: () => void;
@@ -48,7 +49,7 @@ export default function LoginForm({ onSuccess, redirectTo }: LoginFormProps) {
           <Lock className="h-8 w-8 text-blue-600" />
         </div>
         <h2 className="text-2xl font-bold text-gray-900">Employee Login</h2>
-        <p className="text-gray-600 mt-2">Access your A  p  e  x    M  e  r  i  d  i  a  n account</p>
+        <p className="text-gray-600 mt-2">Access your <BrandName asLink={false} className="inline" /> account</p>
       </div>
 
       {error && (
