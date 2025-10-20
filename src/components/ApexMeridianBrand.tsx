@@ -1,19 +1,20 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 interface ApexMeridianBrandProps {
   className?: string;
   size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
   showRegistered?: boolean;
-  color?: 'blue' | 'white' | 'dark' | 'gradient';
+  asLink?: boolean;
 }
 
 export const ApexMeridianBrand: React.FC<ApexMeridianBrandProps> = ({
   className = '',
   size = 'md',
   showRegistered = true,
-  color = 'blue'
+  asLink = true
 }) => {
   const sizeClasses = {
     sm: 'text-sm',
@@ -23,57 +24,36 @@ export const ApexMeridianBrand: React.FC<ApexMeridianBrandProps> = ({
     '2xl': 'text-2xl'
   };
 
-  const colorClasses = {
-    blue: 'text-blue-600 dark:text-blue-400',
-    white: 'text-white',
-    dark: 'text-gray-900 dark:text-white',
-    gradient: 'bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent'
-  };
-
   const baseClasses = `
     font-light 
     ${sizeClasses[size]} 
-    ${colorClasses[color]}
+    text-blue-400
+    hover:text-blue-300
+    transition-colors
     ${className}
   `;
 
-  return (
-    <span className={baseClasses} style={{ letterSpacing: '0.2em' }}>
+  const content = (
+    <span className={baseClasses}>
       <span className="whitespace-nowrap">
-        <span className="inline-block">A  p  e  x</span>
-        <span className="inline-block ml-2">M  e  r  i  d  i  a  n</span>
+        A  p  e  x    M  e  r  i  d  i  a  n
       </span>
       {showRegistered && (
         <sup className="text-sm ml-1">®</sup>
       )}
     </span>
   );
-};
 
-// Utility function for consistent company name styling
-export const apexMeridianText = (options?: {
-  size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl';
-  color?: 'blue' | 'white' | 'dark' | 'gradient';
-  showRegistered?: boolean;
-}) => {
-  const { size = 'md', color = 'blue', showRegistered = true } = options || {};
-  
-  const sizeClasses = {
-    sm: 'text-sm',
-    md: 'text-base',
-    lg: 'text-lg',
-    xl: 'text-xl',
-    '2xl': 'text-2xl'
-  };
+  if (asLink) {
+    return (
+      <Link href="/" className="inline-block">
+        {content}
+      </Link>
+    );
+  }
 
-  const colorClasses = {
-    blue: 'text-blue-600 dark:text-blue-400',
-    white: 'text-white',
-    dark: 'text-gray-900 dark:text-white',
-    gradient: 'bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent'
-  };
-
-  return `font-light ${sizeClasses[size]} ${colorClasses[color]}`;
+  return content;
 };
 
 export default ApexMeridianBrand;
+

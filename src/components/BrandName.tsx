@@ -1,17 +1,20 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface BrandNameProps {
   className?: string;
   showRegistered?: boolean;
   size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl';
   style?: React.CSSProperties;
+  asLink?: boolean;
 }
 
 export default function BrandName({ 
   className = '', 
   showRegistered = true, 
   size = 'base',
-  style = {}
+  style = {},
+  asLink = true
 }: BrandNameProps) {
   const sizeClasses = {
     xs: 'text-xs',
@@ -39,12 +42,23 @@ export default function BrandName({
     '6xl': 'text-4xl'
   };
 
-  return (
+  const content = (
     <span 
-      className={`${sizeClasses[size]} ${className} whitespace-nowrap inline-block`}
+      className={`${sizeClasses[size]} ${className} whitespace-nowrap inline-block text-blue-400 hover:text-blue-300 transition-colors`}
       style={style}
     >
       A  p  e  x    M  e  r  i  d  i  a  n{showRegistered && <sup className={`${registeredSizes[size]} ml-1`}>®</sup>}
     </span>
   );
+
+  if (asLink) {
+    return (
+      <Link href="/" className="inline-block">
+        {content}
+      </Link>
+    );
+  }
+
+  return content;
 }
+

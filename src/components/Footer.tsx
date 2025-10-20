@@ -2,13 +2,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github, Globe, Sun, Moon } from 'lucide-react';
-import { useTheme } from '../lib/theme-context';
-import { useLanguage } from '../lib/language-context';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+import BrandName from './BrandName';
 
 const Footer: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
-  const { language, setLanguage } = useLanguage();
+
   
   return (
     <footer className="relative z-50 bg-gray-900 text-white transition-colors duration-300 border-t border-gray-800">
@@ -155,34 +153,12 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center mb-4">
             <div className="text-gray-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 <span className="font-light tracking-wider text-blue-600 dark:text-blue-400 whitespace-nowrap">
-                <span className="inline-block">A  p  e  x</span>
-                <span className="inline-block ml-1">M  e  r  i  d  i  a  n</span><sup className="text-xs">®</sup>
-              </span>. All rights reserved.
+              © 2025 <BrandName />. All rights reserved.
             </div>
             
-            {/* Controls and Social Links */}
+            {/* Social Links */}
             <div className="flex items-center space-x-4">
-              {/* Language Toggle */}
-              <button
-                onClick={() => setLanguage(language === 'en' ? 'ar' : 'en')}
-                className="flex items-center px-3 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
-              >
-                <Globe className="h-4 w-4 mr-1" />
-                {language === 'en' ? 'العربية' : 'English'}
-              </button>
-
-              {/* Theme Toggle */}
-              <button
-                onClick={toggleTheme}
-                className="p-2 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-200"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-              </button>
-
-              {/* Social Links */}
-              <div className="flex space-x-4 ml-4">
+              <div className="flex space-x-4">
                 <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </a>
@@ -221,11 +197,7 @@ const Footer: React.FC = () => {
           {/* Powered By */}
           <div className="text-center mt-4 pt-4 border-t border-gray-700">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Powered and designed by{' '}
-              <span className="font-medium text-blue-600 dark:text-blue-400">
-                <span className="inline-block">A  p  e  x</span>
-                <span className="inline-block ml-1">M  e  r  i  d  i  a  n</span><sup className="text-xs">®</sup>
-              </span>
+              Powered and designed by <BrandName />
             </p>
           </div>
         </div>

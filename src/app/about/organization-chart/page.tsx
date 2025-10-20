@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Mail, Users, Crown, Shield, Code, Brain, Database, Palette, Globe, Calculator, HeartHandshake, BookOpen, Building, ChevronDown, ExternalLink } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 
 export default function OrganizationChartPage() {
   const organizationStructure = {
@@ -408,7 +409,7 @@ export default function OrganizationChartPage() {
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Comprehensive view of all departments, teams, and individual positions within 
               <span className="font-light text-blue-600 mx-2" style={{ letterSpacing: '0.2em' }}>
-                A  p  e  x    M  e  r  i  d  i  a  n
+                <BrandName />
                 <sup className="text-xs ml-1">®</sup>
               </span>
             </p>

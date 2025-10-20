@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Search, MessageCircle, Book, Video, Download, ArrowRight, Clock, Users, Shield } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
+import BrandName from '@/components/BrandName';
 
 export default function Support() {
   const { t } = useLanguage();
@@ -115,7 +116,7 @@ export default function Support() {
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Get help with{' '}
             <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-              A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+              <BrandName />
             </span>{' '}
             AI solutions
           </p>

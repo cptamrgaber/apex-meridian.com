@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Calendar, Award, Users, TrendingUp, ArrowRight, MapPin, Rocket } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 
 export default function CompanyHistoryPage() {
   return (
@@ -14,7 +15,7 @@ export default function CompanyHistoryPage() {
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
               From a startup in Cairo to a pioneering AI company, discover how <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x    M  e  r  i  d  i  a  n</span>
+                <span><BrandName /></span>
                 <sup className="text-xs ml-1">®</sup>
               </span> has evolved to become a leader in artificial intelligence solutions.
             </p>
@@ -49,7 +50,7 @@ export default function CompanyHistoryPage() {
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Company Founded in Cairo</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                        <span>A  p  e  x    M  e  r  i  d  i  a  n</span>
+                        <span><BrandName /></span>
                         <sup className="text-xs ml-1">®</sup>
                       </span> was established in Cairo, Egypt as a startup with a vision to create ethical, beneficial AI solutions. Founded with initial focus on developing intelligent systems for emerging markets.
                     </p>

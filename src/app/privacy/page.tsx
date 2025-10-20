@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/lib/language-context';
+import BrandName from '@/components/BrandName';
 
 export default function PrivacyPolicy() {
   const { t } = useLanguage();
@@ -24,7 +25,7 @@ export default function PrivacyPolicy() {
               </h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-                  A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+                  <BrandName />
                 </span> collects information you provide directly to us, such as when you create an account, 
                 use our services, or contact us for support.
               </p>

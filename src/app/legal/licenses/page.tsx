@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/lib/language-context';
+import BrandName from '@/components/BrandName';
 
 export default function Licenses() {
   const { t } = useLanguage();
@@ -24,7 +25,7 @@ export default function Licenses() {
               </h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 <span className="font-light" style={{ letterSpacing: '0.2em' }}>
-                  A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-xs ml-1">®</sup>
+                  <BrandName />
                 </span> provides various software licensing options to meet different customer needs 
                 and use cases across our AI technology platforms.
               </p>

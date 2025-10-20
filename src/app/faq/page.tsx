@@ -26,7 +26,7 @@ export default function FAQ() {
   const faqData: FAQItem[] = [
     {
       category: "General",
-      question: "What is A  p  e  x    M  e  r  i  d  i  a  n?",
+      question: "What is <BrandName />?",
       answer: "A  p  e  x    M  e  r  i  d  i  a  n is a leading artificial intelligence company that develops cutting-edge AI solutions for aviation, cybersecurity, education, and AGI development. We focus on creating AI that augments human capabilities and solves complex real-world problems."
     },
     {
@@ -66,7 +66,7 @@ export default function FAQ() {
     },
     {
       category: "Business",
-      question: "How do I get started with A  p  e  x    M  e  r  i  d  i  a  n solutions?",
+      question: "How do I get started with <BrandName /> solutions?",
       answer: "Contact our team through the website or email to schedule a consultation. We'll assess your needs, provide a customized demonstration, and develop an implementation plan tailored to your organization."
     },
     {

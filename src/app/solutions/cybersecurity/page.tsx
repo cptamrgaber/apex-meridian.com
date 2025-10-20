@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Shield, AlertTriangle, Eye, Lock, ArrowRight, CheckCircle } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 
 export default function CybersecuritySolutionsPage() {
   return (
@@ -290,7 +291,7 @@ export default function CybersecuritySolutionsPage() {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Success Story</h2>
               <p className="text-lg text-gray-600">
-                How GlobalTech Corp prevented a major cyber attack with A  p  e  x    M  e  r  i  d  i  a  n AI
+                How GlobalTech Corp prevented a major cyber attack with <BrandName /> AI
               </p>
             </div>
             
@@ -357,7 +358,7 @@ export default function CybersecuritySolutionsPage() {
                 
                 <div className="mt-6 p-4 bg-gray-50 rounded-lg">
                   <p className="text-sm text-gray-600 italic">
-                    &quot;A  p  e  x    M  e  r  i  d  i  a  n&apos;s AI saved us from what could have been a catastrophic breach. Their technology is years ahead of anything else we&apos;ve seen.&quot;
+                    &quot;<BrandName />&apos;s AI saved us from what could have been a catastrophic breach. Their technology is years ahead of anything else we&apos;ve seen.&quot;
                   </p>
                   <p className="text-sm font-medium text-gray-900 mt-2">
                     - Chief Information Security Officer, GlobalTech Corp

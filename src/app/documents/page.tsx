@@ -6,6 +6,7 @@ import { useAuth } from '@/lib/auth-context';
 import { useLanguage } from '@/lib/language-context';
 import { useTheme } from '@/lib/theme-context';
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
+import BrandName from '@/components/BrandName';
 
 interface Document {
   id: string;
@@ -39,7 +40,7 @@ const DocumentsPage: React.FC = () => {
       size: '2.4 MB',
       lastModified: '2024-01-15',
       accessLevel: 'public',
-      description: 'Comprehensive overview of A  p  e  x    M  e  r  i  d  i  a  n\'s mission, vision, and core values.',
+      description: 'Comprehensive overview of <BrandName />\'s mission, vision, and core values.',
       downloadCount: 1247,
       status: 'active'
     },

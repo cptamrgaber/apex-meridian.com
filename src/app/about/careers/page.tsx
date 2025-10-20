@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { MapPin, Clock, Users, Briefcase, ArrowRight, Star, Code, Shield, Brain, Zap, Globe, Database, Palette, HeartHandshake, Calculator, BookOpen, GraduationCap, Award, CheckCircle } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 
 export default function CareersPage() {
   const jobCategories = [
@@ -802,7 +803,7 @@ export default function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x    M  e  r  i  d  i  a  n</span>
+                <span><BrandName /></span>
                 <sup className="text-xs ml-1">®</sup>
               </span>?
             </h2>
