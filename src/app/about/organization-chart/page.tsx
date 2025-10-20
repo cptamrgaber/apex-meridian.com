@@ -288,15 +288,15 @@ export default function OrganizationChartPage() {
 
   const getColorClasses = (color: string) => {
     const colorMap: { [key: string]: { bg: string; text: string; border: string; hover: string } } = {
-      purple: { bg: "bg-purple-100", text: "text-purple-600", border: "border-purple-200", hover: "hover:bg-purple-50" },
-      blue: { bg: "bg-blue-100", text: "text-blue-600", border: "border-blue-200", hover: "hover:bg-blue-50" },
-      green: { bg: "bg-green-100", text: "text-green-600", border: "border-green-200", hover: "hover:bg-green-50" },
-      red: { bg: "bg-red-100", text: "text-red-600", border: "border-red-200", hover: "hover:bg-red-50" },
-      orange: { bg: "bg-orange-100", text: "text-orange-600", border: "border-orange-200", hover: "hover:bg-orange-50" },
-      teal: { bg: "bg-teal-100", text: "text-teal-600", border: "border-teal-200", hover: "hover:bg-teal-50" },
-      indigo: { bg: "bg-indigo-100", text: "text-indigo-600", border: "border-indigo-200", hover: "hover:bg-indigo-50" },
-      pink: { bg: "bg-pink-100", text: "text-pink-600", border: "border-pink-200", hover: "hover:bg-pink-50" },
-      emerald: { bg: "bg-emerald-100", text: "text-emerald-600", border: "border-emerald-200", hover: "hover:bg-emerald-50" }
+      purple: { bg: "bg-purple-900", text: "text-purple-300", border: "border-purple-700", hover: "hover:bg-purple-800" },
+      blue: { bg: "bg-blue-900", text: "text-blue-300", border: "border-blue-700", hover: "hover:bg-blue-800" },
+      green: { bg: "bg-green-900", text: "text-green-300", border: "border-green-700", hover: "hover:bg-green-800" },
+      red: { bg: "bg-red-900", text: "text-red-300", border: "border-red-700", hover: "hover:bg-red-800" },
+      orange: { bg: "bg-orange-900", text: "text-orange-300", border: "border-orange-700", hover: "hover:bg-orange-800" },
+      teal: { bg: "bg-teal-900", text: "text-teal-300", border: "border-teal-700", hover: "hover:bg-teal-800" },
+      indigo: { bg: "bg-indigo-900", text: "text-indigo-300", border: "border-indigo-700", hover: "hover:bg-indigo-800" },
+      pink: { bg: "bg-pink-900", text: "text-pink-300", border: "border-pink-700", hover: "hover:bg-pink-800" },
+      emerald: { bg: "bg-emerald-900", text: "text-emerald-300", border: "border-emerald-700", hover: "hover:bg-emerald-800" }
     };
     return colorMap[color] || colorMap.blue;
   };
@@ -407,11 +407,7 @@ export default function OrganizationChartPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Departments & Teams</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Comprehensive view of all departments, teams, and individual positions within 
-              <span className="font-light text-blue-600 mx-2" style={{ letterSpacing: '0.2em' }}>
-                <BrandName />
-                <sup className="text-xs ml-1">®</sup>
-              </span>
+              Comprehensive view of all departments, teams, and individual positions within <BrandName />
             </p>
           </div>
 
