@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
-import BrandName from './BrandName';
 
 export default function DramaticHero() {
   const { t } = useLanguage();
@@ -29,10 +28,8 @@ export default function DramaticHero() {
         {/* Professional Text Logo */}
         <div className="flex items-center justify-center mb-8 animate-slide-up">
           <div className="relative">
-            <h1 className="text-center font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2">
-              <BrandName 
-                size="5xl"
-              />
+            <h1 className="text-center font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2" style={{ letterSpacing: '0.2em' }}>
+              A  p  e  x    M  e  r  i  d  i  a  n<sup className="text-2xl ml-1">®</sup>
             </h1>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></div>
           </div>
