@@ -51,8 +51,8 @@ function EmployeeDashboardContent() {
           <div className="lg:col-span-1">
             <div className="bg-gray-900 rounded-lg shadow p-6">
               <div className="text-center">
-                <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                  <User className="h-10 w-10 text-blue-600" />
+                <div className="bg-blue-900 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                  <User className="h-10 w-10 text-blue-300" />
                 </div>
                 <h2 className="text-xl font-bold text-white">{user?.name}</h2>
                 <p className="text-gray-600">{user?.department}</p>
@@ -101,8 +101,8 @@ function EmployeeDashboardContent() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gray-900 rounded-lg shadow p-6">
                 <div className="flex items-center">
-                  <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-green-600" />
+                  <div className="bg-green-900 rounded-full w-12 h-12 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-green-300" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Time Tracking</h3>
@@ -113,8 +113,8 @@ function EmployeeDashboardContent() {
 
               <div className="bg-gray-900 rounded-lg shadow p-6">
                 <div className="flex items-center">
-                  <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">
-                    <Calendar className="h-6 w-6 text-blue-600" />
+                  <div className="bg-blue-900 rounded-full w-12 h-12 flex items-center justify-center">
+                    <Calendar className="h-6 w-6 text-blue-300" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Leave Balance</h3>
@@ -132,8 +132,8 @@ function EmployeeDashboardContent() {
               <div className="p-6">
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="bg-blue-100 rounded-full w-8 h-8 flex items-center justify-center mt-1">
-                      <FileText className="h-4 w-4 text-blue-600" />
+                    <div className="bg-blue-900 rounded-full w-8 h-8 flex items-center justify-center mt-1">
+                      <FileText className="h-4 w-4 text-blue-300" />
                     </div>
                     <div className="ml-3">
                       <p className="text-sm text-white">Submitted expense report for Q4 2024</p>
@@ -141,8 +141,8 @@ function EmployeeDashboardContent() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="bg-green-100 rounded-full w-8 h-8 flex items-center justify-center mt-1">
-                      <Calendar className="h-4 w-4 text-green-600" />
+                    <div className="bg-green-900 rounded-full w-8 h-8 flex items-center justify-center mt-1">
+                      <Calendar className="h-4 w-4 text-green-300" />
                     </div>
                     <div className="ml-3">
                       <p className="text-sm text-white">Approved leave request for Dec 25-26</p>
@@ -150,8 +150,8 @@ function EmployeeDashboardContent() {
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="bg-purple-100 rounded-full w-8 h-8 flex items-center justify-center mt-1">
-                      <Bell className="h-4 w-4 text-purple-600" />
+                    <div className="bg-purple-900 rounded-full w-8 h-8 flex items-center justify-center mt-1">
+                      <Bell className="h-4 w-4 text-purple-300" />
                     </div>
                     <div className="ml-3">
                       <p className="text-sm text-white">Completed mandatory security training</p>

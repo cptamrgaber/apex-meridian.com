@@ -752,15 +752,15 @@ export default function CareersPage() {
 
   const getColorClasses = (color: string) => {
     const colorMap: { [key: string]: { bg: string; text: string; border: string } } = {
-      blue: { bg: "bg-blue-100", text: "text-blue-600", border: "border-blue-200" },
-      green: { bg: "bg-green-100", text: "text-green-600", border: "border-green-200" },
-      purple: { bg: "bg-purple-100", text: "text-purple-600", border: "border-purple-200" },
-      red: { bg: "bg-red-100", text: "text-red-600", border: "border-red-200" },
-      orange: { bg: "bg-orange-100", text: "text-orange-600", border: "border-orange-200" },
-      teal: { bg: "bg-teal-100", text: "text-teal-600", border: "border-teal-200" },
-      indigo: { bg: "bg-indigo-100", text: "text-indigo-600", border: "border-indigo-200" },
-      pink: { bg: "bg-pink-100", text: "text-pink-600", border: "border-pink-200" },
-      emerald: { bg: "bg-emerald-100", text: "text-emerald-600", border: "border-emerald-200" }
+      blue: { bg: "bg-blue-900", text: "text-blue-300", border: "border-blue-700" },
+      green: { bg: "bg-green-900", text: "text-green-300", border: "border-green-700" },
+      purple: { bg: "bg-purple-900", text: "text-purple-300", border: "border-purple-700" },
+      red: { bg: "bg-red-900", text: "text-red-300", border: "border-red-700" },
+      orange: { bg: "bg-orange-900", text: "text-orange-300", border: "border-orange-700" },
+      teal: { bg: "bg-teal-900", text: "text-teal-300", border: "border-teal-700" },
+      indigo: { bg: "bg-indigo-900", text: "text-indigo-300", border: "border-indigo-700" },
+      pink: { bg: "bg-pink-900", text: "text-pink-300", border: "border-pink-700" },
+      emerald: { bg: "bg-emerald-900", text: "text-emerald-300", border: "border-emerald-700" }
     };
     return colorMap[color] || colorMap.blue;
   };
@@ -787,7 +787,7 @@ export default function CareersPage() {
             <div className="mt-6">
               <Link 
                 href="/about/organization-chart" 
-                className="inline-flex items-center px-6 py-3 bg-gray-900 text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-gray-900 text-blue-50 font-semibold rounded-lg hover:bg-blue-800 transition-colors"
               >
                 View Organization Chart
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -811,32 +811,32 @@ export default function CareersPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Star className="h-8 w-8 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Star className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Cutting-Edge Research</h3>
               <p className="text-gray-600 dark:text-gray-300">Work on breakthrough AI technologies that will shape the next decade.</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-green-600" />
+              <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-green-300" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">World-Class Team</h3>
               <p className="text-gray-600 dark:text-gray-300">Collaborate with leading experts from top universities and tech companies.</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Briefcase className="h-8 w-8 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Briefcase className="h-8 w-8 text-purple-300" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Growth Opportunities</h3>
               <p className="text-gray-600 dark:text-gray-300">Accelerate your career with mentorship and learning opportunities.</p>
             </div>
             
             <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-orange-600" />
+              <div className="bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-orange-300" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Work-Life Balance</h3>
               <p className="text-gray-600 dark:text-gray-300">Flexible schedules and comprehensive benefits for your well-being.</p>
@@ -853,8 +853,8 @@ export default function CareersPage() {
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               Discover exciting opportunities across all departments to make an impact in artificial intelligence
             </p>
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg p-4 max-w-2xl mx-auto">
-              <p className="text-blue-800 dark:text-blue-200 font-medium">
+            <div className="bg-blue-800 dark:bg-blue-900/20 border border-blue-700 dark:border-blue-700 rounded-lg p-4 max-w-2xl mx-auto">
+              <p className="text-blue-100 dark:text-blue-200 font-medium">
                 <strong>{jobCategories.reduce((total, category) => total + category.jobs.length, 0)} Open Positions</strong> across {jobCategories.length} departments
               </p>
             </div>
@@ -924,7 +924,7 @@ export default function CareersPage() {
                                 </h6>
                                 <div className="flex flex-wrap gap-2">
                                   {job.requirements.certifications.map((cert, certIndex) => (
-                                    <span key={certIndex} className="px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200 text-xs rounded-full">
+                                    <span key={certIndex} className="px-2 py-1 bg-yellow-900 dark:bg-yellow-900/30 text-yellow-100 dark:text-yellow-200 text-xs rounded-full">
                                       {cert}
                                     </span>
                                   ))}
@@ -988,14 +988,14 @@ export default function CareersPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="mailto:careers@apex-meridian.com?subject=General Inquiry - Career Opportunities"
-              className="inline-flex items-center px-8 py-3 bg-gray-900 text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-gray-900 text-blue-50 font-semibold rounded-lg hover:bg-blue-800 transition-colors"
             >
               Contact HR Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link 
               href="/about/organization-chart"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-900 hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-900 hover:text-blue-50 transition-colors"
             >
               Organization Chart
               <Users className="ml-2 h-5 w-5" />

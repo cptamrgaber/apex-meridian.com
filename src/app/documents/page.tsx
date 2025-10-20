@@ -187,10 +187,10 @@ const DocumentsPage: React.FC = () => {
 
   const getAccessLevelColor = (level: string) => {
     switch (level) {
-      case 'public': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
-      case 'employee': return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
-      case 'hr': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200';
-      case 'admin': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
+      case 'public': return 'bg-green-900 text-green-100 dark:bg-green-900 dark:text-green-200';
+      case 'employee': return 'bg-blue-900 text-blue-100 dark:bg-blue-900 dark:text-blue-200';
+      case 'hr': return 'bg-yellow-900 text-yellow-100 dark:bg-yellow-900 dark:text-yellow-200';
+      case 'admin': return 'bg-red-900 text-red-100 dark:bg-red-900 dark:text-red-200';
       default: return 'bg-gray-800 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
     }
   };
@@ -226,10 +226,10 @@ const DocumentsPage: React.FC = () => {
 
           {/* User Access Info */}
           {user && (
-            <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-8">
+            <div className="bg-blue-800 dark:bg-blue-900/20 border border-blue-700 dark:border-blue-800 rounded-lg p-4 mb-8">
               <div className="flex items-center">
-                <Shield className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" />
-                <span className="text-blue-800 dark:text-blue-200">
+                <Shield className="w-5 h-5 text-blue-300 dark:text-blue-400 mr-2" />
+                <span className="text-blue-100 dark:text-blue-200">
                   Logged in as <strong>{user.role}</strong> - You have access to {getAccessibleDocuments().length} documents
                 </span>
               </div>

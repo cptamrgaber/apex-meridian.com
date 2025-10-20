@@ -141,7 +141,7 @@ export default function Support() {
           {quickLinks.map((link, index) => (
             <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center mb-4">
-                <link.icon className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" />
+                <link.icon className="h-8 w-8 text-blue-300 dark:text-blue-400 mr-3" />
                 <h3 className="text-lg font-semibold text-white">
                   {link.title}
                 </h3>
@@ -149,7 +149,7 @@ export default function Support() {
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {link.description}
               </p>
-              <button className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium flex items-center">
+              <button className="text-blue-300 dark:text-blue-400 hover:text-blue-200 dark:hover:text-blue-300 font-medium flex items-center">
                 Learn more
                 <ArrowRight className="h-4 w-4 ml-1" />
               </button>
@@ -166,8 +166,8 @@ export default function Support() {
             {supportCategories.map((category, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-xl transition-shadow duration-200">
                 <div className="text-center mb-6">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full mb-4">
-                    <category.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-900 dark:bg-blue-900 rounded-full mb-4">
+                    <category.icon className="h-8 w-8 text-blue-300 dark:text-blue-400" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">
                     {category.title}
@@ -211,7 +211,7 @@ export default function Support() {
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-blue-500 text-white">
+                    <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-blue-8000 text-white">
                       Most Popular
                     </span>
                   </div>
@@ -221,7 +221,7 @@ export default function Support() {
                   <h3 className="text-2xl font-bold text-white mb-2">
                     {plan.name}
                   </h3>
-                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+                  <div className="text-3xl font-bold text-blue-300 dark:text-blue-400 mb-4">
                     {plan.price}
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function Support() {
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <div className="w-1.5 h-1.5 bg-green-8000 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
@@ -250,7 +250,7 @@ export default function Support() {
         </div>
 
         {/* Contact Support */}
-        <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-8 text-center">
+        <div className="bg-blue-800 dark:bg-slate-800 rounded-lg p-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-4">
             Need immediate assistance?
           </h2>

@@ -53,8 +53,8 @@ export default function PlatformPage() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-gray-800 rounded-lg p-8">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Brain className="h-8 w-8 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <Brain className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Advanced AI Models</h3>
               <p className="text-gray-600">
@@ -64,8 +64,8 @@ export default function PlatformPage() {
             </div>
 
             <div className="bg-gray-800 rounded-lg p-8">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Zap className="h-8 w-8 text-green-600" />
+              <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <Zap className="h-8 w-8 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Real-time Processing</h3>
               <p className="text-gray-600">
@@ -75,8 +75,8 @@ export default function PlatformPage() {
             </div>
 
             <div className="bg-gray-800 rounded-lg p-8">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Shield className="h-8 w-8 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <Shield className="h-8 w-8 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Enterprise Security</h3>
               <p className="text-gray-600">
@@ -104,7 +104,7 @@ export default function PlatformPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
-                <Database className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <Database className="h-12 w-12 text-blue-300 mx-auto mb-4" />
                 <h3 className="text-lg font-bold text-white mb-2">Data Layer</h3>
                 <p className="text-gray-600 text-sm">
                   Distributed data storage with real-time synchronization and automated backup systems.
@@ -114,7 +114,7 @@ export default function PlatformPage() {
 
             <div className="text-center">
               <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
-                <Cpu className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <Cpu className="h-12 w-12 text-green-300 mx-auto mb-4" />
                 <h3 className="text-lg font-bold text-white mb-2">Compute Engine</h3>
                 <p className="text-gray-600 text-sm">
                   GPU-accelerated processing with auto-scaling capabilities for variable workloads.
@@ -124,7 +124,7 @@ export default function PlatformPage() {
 
             <div className="text-center">
               <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
-                <Network className="h-12 w-12 text-purple-600 mx-auto mb-4" />
+                <Network className="h-12 w-12 text-purple-300 mx-auto mb-4" />
                 <h3 className="text-lg font-bold text-white mb-2">API Gateway</h3>
                 <p className="text-gray-600 text-sm">
                   RESTful and GraphQL APIs with rate limiting, authentication, and monitoring.
@@ -134,7 +134,7 @@ export default function PlatformPage() {
 
             <div className="text-center">
               <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
-                <Lock className="h-12 w-12 text-red-600 mx-auto mb-4" />
+                <Lock className="h-12 w-12 text-red-300 mx-auto mb-4" />
                 <h3 className="text-lg font-bold text-white mb-2">Security Layer</h3>
                 <p className="text-gray-600 text-sm">
                   Multi-factor authentication, encryption at rest and in transit, audit logging.
@@ -259,7 +259,7 @@ export default function PlatformPage() {
             </a>
             <a
               href="mailto:platform@apex-meridian.com"
-              className="inline-flex items-center px-8 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-300 hover:bg-blue-800 transition-colors"
             >
               Contact Platform Team
             </a>

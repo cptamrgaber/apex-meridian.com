@@ -51,7 +51,7 @@ export default function AGISolutionsPage() {
                 Pioneering the future of artificial intelligence with advanced reasoning, multi-modal understanding, and autonomous problem-solving capabilities that adapt and learn like human intelligence.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-gray-900 text-purple-900 rounded-xl font-semibold hover:bg-purple-50 transition-all duration-300 transform hover:scale-105">
+                <button className="px-8 py-4 bg-gray-900 text-purple-50 rounded-xl font-semibold hover:bg-purple-800 transition-all duration-300 transform hover:scale-105">
                   Request Demo
                 </button>
                 <button className="px-8 py-4 bg-gray-900/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-gray-900/30 transition-all duration-300">
@@ -104,7 +104,7 @@ export default function AGISolutionsPage() {
               <h3 className="text-2xl font-bold text-white mb-6">Our AGI Philosophy</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Brain className="h-6 w-6 text-purple-600 mt-1 mr-4" />
+                  <Brain className="h-6 w-6 text-purple-300 mt-1 mr-4" />
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Human-Aligned Intelligence</h4>
                     <p className="text-gray-600">
@@ -114,7 +114,7 @@ export default function AGISolutionsPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <Shield className="h-6 w-6 text-purple-600 mt-1 mr-4" />
+                  <Shield className="h-6 w-6 text-purple-300 mt-1 mr-4" />
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Safety-First Approach</h4>
                     <p className="text-gray-600">
@@ -124,7 +124,7 @@ export default function AGISolutionsPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <Users className="h-6 w-6 text-purple-600 mt-1 mr-4" />
+                  <Users className="h-6 w-6 text-purple-300 mt-1 mr-4" />
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Collaborative Intelligence</h4>
                     <p className="text-gray-600">
@@ -140,23 +140,23 @@ export default function AGISolutionsPage() {
                 <h4 className="text-xl font-bold text-white mb-4">AGI Research Areas</h4>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Multi-modal reasoning and understanding</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Continual learning and adaptation</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Ethical decision-making frameworks</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Human-AI interaction protocols</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Interpretable AI systems</span>
                   </li>
                 </ul>
@@ -178,8 +178,8 @@ export default function AGISolutionsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Brain className="h-6 w-6 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Brain className="h-6 w-6 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Cognitive Architecture</h3>
               <p className="text-gray-600 mb-4">
@@ -193,8 +193,8 @@ export default function AGISolutionsPage() {
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Zap className="h-6 w-6 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Zap className="h-6 w-6 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Emergent Intelligence</h3>
               <p className="text-gray-600 mb-4">
@@ -208,8 +208,8 @@ export default function AGISolutionsPage() {
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6 text-green-600" />
+              <div className="bg-green-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Shield className="h-6 w-6 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">AI Safety & Ethics</h3>
               <p className="text-gray-600 mb-4">
@@ -285,14 +285,14 @@ export default function AGISolutionsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-purple-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Partner with Us
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/about/careers"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-purple-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-purple-50 transition-colors"
             >
               Join Our Research Team
             </Link>

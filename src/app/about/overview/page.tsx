@@ -33,21 +33,21 @@ export default function CompanyOverviewPage() {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Target className="h-6 w-6 text-blue-600 mt-1 mr-3" />
+                  <Target className="h-6 w-6 text-blue-300 mt-1 mr-3" />
                   <div>
                     <h3 className="font-semibold text-white">Innovation First</h3>
                     <p className="text-gray-600">Pushing the boundaries of what&apos;s possible with AI technology</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Users className="h-6 w-6 text-blue-600 mt-1 mr-3" />
+                  <Users className="h-6 w-6 text-blue-300 mt-1 mr-3" />
                   <div>
                     <h3 className="font-semibold text-white">Human-Centered</h3>
                     <p className="text-gray-600">Designing AI that enhances human decision-making and creativity</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Globe className="h-6 w-6 text-blue-600 mt-1 mr-3" />
+                  <Globe className="h-6 w-6 text-blue-300 mt-1 mr-3" />
                   <div>
                     <h3 className="font-semibold text-white">Global Impact</h3>
                     <p className="text-gray-600">Creating solutions that benefit organizations and communities worldwide</p>
@@ -80,19 +80,19 @@ export default function CompanyOverviewPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">Growing</div>
+              <div className="text-4xl font-bold text-blue-300 mb-2">Growing</div>
               <p className="text-gray-600">User Base</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">Expanding</div>
+              <div className="text-4xl font-bold text-blue-300 mb-2">Expanding</div>
               <p className="text-gray-600">Enterprise Clients</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">Enterprise-Grade</div>
+              <div className="text-4xl font-bold text-blue-300 mb-2">Enterprise-Grade</div>
               <p className="text-gray-600">Platform Reliability</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">Global</div>
+              <div className="text-4xl font-bold text-blue-300 mb-2">Global</div>
               <p className="text-gray-600">Market Presence</p>
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function CompanyOverviewPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Excellence</h3>
               <p className="text-gray-600">
@@ -137,8 +137,8 @@ export default function CompanyOverviewPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-green-600" />
+              <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Collaboration</h3>
               <p className="text-gray-600">
@@ -147,8 +147,8 @@ export default function CompanyOverviewPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Integrity</h3>
               <p className="text-gray-600">
@@ -169,14 +169,14 @@ export default function CompanyOverviewPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/leadership"
-              className="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-50 transition-colors"
             >
               Meet Our Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Contact Us
             </Link>

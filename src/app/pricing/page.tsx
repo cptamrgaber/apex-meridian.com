@@ -120,7 +120,7 @@ export default function Pricing() {
               Annual
             </span>
             {billingCycle === 'annual' && (
-              <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+              <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-900 text-green-100 dark:bg-green-900 dark:text-green-200">
                 Save 17%
               </span>
             )}
@@ -140,7 +140,7 @@ export default function Pricing() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-blue-500 text-white">
+                  <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-blue-8000 text-white">
                     <Star className="h-4 w-4 mr-1" />
                     Most Popular
                   </span>
@@ -217,7 +217,7 @@ export default function Pricing() {
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                   {addon.description}
                 </p>
-                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                <div className="text-2xl font-bold text-blue-300 dark:text-blue-400">
                   ${addon.price}/month
                 </div>
               </div>

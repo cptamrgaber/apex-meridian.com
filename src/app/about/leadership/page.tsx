@@ -31,8 +31,8 @@ export default function LeadershipPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Vision-Driven</h3>
               <p className="text-gray-600">
@@ -41,8 +41,8 @@ export default function LeadershipPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-green-600" />
+              <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Collaborative</h3>
               <p className="text-gray-600">
@@ -51,8 +51,8 @@ export default function LeadershipPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Excellence-Focused</h3>
               <p className="text-gray-600">
@@ -76,8 +76,8 @@ export default function LeadershipPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-lg">CEO</span>
+                <div className="w-20 h-20 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-blue-300 font-bold text-lg">CEO</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Chief Executive Officer</h3>
                 <p className="text-gray-600">Executive Leadership</p>
@@ -95,8 +95,8 @@ export default function LeadershipPage() {
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-green-600 font-bold text-lg">CTO</span>
+                <div className="w-20 h-20 bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-green-300 font-bold text-lg">CTO</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Chief Technology Officer</h3>
                 <p className="text-gray-600">Technology Leadership</p>
@@ -114,8 +114,8 @@ export default function LeadershipPage() {
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-purple-600 font-bold text-lg">CFO</span>
+                <div className="w-20 h-20 bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-purple-300 font-bold text-lg">CFO</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Chief Financial Officer</h3>
                 <p className="text-gray-600">Financial Leadership</p>
@@ -133,8 +133,8 @@ export default function LeadershipPage() {
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-orange-600 font-bold text-lg">CPO</span>
+                <div className="w-20 h-20 bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-orange-300 font-bold text-lg">CPO</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Chief Product Officer</h3>
                 <p className="text-gray-600">Product Leadership</p>
@@ -152,8 +152,8 @@ export default function LeadershipPage() {
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-red-600 font-bold text-lg">CSO</span>
+                <div className="w-20 h-20 bg-red-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-red-300 font-bold text-lg">CSO</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Chief Sales Officer</h3>
                 <p className="text-gray-600">Sales Leadership</p>
@@ -171,8 +171,8 @@ export default function LeadershipPage() {
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-teal-600 font-bold text-lg">CHRO</span>
+                <div className="w-20 h-20 bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-teal-300 font-bold text-lg">CHRO</span>
                 </div>
                 <h3 className="text-xl font-bold text-white">Chief Human Resources Officer</h3>
                 <p className="text-gray-600">People Leadership</p>
@@ -262,7 +262,7 @@ export default function LeadershipPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Join Our Leadership Team</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-            We&apos;re building a world-class team of leaders who share our vision for the future of AI. Explore leadership opportunities at <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
+            We&apos;re building a world-class team of leaders who share our vision for the future of AI. Explore leadership opportunities at <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
               <span>A  p  e  x</span>
               
               <span>M e r i d i a n</span>
@@ -272,14 +272,14 @@ export default function LeadershipPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/careers"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               View Open Positions
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-50 transition-colors"
             >
               Contact Us
             </Link>

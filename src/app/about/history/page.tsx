@@ -40,9 +40,9 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pr-8 text-right">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center justify-end mb-2">
-                      <MapPin className="h-5 w-5 text-blue-600 mr-2" />
-                      <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-                      <span className="text-blue-600 font-semibold">March 2020</span>
+                      <MapPin className="h-5 w-5 text-blue-300 mr-2" />
+                      <Calendar className="h-5 w-5 text-blue-300 mr-2" />
+                      <span className="text-blue-300 font-semibold">March 2020</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Company Founded in Cairo</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -61,8 +61,8 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pl-8">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center mb-2">
-                      <Calendar className="h-5 w-5 text-green-600 mr-2" />
-                      <span className="text-green-600 font-semibold">Late 2020</span>
+                      <Calendar className="h-5 w-5 text-green-300 mr-2" />
+                      <span className="text-green-300 font-semibold">Late 2020</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">First Aviation Platform</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -77,8 +77,8 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pr-8 text-right">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center justify-end mb-2">
-                      <Calendar className="h-5 w-5 text-purple-600 mr-2" />
-                      <span className="text-purple-600 font-semibold">2021</span>
+                      <Calendar className="h-5 w-5 text-purple-300 mr-2" />
+                      <span className="text-purple-300 font-semibold">2021</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Platform Evolution & Expansion</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -97,8 +97,8 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pl-8">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center mb-2">
-                      <Calendar className="h-5 w-5 text-orange-600 mr-2" />
-                      <span className="text-orange-600 font-semibold">2022</span>
+                      <Calendar className="h-5 w-5 text-orange-300 mr-2" />
+                      <span className="text-orange-300 font-semibold">2022</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Multi-Industry Solutions</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -113,8 +113,8 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pr-8 text-right">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center justify-end mb-2">
-                      <Calendar className="h-5 w-5 text-red-600 mr-2" />
-                      <span className="text-red-600 font-semibold">2023</span>
+                      <Calendar className="h-5 w-5 text-red-300 mr-2" />
+                      <span className="text-red-300 font-semibold">2023</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Market Recognition</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -133,9 +133,9 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pl-8">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center mb-2">
-                      <Rocket className="h-5 w-5 text-indigo-600 mr-2" />
-                      <Calendar className="h-5 w-5 text-indigo-600 mr-2" />
-                      <span className="text-indigo-600 font-semibold">2024</span>
+                      <Rocket className="h-5 w-5 text-indigo-300 mr-2" />
+                      <Calendar className="h-5 w-5 text-indigo-300 mr-2" />
+                      <span className="text-indigo-300 font-semibold">2024</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">AGI Research & Funding Round</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -150,8 +150,8 @@ export default function CompanyHistoryPage() {
                 <div className="flex-1 pr-8 text-right">
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-2 border-blue-500">
                     <div className="flex items-center justify-end mb-2">
-                      <Calendar className="h-5 w-5 text-blue-600 mr-2" />
-                      <span className="text-blue-600 font-semibold">2025</span>
+                      <Calendar className="h-5 w-5 text-blue-300 mr-2" />
+                      <span className="text-blue-300 font-semibold">2025</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Government Partnership & Innovation</h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -179,8 +179,8 @@ export default function CompanyHistoryPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              <div className="bg-blue-900 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <MapPin className="h-8 w-8 text-blue-300 dark:text-blue-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Cairo</h3>
               <p className="text-gray-600 dark:text-gray-300">Headquarters</p>
@@ -188,8 +188,8 @@ export default function CompanyHistoryPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-green-600 dark:text-green-400" />
+              <div className="bg-green-900 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Calendar className="h-8 w-8 text-green-300 dark:text-green-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">5+</h3>
               <p className="text-gray-600 dark:text-gray-300">Years of Innovation</p>
@@ -197,8 +197,8 @@ export default function CompanyHistoryPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Rocket className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+              <div className="bg-purple-900 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Rocket className="h-8 w-8 text-purple-300 dark:text-purple-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Startup</h3>
               <p className="text-gray-600 dark:text-gray-300">Growth Journey</p>
@@ -206,8 +206,8 @@ export default function CompanyHistoryPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-orange-100 dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-orange-600 dark:text-orange-400" />
+              <div className="bg-orange-900 dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-orange-300 dark:text-orange-400" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">3</h3>
               <p className="text-gray-600 dark:text-gray-300">Core Industries</p>
@@ -230,8 +230,8 @@ export default function CompanyHistoryPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              <div className="bg-blue-900 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-blue-300 dark:text-blue-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Ethical AI Leadership</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -240,8 +240,8 @@ export default function CompanyHistoryPage() {
             </div>
             
             <div className="text-center p-6">
-              <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
+              <div className="bg-green-900 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-green-300 dark:text-green-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Regional Innovation Hub</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -250,8 +250,8 @@ export default function CompanyHistoryPage() {
             </div>
             
             <div className="text-center p-6">
-              <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+              <div className="bg-purple-900 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-purple-300 dark:text-purple-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Global Impact</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -272,14 +272,14 @@ export default function CompanyHistoryPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/careers"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Join Our Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-50 transition-colors"
             >
               Contact Us
             </Link>

@@ -34,7 +34,7 @@ export default function CybersecuritySolutionsPage() {
                 Protect your organization with advanced AI-driven threat detection, automated incident response, and predictive risk management that stays ahead of evolving cyber threats.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-gray-900 text-red-900 rounded-xl font-semibold hover:bg-red-50 transition-all duration-300 transform hover:scale-105">
+                <button className="px-8 py-4 bg-gray-900 text-red-50 rounded-xl font-semibold hover:bg-red-800 transition-all duration-300 transform hover:scale-105">
                   Request Demo
                 </button>
                 <button className="px-8 py-4 bg-gray-900/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-gray-900/30 transition-all duration-300">
@@ -81,8 +81,8 @@ export default function CybersecuritySolutionsPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-900 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-red-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Eye className="h-6 w-6 text-red-600" />
+              <div className="bg-red-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Eye className="h-6 w-6 text-red-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Threat Detection</h3>
               <p className="text-gray-600 mb-4">
@@ -94,14 +94,14 @@ export default function CybersecuritySolutionsPage() {
                 <li>• Network traffic monitoring</li>
                 <li>• Endpoint threat hunting</li>
               </ul>
-              <Link href="/contact" className="text-red-600 hover:text-red-800 font-medium">
+              <Link href="/contact" className="text-red-300 hover:text-red-100 font-medium">
                 Learn More →
               </Link>
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <AlertTriangle className="h-6 w-6 text-orange-600" />
+              <div className="bg-orange-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <AlertTriangle className="h-6 w-6 text-orange-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Incident Response</h3>
               <p className="text-gray-600 mb-4">
@@ -113,14 +113,14 @@ export default function CybersecuritySolutionsPage() {
                 <li>• Response orchestration</li>
                 <li>• Forensic analysis automation</li>
               </ul>
-              <Link href="/contact" className="text-red-600 hover:text-red-800 font-medium">
+              <Link href="/contact" className="text-red-300 hover:text-red-100 font-medium">
                 Learn More →
               </Link>
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-              <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Lock className="h-6 w-6 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Lock className="h-6 w-6 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Risk Management</h3>
               <p className="text-gray-600 mb-4">
@@ -132,7 +132,7 @@ export default function CybersecuritySolutionsPage() {
                 <li>• Compliance monitoring</li>
                 <li>• Security posture assessment</li>
               </ul>
-              <Link href="/contact" className="text-red-600 hover:text-red-800 font-medium">
+              <Link href="/contact" className="text-red-300 hover:text-red-100 font-medium">
                 Learn More →
               </Link>
             </div>
@@ -161,25 +161,25 @@ export default function CybersecuritySolutionsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">99.7%</div>
+              <div className="text-4xl font-bold text-red-300 mb-2">99.7%</div>
               <p className="text-gray-600 font-medium">Threat Detection Rate</p>
               <p className="text-sm text-gray-500 mt-1">Including zero-day attacks</p>
             </div>
             
             <div className="text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">&lt;30s</div>
+              <div className="text-4xl font-bold text-orange-300 mb-2">&lt;30s</div>
               <p className="text-gray-600 font-medium">Response Time</p>
               <p className="text-sm text-gray-500 mt-1">Automated threat containment</p>
             </div>
             
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">85%</div>
+              <div className="text-4xl font-bold text-purple-300 mb-2">85%</div>
               <p className="text-gray-600 font-medium">False Positive Reduction</p>
               <p className="text-sm text-gray-500 mt-1">Compared to traditional tools</p>
             </div>
             
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+              <div className="text-4xl font-bold text-blue-300 mb-2">24/7</div>
               <p className="text-gray-600 font-medium">Continuous Monitoring</p>
               <p className="text-sm text-gray-500 mt-1">AI-powered surveillance</p>
             </div>
@@ -202,8 +202,8 @@ export default function CybersecuritySolutionsPage() {
               <h3 className="text-2xl font-bold text-white mb-6">How Our AI Works</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-red-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                    <span className="text-red-600 font-bold text-sm">1</span>
+                  <div className="bg-red-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                    <span className="text-red-300 font-bold text-sm">1</span>
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Data Ingestion</h4>
@@ -214,8 +214,8 @@ export default function CybersecuritySolutionsPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-orange-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                    <span className="text-orange-600 font-bold text-sm">2</span>
+                  <div className="bg-orange-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                    <span className="text-orange-300 font-bold text-sm">2</span>
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Behavioral Analysis</h4>
@@ -226,8 +226,8 @@ export default function CybersecuritySolutionsPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-purple-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                    <span className="text-purple-600 font-bold text-sm">3</span>
+                  <div className="bg-purple-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                    <span className="text-purple-300 font-bold text-sm">3</span>
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Threat Classification</h4>
@@ -238,8 +238,8 @@ export default function CybersecuritySolutionsPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
-                    <span className="text-blue-600 font-bold text-sm">4</span>
+                  <div className="bg-blue-900 rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                    <span className="text-blue-300 font-bold text-sm">4</span>
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Automated Response</h4>
@@ -255,27 +255,27 @@ export default function CybersecuritySolutionsPage() {
               <h4 className="text-xl font-bold text-white mb-6">Key AI Capabilities</h4>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                   <span className="text-gray-300">Deep learning neural networks for pattern recognition</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                   <span className="text-gray-300">Natural language processing for threat intelligence</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                   <span className="text-gray-300">Reinforcement learning for adaptive defense</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                   <span className="text-gray-300">Graph analytics for attack path analysis</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                   <span className="text-gray-300">Ensemble methods for improved accuracy</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                   <span className="text-gray-300">Federated learning for privacy-preserving updates</span>
                 </div>
               </div>
@@ -287,7 +287,7 @@ export default function CybersecuritySolutionsPage() {
       {/* Case Study */}
       <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-red-50 rounded-lg p-8">
+          <div className="bg-red-800 rounded-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-white mb-4">Success Story</h2>
               <p className="text-lg text-gray-600">
@@ -309,15 +309,15 @@ export default function CybersecuritySolutionsPage() {
                 
                 <div className="space-y-3">
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Detected zero-day exploit in real-time</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Automatically isolated compromised systems</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Prevented $50M in potential damages</span>
                   </div>
                 </div>
@@ -327,28 +327,28 @@ export default function CybersecuritySolutionsPage() {
                 <h3 className="text-xl font-bold text-white mb-4">Attack Timeline</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-red-8000 rounded-full mr-3"></div>
                     <div>
                       <span className="text-sm text-gray-500">00:00</span>
                       <p className="text-gray-300">Initial phishing email delivered</p>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-orange-8000 rounded-full mr-3"></div>
                     <div>
                       <span className="text-sm text-gray-500">00:05</span>
                       <p className="text-gray-300">Malicious payload executed</p>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-yellow-8000 rounded-full mr-3"></div>
                     <div>
                       <span className="text-sm text-gray-500">00:15</span>
                       <p className="text-gray-300">AI detects anomalous behavior</p>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                    <div className="w-3 h-3 bg-green-8000 rounded-full mr-3"></div>
                     <div>
                       <span className="text-sm text-gray-500">00:16</span>
                       <p className="text-gray-300">Automatic containment activated</p>
@@ -380,14 +380,14 @@ export default function CybersecuritySolutionsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Get Security Assessment
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/technology/platform"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-red-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-red-50 transition-colors"
             >
               Learn About Our Platform
             </Link>

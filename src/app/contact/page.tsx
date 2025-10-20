@@ -7,7 +7,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Contact <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
+            Contact <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
               <span>A  p  e  x</span>
               
               <span>M e r i d i a n</span>
@@ -26,7 +26,7 @@ export default function ContactPage() {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                <Mail className="h-6 w-6 text-blue-300 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-white">Email</h3>
                   <p className="text-gray-600">info@apex-meridian.com</p>
@@ -35,7 +35,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start">
-                <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                <Phone className="h-6 w-6 text-blue-300 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-white">Phone</h3>
                   <p className="text-gray-600">+201200929092</p>
@@ -44,11 +44,11 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start">
-                <MapPin className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                <MapPin className="h-6 w-6 text-blue-300 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-white">Headquarters</h3>
                   <p className="text-gray-600">
-                    <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
+                    <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
                       <span>A  p  e  x</span>
                       
                       <span>M e r i d i a n</span>
@@ -61,7 +61,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-start">
-                <Clock className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                <Clock className="h-6 w-6 text-blue-300 mt-1 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium text-white">Business Hours</h3>
                   <p className="text-gray-600">
@@ -178,34 +178,34 @@ export default function ContactPage() {
         {/* Additional Contact Options */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="text-center">
-            <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Mail className="h-8 w-8 text-blue-600" />
+            <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <Mail className="h-8 w-8 text-blue-300" />
             </div>
             <h3 className="text-lg font-bold text-white mb-2">Sales Inquiries</h3>
             <p className="text-gray-600 mb-2">Ready to get started with our AI solutions?</p>
-            <a href="mailto:sales@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
+            <a href="mailto:sales@apex-meridian.com" className="text-blue-300 hover:text-blue-100 font-medium">
               sales@apex-meridian.com
             </a>
           </div>
 
           <div className="text-center">
-            <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <Phone className="h-8 w-8 text-green-600" />
+            <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <Phone className="h-8 w-8 text-green-300" />
             </div>
             <h3 className="text-lg font-bold text-white mb-2">Technical Support</h3>
             <p className="text-gray-600 mb-2">Need help with our platform or services?</p>
-            <a href="mailto:support@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
+            <a href="mailto:support@apex-meridian.com" className="text-blue-300 hover:text-blue-100 font-medium">
               support@apex-meridian.com
             </a>
           </div>
 
           <div className="text-center">
-            <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <MapPin className="h-8 w-8 text-purple-600" />
+            <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <MapPin className="h-8 w-8 text-purple-300" />
             </div>
             <h3 className="text-lg font-bold text-white mb-2">Careers & HR</h3>
             <p className="text-gray-600 mb-2">Join our team and career opportunities</p>
-            <a href="mailto:careers@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
+            <a href="mailto:careers@apex-meridian.com" className="text-blue-300 hover:text-blue-100 font-medium">
               careers@apex-meridian.com
             </a>
           </div>

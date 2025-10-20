@@ -56,8 +56,8 @@ export default function EmployeeLoginPage() {
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <svg className="h-8 w-8 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
@@ -67,8 +67,8 @@ export default function EmployeeLoginPage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <svg className="h-8 w-8 text-green-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
@@ -78,8 +78,8 @@ export default function EmployeeLoginPage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <svg className="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <svg className="h-8 w-8 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-2-2V10a2 2 0 012-2h8z" />
                     </svg>
                   </div>
@@ -99,10 +99,10 @@ export default function EmployeeLoginPage() {
             </p>
             <div className="space-y-2">
               <p className="text-sm text-gray-500">
-                Contact IT Support: <a href="mailto:support@apex-meridian.com" className="text-blue-600 hover:text-blue-800">support@apex-meridian.com</a>
+                Contact IT Support: <a href="mailto:support@apex-meridian.com" className="text-blue-300 hover:text-blue-100">support@apex-meridian.com</a>
               </p>
               <p className="text-sm text-gray-500">
-                HR Department: <a href="mailto:hr@apex-meridian.com" className="text-blue-600 hover:text-blue-800">hr@apex-meridian.com</a>
+                HR Department: <a href="mailto:hr@apex-meridian.com" className="text-blue-300 hover:text-blue-100">hr@apex-meridian.com</a>
               </p>
               <p className="text-sm text-gray-500">
                 Phone: +201200929092

@@ -13,7 +13,7 @@ export default function InvestmentOpportunityPage() {
               Investment Opportunity
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Join us in revolutionizing artificial intelligence across multiple industries. Discover why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
+              Join us in revolutionizing artificial intelligence across multiple industries. Discover why <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x</span>
                 
                 <span>M e r i d i a n</span>
@@ -35,25 +35,25 @@ export default function InvestmentOpportunityPage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-blue-50 rounded-lg p-6 text-center">
+            <div className="bg-blue-800 rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold text-white mb-2">Aviation AI</h3>
-              <div className="text-3xl font-bold text-blue-600 mb-2">$2.1B</div>
+              <div className="text-3xl font-bold text-blue-300 mb-2">$2.1B</div>
               <p className="text-gray-600 text-sm mb-2">Market size by 2028</p>
-              <p className="text-green-600 font-medium">CAGR: 35%</p>
+              <p className="text-green-300 font-medium">CAGR: 35%</p>
             </div>
             
-            <div className="bg-red-50 rounded-lg p-6 text-center">
+            <div className="bg-red-800 rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold text-white mb-2">Cybersecurity AI</h3>
-              <div className="text-3xl font-bold text-red-600 mb-2">$46.3B</div>
+              <div className="text-3xl font-bold text-red-300 mb-2">$46.3B</div>
               <p className="text-gray-600 text-sm mb-2">Market size by 2028</p>
-              <p className="text-green-600 font-medium">CAGR: 23%</p>
+              <p className="text-green-300 font-medium">CAGR: 23%</p>
             </div>
             
-            <div className="bg-green-50 rounded-lg p-6 text-center">
+            <div className="bg-green-800 rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold text-white mb-2">Education AI</h3>
-              <div className="text-3xl font-bold text-green-600 mb-2">$25.7B</div>
+              <div className="text-3xl font-bold text-green-300 mb-2">$25.7B</div>
               <p className="text-gray-600 text-sm mb-2">Market size by 2028</p>
-              <p className="text-green-600 font-medium">CAGR: 32%</p>
+              <p className="text-green-300 font-medium">CAGR: 32%</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function InvestmentOpportunityPage() {
             <h3 className="text-2xl font-bold text-white mb-4">Total Addressable Market</h3>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="text-5xl font-bold text-blue-600 mb-2">$74.1B</div>
+                <div className="text-5xl font-bold text-blue-300 mb-2">$74.1B</div>
                 <p className="text-lg text-gray-600 mb-4">Combined TAM across our target markets by 2028</p>
                 <ul className="space-y-2 text-gray-600">
                   <li>• Early-stage market with significant growth potential</li>
@@ -76,15 +76,15 @@ export default function InvestmentOpportunityPage() {
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Current Market Share</span>
-                      <span className="font-bold text-blue-600">2.3%</span>
+                      <span className="font-bold text-blue-300">2.3%</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Target by 2028</span>
-                      <span className="font-bold text-green-600">8.5%</span>
+                      <span className="font-bold text-green-300">8.5%</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Revenue Potential</span>
-                      <span className="font-bold text-purple-600">$6.3B</span>
+                      <span className="font-bold text-purple-300">$6.3B</span>
                     </div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function InvestmentOpportunityPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Competitive Advantages</h2>
             <p className="text-lg text-gray-600">
-              What sets <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
+              What sets <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x</span>
                 
                 <span>M e r i d i a n</span>
@@ -111,8 +111,8 @@ export default function InvestmentOpportunityPage() {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Target className="h-6 w-6 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Target className="h-6 w-6 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Proprietary Technology</h3>
               <p className="text-gray-600 mb-4">
@@ -127,8 +127,8 @@ export default function InvestmentOpportunityPage() {
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Globe className="h-6 w-6 text-green-600" />
+              <div className="bg-green-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Globe className="h-6 w-6 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Multi-Industry Focus</h3>
               <p className="text-gray-600 mb-4">
@@ -143,8 +143,8 @@ export default function InvestmentOpportunityPage() {
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Zap className="h-6 w-6 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Zap className="h-6 w-6 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Proven Execution</h3>
               <p className="text-gray-600 mb-4">
@@ -159,8 +159,8 @@ export default function InvestmentOpportunityPage() {
             </div>
 
             <div className="bg-gray-900 rounded-lg shadow-lg p-6">
-              <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <TrendingUp className="h-6 w-6 text-orange-600" />
+              <div className="bg-orange-900 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <TrendingUp className="h-6 w-6 text-orange-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Strategic Partnerships</h3>
               <p className="text-gray-600 mb-4">
@@ -191,22 +191,22 @@ export default function InvestmentOpportunityPage() {
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">2025</h3>
-                <div className="text-2xl font-bold text-blue-600 mb-1">$45M</div>
+                <div className="text-2xl font-bold text-blue-300 mb-1">$45M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">2026</h3>
-                <div className="text-2xl font-bold text-green-600 mb-1">$120M</div>
+                <div className="text-2xl font-bold text-green-300 mb-1">$120M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">2027</h3>
-                <div className="text-2xl font-bold text-purple-600 mb-1">$280M</div>
+                <div className="text-2xl font-bold text-purple-300 mb-1">$280M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">2028</h3>
-                <div className="text-2xl font-bold text-orange-600 mb-1">$580M</div>
+                <div className="text-2xl font-bold text-orange-300 mb-1">$580M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
             </div>
@@ -214,17 +214,17 @@ export default function InvestmentOpportunityPage() {
             <div className="mt-8 grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <h4 className="text-lg font-bold text-white mb-2">Gross Margin</h4>
-                <div className="text-3xl font-bold text-green-600">85%</div>
+                <div className="text-3xl font-bold text-green-300">85%</div>
                 <p className="text-sm text-gray-600">Software-based revenue model</p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-2">Customer LTV</h4>
-                <div className="text-3xl font-bold text-blue-600">$2.3M</div>
+                <div className="text-3xl font-bold text-blue-300">$2.3M</div>
                 <p className="text-sm text-gray-600">Average enterprise customer</p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-2">CAC Payback</h4>
-                <div className="text-3xl font-bold text-purple-600">8 months</div>
+                <div className="text-3xl font-bold text-purple-300">8 months</div>
                 <p className="text-sm text-gray-600">Efficient customer acquisition</p>
               </div>
             </div>
@@ -248,23 +248,23 @@ export default function InvestmentOpportunityPage() {
                 <h3 className="text-xl font-bold text-white mb-6">Investment Highlights</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Series C round: $100M target</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Pre-money valuation: $800M</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Minimum investment: $1M</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Expected close: Q2 2025</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
                     <span className="text-gray-300">Board seat available for lead investor</span>
                   </div>
                 </div>
@@ -275,23 +275,23 @@ export default function InvestmentOpportunityPage() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">R&D and Product Development</span>
-                    <span className="font-bold text-blue-600">40%</span>
+                    <span className="font-bold text-blue-300">40%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Sales and Marketing</span>
-                    <span className="font-bold text-green-600">30%</span>
+                    <span className="font-bold text-green-300">30%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">International Expansion</span>
-                    <span className="font-bold text-purple-600">20%</span>
+                    <span className="font-bold text-purple-300">20%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Working Capital</span>
-                    <span className="font-bold text-orange-600">10%</span>
+                    <span className="font-bold text-orange-300">10%</span>
                   </div>
                 </div>
                 
-                <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+                <div className="mt-6 p-4 bg-blue-800 rounded-lg">
                   <h4 className="font-bold text-white mb-2">Expected Outcomes</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• 3x revenue growth over 24 months</li>
@@ -316,14 +316,14 @@ export default function InvestmentOpportunityPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Contact Investor Relations
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/investors/financials"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-50 transition-colors"
             >
               View Financial Information
             </Link>

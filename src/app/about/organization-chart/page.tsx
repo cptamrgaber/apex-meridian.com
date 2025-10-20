@@ -310,8 +310,8 @@ export default function OrganizationChartPage() {
             <h4 className="font-semibold text-white mb-1">{position.title}</h4>
             <span className={`inline-block px-2 py-1 text-xs rounded-full ${
               position.status === 'Hiring' 
-                ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200' 
-                : 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-200'
+                ? 'bg-green-900 text-green-100 dark:bg-green-900/30 dark:text-green-200' 
+                : 'bg-yellow-900 text-yellow-100 dark:bg-yellow-900/30 dark:text-yellow-200'
             }`}>
               {position.status}
             </span>
@@ -349,7 +349,7 @@ export default function OrganizationChartPage() {
             <div className="mt-6">
               <Link 
                 href="/about/careers" 
-                className="inline-flex items-center px-6 py-3 bg-gray-900 text-indigo-900 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-gray-900 text-indigo-50 font-semibold rounded-lg hover:bg-indigo-800 transition-colors"
               >
                 View Open Positions
                 <ExternalLink className="ml-2 h-5 w-5" />
@@ -364,7 +364,7 @@ export default function OrganizationChartPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
-              <Crown className="h-8 w-8 text-purple-600 mr-3" />
+              <Crown className="h-8 w-8 text-purple-300 mr-3" />
               <h2 className="text-3xl font-bold text-white">Board of Directors</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
@@ -385,7 +385,7 @@ export default function OrganizationChartPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
-              <Building className="h-8 w-8 text-blue-600 mr-3" />
+              <Building className="h-8 w-8 text-blue-300 mr-3" />
               <h2 className="text-3xl font-bold text-white">Executive Leadership</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
@@ -485,14 +485,14 @@ export default function OrganizationChartPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="mailto:info@apex-meridian.com?subject=General Inquiry"
-              className="inline-flex items-center px-8 py-3 bg-gray-900 text-indigo-900 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-gray-900 text-indigo-50 font-semibold rounded-lg hover:bg-indigo-800 transition-colors"
             >
               <Mail className="mr-2 h-5 w-5" />
               General Inquiries
             </Link>
             <Link 
               href="mailto:careers@apex-meridian.com?subject=Career Opportunities"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-900 hover:text-indigo-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-900 hover:text-indigo-50 transition-colors"
             >
               <Users className="mr-2 h-5 w-5" />
               Career Opportunities

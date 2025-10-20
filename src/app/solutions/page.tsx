@@ -26,8 +26,8 @@ export default function SolutionsPage() {
           <div className="grid md:grid-cols-2 gap-12">
             <Link href="/solutions/aviation" className="group">
               <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-blue-500 h-full">
-                <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
-                  <Zap className="h-8 w-8 text-blue-600" />
+                <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
+                  <Zap className="h-8 w-8 text-blue-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Aviation Solutions</h3>
                 <p className="text-gray-600 mb-6">
@@ -47,7 +47,7 @@ export default function SolutionsPage() {
                     <span>Safety & Compliance Automation</span>
                   </div>
                 </div>
-                <div className="flex items-center text-blue-600 group-hover:text-blue-800 font-medium">
+                <div className="flex items-center text-blue-300 group-hover:text-blue-100 font-medium">
                   <span>Explore Aviation AI</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </div>
@@ -56,8 +56,8 @@ export default function SolutionsPage() {
 
             <Link href="/solutions/cybersecurity" className="group">
               <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-red-500 h-full">
-                <div className="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors">
-                  <Shield className="h-8 w-8 text-red-600" />
+                <div className="bg-red-900 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors">
+                  <Shield className="h-8 w-8 text-red-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Cybersecurity Solutions</h3>
                 <p className="text-gray-600 mb-6">
@@ -77,7 +77,7 @@ export default function SolutionsPage() {
                     <span>Predictive Risk Management</span>
                   </div>
                 </div>
-                <div className="flex items-center text-blue-600 group-hover:text-blue-800 font-medium">
+                <div className="flex items-center text-blue-300 group-hover:text-blue-100 font-medium">
                   <span>Explore Security AI</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </div>
@@ -86,8 +86,8 @@ export default function SolutionsPage() {
 
             <Link href="/solutions/education" className="group">
               <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-green-500 h-full">
-                <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
-                  <BookOpen className="h-8 w-8 text-green-600" />
+                <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
+                  <BookOpen className="h-8 w-8 text-green-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Education Solutions</h3>
                 <p className="text-gray-600 mb-6">
@@ -107,7 +107,7 @@ export default function SolutionsPage() {
                     <span>Adaptive Content Delivery</span>
                   </div>
                 </div>
-                <div className="flex items-center text-blue-600 group-hover:text-blue-800 font-medium">
+                <div className="flex items-center text-blue-300 group-hover:text-blue-100 font-medium">
                   <span>Explore Education AI</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </div>
@@ -116,8 +116,8 @@ export default function SolutionsPage() {
 
             <Link href="/solutions/agi" className="group">
               <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-purple-500 h-full">
-                <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
-                  <Brain className="h-8 w-8 text-purple-600" />
+                <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
+                  <Brain className="h-8 w-8 text-purple-300" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">AGI Development</h3>
                 <p className="text-gray-600 mb-6">
@@ -137,7 +137,7 @@ export default function SolutionsPage() {
                     <span>Human-AI Collaboration</span>
                   </div>
                 </div>
-                <div className="flex items-center text-blue-600 group-hover:text-blue-800 font-medium">
+                <div className="flex items-center text-blue-300 group-hover:text-blue-100 font-medium">
                   <span>Explore AGI Research</span>
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </div>
@@ -159,8 +159,8 @@ export default function SolutionsPage() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Zap className="h-8 w-8 text-blue-600" />
+              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Zap className="h-8 w-8 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Real-time Processing</h3>
               <p className="text-gray-600">
@@ -169,8 +169,8 @@ export default function SolutionsPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-green-600" />
+              <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-8 w-8 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Enterprise Security</h3>
               <p className="text-gray-600">
@@ -179,8 +179,8 @@ export default function SolutionsPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Brain className="h-8 w-8 text-purple-600" />
+              <div className="bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Brain className="h-8 w-8 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Scalable Architecture</h3>
               <p className="text-gray-600">
@@ -211,14 +211,14 @@ export default function SolutionsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-50 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/investors"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-50 transition-colors"
             >
               Investment Opportunities
             </Link>
