@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import BrandName from '@/components/BrandName';
 import { useAuth } from '@/lib/auth-context';
 import { User } from '@/lib/auth';
 import LoginForm from './LoginForm';
@@ -39,7 +40,7 @@ export default function ProtectedRoute({
               Employee Access Required
             </h1>
             <p className="text-gray-600">
-              Please sign in with your A  p  e  x    M  e  r  i  d  i  a  n employee credentials to access this area.
+              Please sign in with your <BrandName asLink={false} className="inline" /> employee credentials to access this area.
             </p>
           </div>
           <LoginForm />
