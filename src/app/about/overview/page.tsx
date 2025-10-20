@@ -73,11 +73,7 @@ export default function CompanyOverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                <span><BrandName /></span>
-                <sup className="text-xs ml-1">®</sup>
-              </span>
-              <span className="text-white"> by the Numbers</span>
+              <BrandName size="3xl" /> by the Numbers
             </h2>
             <p className="text-lg text-gray-600">Our growth and impact across industries</p>
           </div>
@@ -168,10 +164,7 @@ export default function CompanyOverviewPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
           <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-            Discover how <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-              <span><BrandName /></span>
-              <sup className="text-xs ml-1">®</sup>
-            </span> can transform your industry with cutting-edge AI solutions.
+            Discover how <BrandName /> can transform your industry with cutting-edge AI solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

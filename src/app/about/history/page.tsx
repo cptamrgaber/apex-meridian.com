@@ -14,10 +14,7 @@ export default function CompanyHistoryPage() {
               Our Journey
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              From a startup in Cairo to a pioneering AI company, discover how <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
-                <span><BrandName /></span>
-                <sup className="text-xs ml-1">®</sup>
-              </span> has evolved to become a leader in artificial intelligence solutions.
+              From a startup in Cairo to a pioneering AI company, discover how <BrandName /> has evolved to become a leader in artificial intelligence solutions.
             </p>
           </div>
         </div>
@@ -49,10 +46,7 @@ export default function CompanyHistoryPage() {
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Company Founded in Cairo</h3>
                     <p className="text-gray-600 dark:text-gray-300">
-                      <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
-                        <span><BrandName /></span>
-                        <sup className="text-xs ml-1">®</sup>
-                      </span> was established in Cairo, Egypt as a startup with a vision to create ethical, beneficial AI solutions. Founded with initial focus on developing intelligent systems for emerging markets.
+                      <BrandName /> was established in Cairo, Egypt as a startup with a vision to create ethical, beneficial AI solutions. Founded with initial focus on developing intelligent systems for emerging markets.
                     </p>
                   </div>
                 </div>
