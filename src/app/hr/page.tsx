@@ -43,18 +43,18 @@ function HRDashboardContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-800">
       {/* Header */}
-      <div className="bg-white shadow">
+      <div className="bg-gray-900 shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">HR Dashboard</h1>
+              <h1 className="text-2xl font-bold text-white">HR Dashboard</h1>
               <p className="text-gray-600">Human Resources Management Portal</p>
             </div>
             <button
               onClick={handleLogout}
-              className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-300 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               <LogOut className="h-4 w-4 mr-2" />
               Sign Out
@@ -66,50 +66,50 @@ function HRDashboardContent() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Stats Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-gray-900 rounded-lg shadow p-6">
             <div className="flex items-center">
               <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center">
                 <Users className="h-6 w-6 text-blue-600" />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900">Total Employees</h3>
+                <h3 className="text-lg font-medium text-white">Total Employees</h3>
                 <p className="text-2xl font-bold text-blue-600">124</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-gray-900 rounded-lg shadow p-6">
             <div className="flex items-center">
               <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center">
                 <UserPlus className="h-6 w-6 text-green-600" />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900">New Hires</h3>
+                <h3 className="text-lg font-medium text-white">New Hires</h3>
                 <p className="text-2xl font-bold text-green-600">8</p>
                 <p className="text-sm text-gray-500">This month</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-gray-900 rounded-lg shadow p-6">
             <div className="flex items-center">
               <div className="bg-yellow-100 rounded-full w-12 h-12 flex items-center justify-center">
                 <Calendar className="h-6 w-6 text-yellow-600" />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900">Pending Requests</h3>
+                <h3 className="text-lg font-medium text-white">Pending Requests</h3>
                 <p className="text-2xl font-bold text-yellow-600">12</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow p-6">
+          <div className="bg-gray-900 rounded-lg shadow p-6">
             <div className="flex items-center">
               <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center">
                 <TrendingUp className="h-6 w-6 text-purple-600" />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-medium text-gray-900">Retention Rate</h3>
+                <h3 className="text-lg font-medium text-white">Retention Rate</h3>
                 <p className="text-2xl font-bold text-purple-600">94%</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ function HRDashboardContent() {
         </div>
 
         {/* Navigation Tabs */}
-        <div className="bg-white rounded-lg shadow mb-6">
+        <div className="bg-gray-900 rounded-lg shadow mb-6">
           <div className="border-b border-gray-200">
             <nav className="flex space-x-8 px-6">
               <button
@@ -125,7 +125,7 @@ function HRDashboardContent() {
                 className={`py-4 px-1 border-b-2 font-medium text-sm ${
                   activeTab === 'overview'
                     ? 'border-blue-500 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                    : 'border-transparent text-gray-500 hover:text-gray-300'
                 }`}
               >
                 Overview
@@ -135,7 +135,7 @@ function HRDashboardContent() {
                 className={`py-4 px-1 border-b-2 font-medium text-sm ${
                   activeTab === 'employees'
                     ? 'border-blue-500 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                    : 'border-transparent text-gray-500 hover:text-gray-300'
                 }`}
               >
                 Employees
@@ -145,7 +145,7 @@ function HRDashboardContent() {
                 className={`py-4 px-1 border-b-2 font-medium text-sm ${
                   activeTab === 'requests'
                     ? 'border-blue-500 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                    : 'border-transparent text-gray-500 hover:text-gray-300'
                 }`}
               >
                 Leave Requests
@@ -155,7 +155,7 @@ function HRDashboardContent() {
                 className={`py-4 px-1 border-b-2 font-medium text-sm ${
                   activeTab === 'reports'
                     ? 'border-blue-500 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                    : 'border-transparent text-gray-500 hover:text-gray-300'
                 }`}
               >
                 Reports
@@ -169,14 +169,14 @@ function HRDashboardContent() {
                 <div className="grid lg:grid-cols-2 gap-6">
                   {/* Recent Activity */}
                   <div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-4">Recent Activity</h3>
+                    <h3 className="text-lg font-medium text-white mb-4">Recent Activity</h3>
                     <div className="space-y-4">
                       <div className="flex items-start">
                         <div className="bg-green-100 rounded-full w-8 h-8 flex items-center justify-center mt-1">
                           <UserPlus className="h-4 w-4 text-green-600" />
                         </div>
                         <div className="ml-3">
-                          <p className="text-sm text-gray-900">New employee onboarded: Alex Chen</p>
+                          <p className="text-sm text-white">New employee onboarded: Alex Chen</p>
                           <p className="text-xs text-gray-500">2 hours ago</p>
                         </div>
                       </div>
@@ -185,7 +185,7 @@ function HRDashboardContent() {
                           <Calendar className="h-4 w-4 text-blue-600" />
                         </div>
                         <div className="ml-3">
-                          <p className="text-sm text-gray-900">Leave request approved for Jane Smith</p>
+                          <p className="text-sm text-white">Leave request approved for Jane Smith</p>
                           <p className="text-xs text-gray-500">4 hours ago</p>
                         </div>
                       </div>
@@ -194,7 +194,7 @@ function HRDashboardContent() {
                           <FileText className="h-4 w-4 text-purple-600" />
                         </div>
                         <div className="ml-3">
-                          <p className="text-sm text-gray-900">Performance review completed for Q4</p>
+                          <p className="text-sm text-white">Performance review completed for Q4</p>
                           <p className="text-xs text-gray-500">1 day ago</p>
                         </div>
                       </div>
@@ -203,26 +203,26 @@ function HRDashboardContent() {
 
                   {/* Quick Actions */}
                   <div>
-                    <h3 className="text-lg font-medium text-gray-900 mb-4">Quick Actions</h3>
+                    <h3 className="text-lg font-medium text-white mb-4">Quick Actions</h3>
                     <div className="grid grid-cols-2 gap-4">
-                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-left">
+                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-800 transition-colors text-left">
                         <UserPlus className="h-6 w-6 text-blue-600 mb-2" />
-                        <h4 className="font-medium text-gray-900">Add Employee</h4>
+                        <h4 className="font-medium text-white">Add Employee</h4>
                         <p className="text-sm text-gray-600">Onboard new team member</p>
                       </button>
-                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-left">
+                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-800 transition-colors text-left">
                         <Calendar className="h-6 w-6 text-green-600 mb-2" />
-                        <h4 className="font-medium text-gray-900">Schedule Review</h4>
+                        <h4 className="font-medium text-white">Schedule Review</h4>
                         <p className="text-sm text-gray-600">Performance evaluation</p>
                       </button>
-                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-left">
+                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-800 transition-colors text-left">
                         <FileText className="h-6 w-6 text-purple-600 mb-2" />
-                        <h4 className="font-medium text-gray-900">Generate Report</h4>
+                        <h4 className="font-medium text-white">Generate Report</h4>
                         <p className="text-sm text-gray-600">HR analytics and insights</p>
                       </button>
-                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors text-left">
+                      <button className="p-4 border border-gray-200 rounded-lg hover:bg-gray-800 transition-colors text-left">
                         <Mail className="h-6 w-6 text-red-600 mb-2" />
-                        <h4 className="font-medium text-gray-900">Send Announcement</h4>
+                        <h4 className="font-medium text-white">Send Announcement</h4>
                         <p className="text-sm text-gray-600">Company-wide communication</p>
                       </button>
                     </div>
@@ -234,7 +234,7 @@ function HRDashboardContent() {
             {activeTab === 'employees' && (
               <div>
                 <div className="flex justify-between items-center mb-6">
-                  <h3 className="text-lg font-medium text-gray-900">Employee Directory</h3>
+                  <h3 className="text-lg font-medium text-white">Employee Directory</h3>
                   <div className="flex space-x-3">
                     <div className="relative">
                       <Search className="h-5 w-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -244,7 +244,7 @@ function HRDashboardContent() {
                         className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </div>
-                    <button className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                    <button className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-300 bg-gray-900 hover:bg-gray-800">
                       <Filter className="h-4 w-4 mr-2" />
                       Filter
                     </button>
@@ -257,7 +257,7 @@ function HRDashboardContent() {
 
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
+                    <thead className="bg-gray-800">
                       <tr>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                           Employee
@@ -279,7 +279,7 @@ function HRDashboardContent() {
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
+                    <tbody className="bg-gray-900 divide-y divide-gray-200">
                       {employees.map((employee) => (
                         <tr key={employee.id}>
                           <td className="px-6 py-4 whitespace-nowrap">
@@ -288,17 +288,17 @@ function HRDashboardContent() {
                                 <Users className="h-5 w-5 text-gray-600" />
                               </div>
                               <div className="ml-4">
-                                <div className="text-sm font-medium text-gray-900">{employee.name}</div>
+                                <div className="text-sm font-medium text-white">{employee.name}</div>
                               </div>
                             </div>
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                             {employee.department}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                             {employee.role}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                             {employee.joinDate}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
@@ -321,8 +321,8 @@ function HRDashboardContent() {
             {activeTab === 'requests' && (
               <div>
                 <div className="flex justify-between items-center mb-6">
-                  <h3 className="text-lg font-medium text-gray-900">Leave Requests</h3>
-                  <button className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                  <h3 className="text-lg font-medium text-white">Leave Requests</h3>
+                  <button className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-300 bg-gray-900 hover:bg-gray-800">
                     <Download className="h-4 w-4 mr-2" />
                     Export
                   </button>
@@ -330,7 +330,7 @@ function HRDashboardContent() {
 
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
-                    <thead className="bg-gray-50">
+                    <thead className="bg-gray-800">
                       <tr>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                           Employee
@@ -352,19 +352,19 @@ function HRDashboardContent() {
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
+                    <tbody className="bg-gray-900 divide-y divide-gray-200">
                       {leaveRequests.map((request) => (
                         <tr key={request.id}>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
                             {request.employee}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                             {request.type}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                             {request.dates}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                             {request.submitted}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
@@ -396,35 +396,35 @@ function HRDashboardContent() {
 
             {activeTab === 'reports' && (
               <div>
-                <h3 className="text-lg font-medium text-gray-900 mb-6">HR Reports & Analytics</h3>
+                <h3 className="text-lg font-medium text-white mb-6">HR Reports & Analytics</h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h4 className="font-medium text-gray-900 mb-2">Employee Turnover</h4>
+                    <h4 className="font-medium text-white mb-2">Employee Turnover</h4>
                     <p className="text-sm text-gray-600 mb-4">Monthly turnover rates and trends</p>
                     <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">Generate Report</button>
                   </div>
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h4 className="font-medium text-gray-900 mb-2">Attendance Summary</h4>
+                    <h4 className="font-medium text-white mb-2">Attendance Summary</h4>
                     <p className="text-sm text-gray-600 mb-4">Employee attendance and time tracking</p>
                     <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">Generate Report</button>
                   </div>
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h4 className="font-medium text-gray-900 mb-2">Performance Metrics</h4>
+                    <h4 className="font-medium text-white mb-2">Performance Metrics</h4>
                     <p className="text-sm text-gray-600 mb-4">Employee performance evaluations</p>
                     <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">Generate Report</button>
                   </div>
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h4 className="font-medium text-gray-900 mb-2">Compensation Analysis</h4>
+                    <h4 className="font-medium text-white mb-2">Compensation Analysis</h4>
                     <p className="text-sm text-gray-600 mb-4">Salary and benefits breakdown</p>
                     <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">Generate Report</button>
                   </div>
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h4 className="font-medium text-gray-900 mb-2">Training Progress</h4>
+                    <h4 className="font-medium text-white mb-2">Training Progress</h4>
                     <p className="text-sm text-gray-600 mb-4">Employee development and training</p>
                     <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">Generate Report</button>
                   </div>
                   <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h4 className="font-medium text-gray-900 mb-2">Diversity & Inclusion</h4>
+                    <h4 className="font-medium text-white mb-2">Diversity & Inclusion</h4>
                     <p className="text-sm text-gray-600 mb-4">Workforce diversity metrics</p>
                     <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">Generate Report</button>
                   </div>

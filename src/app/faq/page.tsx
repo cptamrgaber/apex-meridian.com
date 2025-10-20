@@ -93,15 +93,12 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             Find answers to common questions about{' '}
-            <BrandName 
-              className="font-light"
-              style={{ letterSpacing: '0.2em' }}
-            />{' '}
+            <BrandName />{' '}
             AI solutions
           </p>
         </div>
@@ -109,7 +106,7 @@ export default function FAQ() {
         {/* FAQ Categories */}
         {categories.map((category) => (
           <div key={category} className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+            <h2 className="text-2xl font-semibold text-white mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
               {category}
             </h2>
             
@@ -126,7 +123,7 @@ export default function FAQ() {
                         onClick={() => toggleItem(globalIndex)}
                         className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
                       >
-                        <span className="text-lg font-medium text-gray-900 dark:text-white">
+                        <span className="text-lg font-medium text-white">
                           {item.question}
                         </span>
                         {isOpen ? (
@@ -138,7 +135,7 @@ export default function FAQ() {
                       
                       {isOpen && (
                         <div className="px-6 pb-4">
-                          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                          <p className="text-gray-300 leading-relaxed">
                             {item.answer}
                           </p>
                         </div>
@@ -152,7 +149,7 @@ export default function FAQ() {
 
         {/* Contact Section */}
         <div className="mt-12 bg-blue-50 dark:bg-slate-800 rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+          <h3 className="text-2xl font-semibold text-white mb-4">
             Still have questions?
           </h3>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
@@ -167,7 +164,7 @@ export default function FAQ() {
             </a>
             <a
               href="mailto:support@apex-meridian.com"
-              className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-slate-700 hover:bg-gray-50 dark:hover:bg-slate-600 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-300 bg-white dark:bg-slate-700 hover:bg-gray-50 dark:hover:bg-slate-600 transition-colors duration-200"
             >
               Email Us
             </a>

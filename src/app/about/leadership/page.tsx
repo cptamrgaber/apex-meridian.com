@@ -4,7 +4,7 @@ import { Users, Target, Award, ArrowRight } from 'lucide-react';
 
 export default function LeadershipPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +23,7 @@ export default function LeadershipPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Philosophy</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Our Leadership Philosophy</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               We believe in building diverse, innovative teams that combine deep technical expertise with strong business acumen and ethical leadership.
             </p>
@@ -34,7 +34,7 @@ export default function LeadershipPage() {
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Target className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Vision-Driven</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Vision-Driven</h3>
               <p className="text-gray-600">
                 Leaders who can see beyond current limitations and drive breakthrough innovations in AI technology.
               </p>
@@ -44,7 +44,7 @@ export default function LeadershipPage() {
               <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Collaborative</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Collaborative</h3>
               <p className="text-gray-600">
                 Team-first approach that values diverse perspectives and fosters an inclusive, high-performance culture.
               </p>
@@ -54,7 +54,7 @@ export default function LeadershipPage() {
               <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Excellence-Focused</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Excellence-Focused</h3>
               <p className="text-gray-600">
                 Commitment to the highest standards of technical excellence, ethical practices, and customer success.
               </p>
@@ -64,22 +64,22 @@ export default function LeadershipPage() {
       </section>
 
       {/* Executive Positions */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Executive Leadership Positions</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Executive Leadership Positions</h2>
             <p className="text-lg text-gray-600">
               Key leadership roles driving our mission to revolutionize AI across industries
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-blue-600 font-bold text-lg">CEO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Chief Executive Officer</h3>
+                <h3 className="text-xl font-bold text-white">Chief Executive Officer</h3>
                 <p className="text-gray-600">Executive Leadership</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
@@ -93,12 +93,12 @@ export default function LeadershipPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-green-600 font-bold text-lg">CTO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Chief Technology Officer</h3>
+                <h3 className="text-xl font-bold text-white">Chief Technology Officer</h3>
                 <p className="text-gray-600">Technology Leadership</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
@@ -112,12 +112,12 @@ export default function LeadershipPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-purple-600 font-bold text-lg">CFO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Chief Financial Officer</h3>
+                <h3 className="text-xl font-bold text-white">Chief Financial Officer</h3>
                 <p className="text-gray-600">Financial Leadership</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
@@ -131,12 +131,12 @@ export default function LeadershipPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-orange-600 font-bold text-lg">CPO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Chief Product Officer</h3>
+                <h3 className="text-xl font-bold text-white">Chief Product Officer</h3>
                 <p className="text-gray-600">Product Leadership</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
@@ -150,12 +150,12 @@ export default function LeadershipPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-red-600 font-bold text-lg">CSO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Chief Sales Officer</h3>
+                <h3 className="text-xl font-bold text-white">Chief Sales Officer</h3>
                 <p className="text-gray-600">Sales Leadership</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
@@ -169,12 +169,12 @@ export default function LeadershipPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="text-center mb-4">
                 <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-teal-600 font-bold text-lg">CHRO</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Chief Human Resources Officer</h3>
+                <h3 className="text-xl font-bold text-white">Chief Human Resources Officer</h3>
                 <p className="text-gray-600">People Leadership</p>
               </div>
               <p className="text-gray-600 text-sm mb-4">
@@ -195,15 +195,15 @@ export default function LeadershipPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Principles</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Our Leadership Principles</h2>
             <p className="text-lg text-gray-600">
               The core values that guide our leadership team and decision-making
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Innovation First</h3>
+            <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-white mb-4">Innovation First</h3>
               <p className="text-gray-600 mb-4">
                 We prioritize breakthrough thinking and encourage calculated risk-taking to push the boundaries of what&apos;s possible in AI.
               </p>
@@ -215,8 +215,8 @@ export default function LeadershipPage() {
               </ul>
             </div>
             
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Customer Obsession</h3>
+            <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-white mb-4">Customer Obsession</h3>
               <p className="text-gray-600 mb-4">
                 Every decision starts with understanding and serving our customers&apos; needs, ensuring our AI solutions deliver real value.
               </p>
@@ -228,8 +228,8 @@ export default function LeadershipPage() {
               </ul>
             </div>
             
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Ethical AI Development</h3>
+            <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-white mb-4">Ethical AI Development</h3>
               <p className="text-gray-600 mb-4">
                 We are committed to developing AI responsibly, with transparency, fairness, and safety at the core of everything we build.
               </p>
@@ -241,8 +241,8 @@ export default function LeadershipPage() {
               </ul>
             </div>
             
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Continuous Learning</h3>
+            <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
+              <h3 className="text-xl font-bold text-white mb-4">Continuous Learning</h3>
               <p className="text-gray-600 mb-4">
                 We foster a culture of continuous learning and adaptation, staying ahead of the rapidly evolving AI landscape.
               </p>
@@ -272,14 +272,14 @@ export default function LeadershipPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/careers"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               View Open Positions
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               Contact Us
             </Link>

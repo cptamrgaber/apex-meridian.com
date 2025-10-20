@@ -5,7 +5,7 @@ import BrandName from '@/components/BrandName';
 
 export default function CompanyHistoryPage() {
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors duration-300">
+    <div className="bg-gray-900 min-h-screen transition-colors duration-300">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,10 +24,10 @@ export default function CompanyHistoryPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Company Timeline</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Company Timeline</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Key milestones in our journey to revolutionize artificial intelligence
             </p>
@@ -47,7 +47,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-blue-600 mr-2" />
                       <span className="text-blue-600 font-semibold">March 2020</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Company Founded in Cairo</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Company Founded in Cairo</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                         <span><BrandName /></span>
@@ -70,7 +70,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-green-600 mr-2" />
                       <span className="text-green-600 font-semibold">Late 2020</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">First Aviation Platform</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">First Aviation Platform</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Launched our first project: an aviation platform for operations and scheduling. This foundational system established our expertise in aviation intelligence and became the cornerstone of our AI development journey.
                     </p>
@@ -86,7 +86,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-purple-600 mr-2" />
                       <span className="text-purple-600 font-semibold">2021</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Platform Evolution & Expansion</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Platform Evolution & Expansion</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Built upon our successful aviation operations and scheduling platform to create the broader MeridianAI platform. Expanded our team in Cairo and began developing AI solutions for cybersecurity and education sectors.
                     </p>
@@ -106,7 +106,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-orange-600 mr-2" />
                       <span className="text-orange-600 font-semibold">2022</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Multi-Industry Solutions</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Multi-Industry Solutions</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Expanded platform to support cybersecurity threat detection and educational AI solutions. Developed comprehensive AI modules serving aviation, cybersecurity, and education sectors from our Cairo headquarters.
                     </p>
@@ -122,7 +122,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-red-600 mr-2" />
                       <span className="text-red-600 font-semibold">2023</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Market Recognition</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Market Recognition</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Gained significant market traction with partnerships across the Middle East and Africa. Established strategic alliances with regional technology companies and expanded our Cairo operations.
                     </p>
@@ -143,7 +143,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-indigo-600 mr-2" />
                       <span className="text-indigo-600 font-semibold">2024</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">AGI Research & Funding Round</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">AGI Research & Funding Round</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Launched dedicated AGI research division and secured our first major funding round. Established AI Safety Institute in Cairo and began development of advanced general intelligence capabilities.
                     </p>
@@ -159,7 +159,7 @@ export default function CompanyHistoryPage() {
                       <Calendar className="h-5 w-5 text-blue-600 mr-2" />
                       <span className="text-blue-600 font-semibold">2025</span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Government Partnership & Innovation</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Government Partnership & Innovation</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Currently developing an advanced security system for the Ministry of Internal Affairs, demonstrating our trusted position in critical infrastructure. Operating from our Cairo headquarters, we continue to pioneer AI solutions across multiple industries while maintaining our commitment to ethical AI development.
                     </p>
@@ -174,10 +174,10 @@ export default function CompanyHistoryPage() {
       </section>
 
       {/* Key Achievements */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Key Achievements</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Key Achievements</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Milestones that define our impact on the AI industry
             </p>
@@ -188,7 +188,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <MapPin className="h-8 w-8 text-blue-600 dark:text-blue-400" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Cairo</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Cairo</h3>
               <p className="text-gray-600 dark:text-gray-300">Headquarters</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">All operations based in Egypt</p>
             </div>
@@ -197,7 +197,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Calendar className="h-8 w-8 text-green-600 dark:text-green-400" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">5+</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">5+</h3>
               <p className="text-gray-600 dark:text-gray-300">Years of Innovation</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Since March 2020 founding</p>
             </div>
@@ -206,7 +206,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Rocket className="h-8 w-8 text-purple-600 dark:text-purple-400" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Startup</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">Startup</h3>
               <p className="text-gray-600 dark:text-gray-300">Growth Journey</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Recent funding round completed</p>
             </div>
@@ -215,7 +215,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-orange-100 dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-orange-600 dark:text-orange-400" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">3</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">3</h3>
               <p className="text-gray-600 dark:text-gray-300">Core Industries</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Aviation, Cybersecurity, Education</p>
             </div>
@@ -224,10 +224,10 @@ export default function CompanyHistoryPage() {
       </section>
 
       {/* Vision for Future */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Vision for the Future</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Our Vision for the Future</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               From our Cairo headquarters, we continue to push the boundaries of artificial intelligence, 
               developing solutions that benefit humanity while maintaining the highest ethical standards.
@@ -239,7 +239,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-blue-600 dark:text-blue-400" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Ethical AI Leadership</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Ethical AI Leadership</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Leading the development of responsible AI technologies that prioritize human welfare and ethical considerations.
               </p>
@@ -249,7 +249,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Regional Innovation Hub</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Regional Innovation Hub</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Establishing Cairo as a major center for AI innovation in the Middle East and Africa region.
               </p>
@@ -259,7 +259,7 @@ export default function CompanyHistoryPage() {
               <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-purple-600 dark:text-purple-400" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Global Impact</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Global Impact</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Expanding our reach to serve organizations worldwide while maintaining our strong Egyptian roots and values.
               </p>
@@ -278,14 +278,14 @@ export default function CompanyHistoryPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/about/careers"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Join Our Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               Contact Us
             </Link>

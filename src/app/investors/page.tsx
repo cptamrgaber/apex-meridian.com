@@ -4,7 +4,7 @@ import { TrendingUp, DollarSign, Shield, Users, ArrowRight } from 'lucide-react'
 
 export default function InvestorsPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +23,7 @@ export default function InvestorsPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Investment Highlights</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Investment Highlights</h2>
             <p className="text-lg text-gray-600">
               Why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x</span>
@@ -39,7 +39,7 @@ export default function InvestorsPage() {
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Market Leadership</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Market Leadership</h3>
               <p className="text-gray-600">Leading position in AI solutions across aviation, cybersecurity, and education sectors.</p>
             </div>
             
@@ -47,7 +47,7 @@ export default function InvestorsPage() {
               <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Strong Revenue Growth</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Strong Revenue Growth</h3>
               <p className="text-gray-600">300% year-over-year revenue growth with expanding enterprise customer base.</p>
             </div>
             
@@ -55,7 +55,7 @@ export default function InvestorsPage() {
               <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Proven Technology</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Proven Technology</h3>
               <p className="text-gray-600">Proprietary AI platform with 50+ patents and industry-leading performance metrics.</p>
             </div>
             
@@ -63,7 +63,7 @@ export default function InvestorsPage() {
               <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-orange-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">World-Class Team</h3>
+              <h3 className="text-xl font-bold text-white mb-2">World-Class Team</h3>
               <p className="text-gray-600">Leadership team from Google, OpenAI, Tesla, and other top technology companies.</p>
             </div>
           </div>
@@ -71,15 +71,15 @@ export default function InvestorsPage() {
       </section>
 
       {/* Navigation Cards */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/investors/opportunity" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-blue-500">
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
                   <TrendingUp className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Investment Opportunity</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">Investment Opportunity</h3>
                 <p className="text-gray-600 text-center mb-4">
                   Learn about our market opportunity, competitive advantages, and growth strategy in the AI industry.
                 </p>
@@ -91,11 +91,11 @@ export default function InvestorsPage() {
             </Link>
 
             <Link href="/investors/financials" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-green-500">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-green-500">
                 <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
                   <DollarSign className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Financial Information</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">Financial Information</h3>
                 <p className="text-gray-600 text-center mb-4">
                   Access our financial reports, key metrics, and performance data for informed investment decisions.
                 </p>
@@ -107,11 +107,11 @@ export default function InvestorsPage() {
             </Link>
 
             <Link href="/investors/governance" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-purple-500">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-2 border-transparent group-hover:border-purple-500">
                 <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
                   <Shield className="h-8 w-8 text-purple-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Corporate Governance</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">Corporate Governance</h3>
                 <p className="text-gray-600 text-center mb-4">
                   Information about our board of directors, governance policies, and commitment to transparency.
                 </p>
@@ -129,7 +129,7 @@ export default function InvestorsPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Key Performance Metrics</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Key Performance Metrics</h2>
             <p className="text-lg text-gray-600">
               Our strong fundamentals demonstrate sustainable growth and market leadership
             </p>
@@ -164,10 +164,10 @@ export default function InvestorsPage() {
       </section>
 
       {/* Market Opportunity */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Massive Market Opportunity</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Massive Market Opportunity</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               The AI market is experiencing unprecedented growth, and <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x</span>
@@ -179,22 +179,22 @@ export default function InvestorsPage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Aviation AI Market</h3>
+            <div className="bg-gray-900 rounded-lg p-6 text-center">
+              <h3 className="text-xl font-bold text-white mb-2">Aviation AI Market</h3>
               <div className="text-3xl font-bold text-blue-600 mb-2">$2.1B</div>
               <p className="text-gray-600 text-sm">Expected market size by 2028</p>
               <p className="text-gray-500 text-xs mt-1">CAGR: 35%</p>
             </div>
             
-            <div className="bg-white rounded-lg p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Cybersecurity AI Market</h3>
+            <div className="bg-gray-900 rounded-lg p-6 text-center">
+              <h3 className="text-xl font-bold text-white mb-2">Cybersecurity AI Market</h3>
               <div className="text-3xl font-bold text-red-600 mb-2">$46.3B</div>
               <p className="text-gray-600 text-sm">Expected market size by 2028</p>
               <p className="text-gray-500 text-xs mt-1">CAGR: 23%</p>
             </div>
             
-            <div className="bg-white rounded-lg p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Education AI Market</h3>
+            <div className="bg-gray-900 rounded-lg p-6 text-center">
+              <h3 className="text-xl font-bold text-white mb-2">Education AI Market</h3>
               <div className="text-3xl font-bold text-green-600 mb-2">$25.7B</div>
               <p className="text-gray-600 text-sm">Expected market size by 2028</p>
               <p className="text-gray-500 text-xs mt-1">CAGR: 32%</p>
@@ -213,14 +213,14 @@ export default function InvestorsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Contact Investor Relations
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/investors/opportunity"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               Learn More
             </Link>

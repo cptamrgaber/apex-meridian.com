@@ -8,9 +8,9 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function EmployeeLoginPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-800">
       {/* Header */}
-      <div className="bg-white shadow-sm">
+      <div className="bg-gray-900 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
@@ -24,7 +24,7 @@ export default function EmployeeLoginPage() {
             </div>
             <Link
               href="/"
-              className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+              className="inline-flex items-center text-gray-600 hover:text-white transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Website
@@ -37,7 +37,7 @@ export default function EmployeeLoginPage() {
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl font-bold text-white mb-4">
               Employee Portal Access
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -50,8 +50,8 @@ export default function EmployeeLoginPage() {
 
           {/* Additional Information */}
           <div className="mt-12 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow p-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">
+            <div className="bg-gray-900 rounded-lg shadow p-8">
+              <h2 className="text-xl font-bold text-white mb-6 text-center">
                 Portal Features
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
@@ -61,7 +61,7 @@ export default function EmployeeLoginPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Personal Dashboard</h3>
+                  <h3 className="text-lg font-medium text-white mb-2">Personal Dashboard</h3>
                   <p className="text-gray-600 text-sm">
                     Access your personal information, time tracking, and leave balances
                   </p>
@@ -72,7 +72,7 @@ export default function EmployeeLoginPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Company Resources</h3>
+                  <h3 className="text-lg font-medium text-white mb-2">Company Resources</h3>
                   <p className="text-gray-600 text-sm">
                     Employee handbook, policies, benefits information, and training materials
                   </p>
@@ -83,7 +83,7 @@ export default function EmployeeLoginPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-2-2V10a2 2 0 012-2h8z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">Communication</h3>
+                  <h3 className="text-lg font-medium text-white mb-2">Communication</h3>
                   <p className="text-gray-600 text-sm">
                     Company announcements, team updates, and direct communication tools
                   </p>

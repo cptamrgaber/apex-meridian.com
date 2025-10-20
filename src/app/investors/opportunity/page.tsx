@@ -4,7 +4,7 @@ import { TrendingUp, Target, Globe, Zap, ArrowRight, CheckCircle } from 'lucide-
 
 export default function InvestmentOpportunityPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +28,7 @@ export default function InvestmentOpportunityPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Massive Market Opportunity</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Massive Market Opportunity</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               The AI market is experiencing unprecedented growth, with our target sectors representing over $74 billion in combined market opportunity by 2028.
             </p>
@@ -36,21 +36,21 @@ export default function InvestmentOpportunityPage() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-blue-50 rounded-lg p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Aviation AI</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Aviation AI</h3>
               <div className="text-3xl font-bold text-blue-600 mb-2">$2.1B</div>
               <p className="text-gray-600 text-sm mb-2">Market size by 2028</p>
               <p className="text-green-600 font-medium">CAGR: 35%</p>
             </div>
             
             <div className="bg-red-50 rounded-lg p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Cybersecurity AI</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Cybersecurity AI</h3>
               <div className="text-3xl font-bold text-red-600 mb-2">$46.3B</div>
               <p className="text-gray-600 text-sm mb-2">Market size by 2028</p>
               <p className="text-green-600 font-medium">CAGR: 23%</p>
             </div>
             
             <div className="bg-green-50 rounded-lg p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Education AI</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Education AI</h3>
               <div className="text-3xl font-bold text-green-600 mb-2">$25.7B</div>
               <p className="text-gray-600 text-sm mb-2">Market size by 2028</p>
               <p className="text-green-600 font-medium">CAGR: 32%</p>
@@ -58,7 +58,7 @@ export default function InvestmentOpportunityPage() {
           </div>
 
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Total Addressable Market</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Total Addressable Market</h3>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="text-5xl font-bold text-blue-600 mb-2">$74.1B</div>
@@ -71,8 +71,8 @@ export default function InvestmentOpportunityPage() {
                 </ul>
               </div>
               <div className="text-center">
-                <div className="bg-white rounded-lg p-6 shadow-lg">
-                  <h4 className="text-lg font-bold text-gray-900 mb-4">Market Position</h4>
+                <div className="bg-gray-900 rounded-lg p-6 shadow-lg">
+                  <h4 className="text-lg font-bold text-white mb-4">Market Position</h4>
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Current Market Share</span>
@@ -95,10 +95,10 @@ export default function InvestmentOpportunityPage() {
       </section>
 
       {/* Competitive Advantages */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Competitive Advantages</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Competitive Advantages</h2>
             <p className="text-lg text-gray-600">
               What sets <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span>A  p  e  x</span>
@@ -110,11 +110,11 @@ export default function InvestmentOpportunityPage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Target className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Proprietary Technology</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Proprietary Technology</h3>
               <p className="text-gray-600 mb-4">
                 Our MeridianAI platform represents 5+ years of R&D investment, with 50+ patents filed and industry-leading performance metrics.
               </p>
@@ -126,11 +126,11 @@ export default function InvestmentOpportunityPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Globe className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Multi-Industry Focus</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Multi-Industry Focus</h3>
               <p className="text-gray-600 mb-4">
                 Unlike competitors focused on single verticals, we address multiple high-growth markets with a unified platform approach.
               </p>
@@ -142,11 +142,11 @@ export default function InvestmentOpportunityPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="bg-purple-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Zap className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Proven Execution</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Proven Execution</h3>
               <p className="text-gray-600 mb-4">
                 Strong track record of product delivery, customer acquisition, and revenue growth with world-class leadership team.
               </p>
@@ -158,11 +158,11 @@ export default function InvestmentOpportunityPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-gray-900 rounded-lg shadow-lg p-6">
               <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <TrendingUp className="h-6 w-6 text-orange-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Strategic Partnerships</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Strategic Partnerships</h3>
               <p className="text-gray-600 mb-4">
                 Key partnerships with industry leaders provide distribution channels, validation, and accelerated market penetration.
               </p>
@@ -181,7 +181,7 @@ export default function InvestmentOpportunityPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Financial Projections</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Financial Projections</h2>
             <p className="text-lg text-gray-600">
               Conservative growth projections based on current market trends and customer pipeline
             </p>
@@ -190,22 +190,22 @@ export default function InvestmentOpportunityPage() {
           <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">2025</h3>
+                <h3 className="text-lg font-bold text-white mb-2">2025</h3>
                 <div className="text-2xl font-bold text-blue-600 mb-1">$45M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">2026</h3>
+                <h3 className="text-lg font-bold text-white mb-2">2026</h3>
                 <div className="text-2xl font-bold text-green-600 mb-1">$120M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">2027</h3>
+                <h3 className="text-lg font-bold text-white mb-2">2027</h3>
                 <div className="text-2xl font-bold text-purple-600 mb-1">$280M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">2028</h3>
+                <h3 className="text-lg font-bold text-white mb-2">2028</h3>
                 <div className="text-2xl font-bold text-orange-600 mb-1">$580M</div>
                 <p className="text-sm text-gray-600">Revenue</p>
               </div>
@@ -213,17 +213,17 @@ export default function InvestmentOpportunityPage() {
             
             <div className="mt-8 grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">Gross Margin</h4>
+                <h4 className="text-lg font-bold text-white mb-2">Gross Margin</h4>
                 <div className="text-3xl font-bold text-green-600">85%</div>
                 <p className="text-sm text-gray-600">Software-based revenue model</p>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">Customer LTV</h4>
+                <h4 className="text-lg font-bold text-white mb-2">Customer LTV</h4>
                 <div className="text-3xl font-bold text-blue-600">$2.3M</div>
                 <p className="text-sm text-gray-600">Average enterprise customer</p>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">CAC Payback</h4>
+                <h4 className="text-lg font-bold text-white mb-2">CAC Payback</h4>
                 <div className="text-3xl font-bold text-purple-600">8 months</div>
                 <p className="text-sm text-gray-600">Efficient customer acquisition</p>
               </div>
@@ -233,45 +233,45 @@ export default function InvestmentOpportunityPage() {
       </section>
 
       {/* Investment Terms */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Current Investment Round</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Current Investment Round</h2>
             <p className="text-lg text-gray-600">
               Series C funding to accelerate growth and expand market presence
             </p>
           </div>
           
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="bg-gray-900 rounded-lg shadow-lg p-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-6">Investment Highlights</h3>
+                <h3 className="text-xl font-bold text-white mb-6">Investment Highlights</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Series C round: $100M target</span>
+                    <span className="text-gray-300">Series C round: $100M target</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Pre-money valuation: $800M</span>
+                    <span className="text-gray-300">Pre-money valuation: $800M</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Minimum investment: $1M</span>
+                    <span className="text-gray-300">Minimum investment: $1M</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Expected close: Q2 2025</span>
+                    <span className="text-gray-300">Expected close: Q2 2025</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-gray-700">Board seat available for lead investor</span>
+                    <span className="text-gray-300">Board seat available for lead investor</span>
                   </div>
                 </div>
               </div>
               
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-6">Use of Funds</h3>
+                <h3 className="text-xl font-bold text-white mb-6">Use of Funds</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">R&D and Product Development</span>
@@ -292,7 +292,7 @@ export default function InvestmentOpportunityPage() {
                 </div>
                 
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                  <h4 className="font-bold text-gray-900 mb-2">Expected Outcomes</h4>
+                  <h4 className="font-bold text-white mb-2">Expected Outcomes</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• 3x revenue growth over 24 months</li>
                     <li>• Expansion to European and Asian markets</li>
@@ -316,14 +316,14 @@ export default function InvestmentOpportunityPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Contact Investor Relations
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/investors/financials"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               View Financial Information
             </Link>

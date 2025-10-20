@@ -3,10 +3,10 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 export default function ContactPage() {
   return (
-    <div className="bg-gray-50 min-h-screen py-16">
+    <div className="bg-gray-800 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Contact <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
               <span>A  p  e  x</span>
               
@@ -21,14 +21,14 @@ export default function ContactPage() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+          <div className="bg-gray-900 rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-white mb-6">Get in Touch</h2>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">Email</h3>
+                  <h3 className="text-lg font-medium text-white">Email</h3>
                   <p className="text-gray-600">info@apex-meridian.com</p>
                   <p className="text-sm text-gray-500">We&apos;ll respond within 24 hours</p>
                 </div>
@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div className="flex items-start">
                 <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">Phone</h3>
+                  <h3 className="text-lg font-medium text-white">Phone</h3>
                   <p className="text-gray-600">+201200929092</p>
                   <p className="text-sm text-gray-500">Sunday - Thursday, 9 AM - 6 PM EET</p>
                 </div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">Headquarters</h3>
+                  <h3 className="text-lg font-medium text-white">Headquarters</h3>
                   <p className="text-gray-600">
                     <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                       <span>A  p  e  x</span>
@@ -63,7 +63,7 @@ export default function ContactPage() {
               <div className="flex items-start">
                 <Clock className="h-6 w-6 text-blue-600 mt-1 mr-4" />
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900">Business Hours</h3>
+                  <h3 className="text-lg font-medium text-white">Business Hours</h3>
                   <p className="text-gray-600">
                     Sunday - Thursday: 9:00 AM - 6:00 PM EET<br />
                     Friday - Saturday: Closed
@@ -74,13 +74,13 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+          <div className="bg-gray-900 rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
             
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-300 mb-2">
                     First Name
                   </label>
                   <input
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-300 mb-2">
                     Last Name
                   </label>
                   <input
@@ -106,7 +106,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                   Email Address
                 </label>
                 <input
@@ -119,7 +119,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
                   Company
                 </label>
                 <input
@@ -131,7 +131,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
                   Area of Interest
                 </label>
                 <select
@@ -152,7 +152,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea
@@ -181,7 +181,7 @@ export default function ContactPage() {
             <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Mail className="h-8 w-8 text-blue-600" />
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Sales Inquiries</h3>
+            <h3 className="text-lg font-bold text-white mb-2">Sales Inquiries</h3>
             <p className="text-gray-600 mb-2">Ready to get started with our AI solutions?</p>
             <a href="mailto:sales@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
               sales@apex-meridian.com
@@ -192,7 +192,7 @@ export default function ContactPage() {
             <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Phone className="h-8 w-8 text-green-600" />
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Technical Support</h3>
+            <h3 className="text-lg font-bold text-white mb-2">Technical Support</h3>
             <p className="text-gray-600 mb-2">Need help with our platform or services?</p>
             <a href="mailto:support@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
               support@apex-meridian.com
@@ -203,7 +203,7 @@ export default function ContactPage() {
             <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <MapPin className="h-8 w-8 text-purple-600" />
             </div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Careers & HR</h3>
+            <h3 className="text-lg font-bold text-white mb-2">Careers & HR</h3>
             <p className="text-gray-600 mb-2">Join our team and career opportunities</p>
             <a href="mailto:careers@apex-meridian.com" className="text-blue-600 hover:text-blue-800 font-medium">
               careers@apex-meridian.com

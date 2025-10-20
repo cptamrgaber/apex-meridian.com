@@ -6,7 +6,7 @@ import BrandName from '@/components/BrandName';
 
 const AIPage: React.FC = () => {
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="bg-gray-800 text-gray-100">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -92,7 +92,7 @@ const AIPage: React.FC = () => {
 };
 
 const renderIndustrySection = (title: string, description: string, imageUrl: string, icon: React.ReactNode) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white p-8 rounded-lg shadow-lg">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-gray-900 p-8 rounded-lg shadow-lg">
     <div className="relative h-80 rounded-lg overflow-hidden">
       <Image
         src={imageUrl}
@@ -112,7 +112,7 @@ const renderIndustrySection = (title: string, description: string, imageUrl: str
 );
 
 const renderEverydayAITask = (title: string, description: string, icon: React.ReactNode) => (
-  <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+  <div className="bg-gray-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
     <div className="mb-4">{icon}</div>
     <h3 className="text-2xl font-bold mb-2">{title}</h3>
     <p>{description}</p>

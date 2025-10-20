@@ -110,7 +110,7 @@ export default function Support() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             Support Center
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
@@ -130,7 +130,7 @@ export default function Support() {
                 placeholder="Search for help articles, guides, or tutorials..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-12 pr-4 py-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-800 text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function Support() {
             <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center mb-4">
                 <link.icon className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" />
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-lg font-semibold text-white">
                   {link.title}
                 </h3>
               </div>
@@ -159,7 +159,7 @@ export default function Support() {
 
         {/* Support Categories */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">
             How can we help you?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -169,7 +169,7 @@ export default function Support() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full mb-4">
                     <category.icon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-semibold text-white mb-2">
                     {category.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
@@ -179,7 +179,7 @@ export default function Support() {
                 
                 <ul className="space-y-2 mb-6">
                   {category.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-gray-700 dark:text-gray-300 text-sm flex items-center">
+                    <li key={itemIndex} className="text-gray-300 text-sm flex items-center">
                       <div className="w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full mr-2"></div>
                       {item}
                     </li>
@@ -196,7 +196,7 @@ export default function Support() {
 
         {/* Support Plans */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">
             Support Plans
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -218,7 +218,7 @@ export default function Support() {
                 )}
 
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-2xl font-bold text-white mb-2">
                     {plan.name}
                   </h3>
                   <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
@@ -230,7 +230,7 @@ export default function Support() {
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                      <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -239,7 +239,7 @@ export default function Support() {
                   className={`w-full py-3 px-4 rounded-lg font-medium transition-colors duration-200 ${
                     plan.popular
                       ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                      : 'bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 text-gray-900 dark:text-white'
+                      : 'bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 text-white'
                   }`}
                 >
                   {plan.name === 'Enterprise' ? 'Contact Sales' : 'Get Started'}
@@ -251,7 +251,7 @@ export default function Support() {
 
         {/* Contact Support */}
         <div className="bg-blue-50 dark:bg-slate-800 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl font-bold text-white mb-4">
             Need immediate assistance?
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6">
@@ -264,7 +264,7 @@ export default function Support() {
             </button>
             <a
               href="/contact"
-              className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-slate-700 hover:bg-gray-50 dark:hover:bg-slate-600 transition-colors duration-200"
+              className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-300 bg-white dark:bg-slate-700 hover:bg-gray-50 dark:hover:bg-slate-600 transition-colors duration-200"
             >
               Contact Support Team
             </a>

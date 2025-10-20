@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -76,7 +76,7 @@ export default function RootLayout({
         <ThemeProvider>
           <LanguageProvider>
             <AuthProvider>
-              <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 transition-colors duration-300">
+              <div className="min-h-screen flex flex-col bg-slate-900 text-gray-300">
                 <Header />
                 <main className="flex-grow">
                   {children}

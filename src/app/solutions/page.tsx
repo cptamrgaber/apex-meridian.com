@@ -5,7 +5,7 @@ import BrandName from '@/components/BrandName';
 
 export default function SolutionsPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,11 +25,11 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <Link href="/solutions/aviation" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-blue-500 h-full">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-blue-500 h-full">
                 <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
                   <Zap className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Aviation Solutions</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Aviation Solutions</h3>
                 <p className="text-gray-600 mb-6">
                   Revolutionize aviation operations with AI-powered flight management, passenger experience optimization, and safety compliance automation. Our solutions enhance efficiency while maintaining the highest safety standards.
                 </p>
@@ -55,11 +55,11 @@ export default function SolutionsPage() {
             </Link>
 
             <Link href="/solutions/cybersecurity" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-red-500 h-full">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-red-500 h-full">
                 <div className="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-red-200 transition-colors">
                   <Shield className="h-8 w-8 text-red-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Cybersecurity Solutions</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Cybersecurity Solutions</h3>
                 <p className="text-gray-600 mb-6">
                   Protect your organization with advanced AI-driven threat detection, automated incident response, and predictive risk management. Stay ahead of evolving cyber threats with intelligent security.
                 </p>
@@ -85,11 +85,11 @@ export default function SolutionsPage() {
             </Link>
 
             <Link href="/solutions/education" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-green-500 h-full">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-green-500 h-full">
                 <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-green-200 transition-colors">
                   <BookOpen className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Education Solutions</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Education Solutions</h3>
                 <p className="text-gray-600 mb-6">
                   Transform learning experiences with personalized AI tutoring, adaptive content delivery, and intelligent assessment systems. Empower educators and students with cutting-edge educational technology.
                 </p>
@@ -115,11 +115,11 @@ export default function SolutionsPage() {
             </Link>
 
             <Link href="/solutions/agi" className="group">
-              <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-purple-500 h-full">
+              <div className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-purple-500 h-full">
                 <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-purple-200 transition-colors">
                   <Brain className="h-8 w-8 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">AGI Development</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">AGI Development</h3>
                 <p className="text-gray-600 mb-6">
                   Pioneer the future of artificial intelligence with our AGI research platform. Develop safe, ethical, and beneficial artificial general intelligence that augments human capabilities.
                 </p>
@@ -148,10 +148,10 @@ export default function SolutionsPage() {
       </section>
 
       {/* Platform Overview */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Powered by MeridianAI Platform</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Powered by MeridianAI Platform</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               All our solutions are built on our proprietary MeridianAI platform, providing scalable, secure, and intelligent AI capabilities across industries.
             </p>
@@ -162,7 +162,7 @@ export default function SolutionsPage() {
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Zap className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Real-time Processing</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Real-time Processing</h3>
               <p className="text-gray-600">
                 Sub-second response times for mission-critical applications with our optimized AI infrastructure.
               </p>
@@ -172,7 +172,7 @@ export default function SolutionsPage() {
               <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Enterprise Security</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Enterprise Security</h3>
               <p className="text-gray-600">
                 Bank-level security with end-to-end encryption and compliance with industry standards.
               </p>
@@ -182,7 +182,7 @@ export default function SolutionsPage() {
               <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Brain className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Scalable Architecture</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Scalable Architecture</h3>
               <p className="text-gray-600">
                 Cloud-native platform that scales from startup to enterprise with seamless performance.
               </p>
@@ -211,14 +211,14 @@ export default function SolutionsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/investors"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               Investment Opportunities
             </Link>

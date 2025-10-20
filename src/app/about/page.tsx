@@ -9,7 +9,7 @@ export default function AboutPage() {
   const { t, isRTL } = useLanguage();
 
   return (
-    <div className={`bg-white dark:bg-gray-900 min-h-screen ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`bg-gray-900 min-h-screen ${isRTL ? 'rtl' : 'ltr'}`}>
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +33,7 @@ export default function AboutPage() {
                 <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
                   <Building className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.overview.title')}</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">{t('about.overview.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
                   {t('about.overview.description')}
                 </p>
@@ -49,7 +49,7 @@ export default function AboutPage() {
                 <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 dark:group-hover:bg-green-800 transition-colors">
                   <Users className="h-8 w-8 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.leadership.title')}</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">{t('about.leadership.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
                   {t('about.leadership.description')}
                 </p>
@@ -65,7 +65,7 @@ export default function AboutPage() {
                 <div className="bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-800 transition-colors">
                   <History className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.history.title')}</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">{t('about.history.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
                   {t('about.history.description')}
                 </p>
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 <div className="bg-orange-100 dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 dark:group-hover:bg-orange-800 transition-colors">
                   <Briefcase className="h-8 w-8 text-orange-600 dark:text-orange-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">{t('about.careers.title')}</h3>
+                <h3 className="text-xl font-bold text-white mb-3 text-center">{t('about.careers.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
                   {t('about.careers.description')}
                 </p>
@@ -96,10 +96,10 @@ export default function AboutPage() {
       </section>
 
       {/* Quick Overview - Legally Safe */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">{t('about.whyChoose.title')}</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">{t('about.whyChoose.title')}</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               {t('about.whyChoose.description')}
             </p>
@@ -139,14 +139,14 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/solutions"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-gray-900 hover:bg-gray-800 transition-colors"
             >
               {t('about.cta.exploreSolutions')}
               <ArrowRight className={`h-5 w-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               {t('about.cta.contactUs')}
             </Link>

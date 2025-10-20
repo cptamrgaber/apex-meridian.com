@@ -31,8 +31,6 @@ export default function DramaticHero() {
           <div className="relative">
             <h1 className="text-center font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2">
               <BrandName 
-                className="font-light text-blue-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-                style={{ letterSpacing: '0.2em' }}
                 size="5xl"
               />
             </h1>

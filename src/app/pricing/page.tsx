@@ -93,20 +93,17 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             Pricing Plans
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Choose the perfect AI solution for your organization with{' '}
-            <BrandName 
-              className="font-light"
-              style={{ letterSpacing: '0.2em' }}
-            />
+            <BrandName />
           </p>
 
           {/* Billing Toggle */}
           <div className="flex items-center justify-center mb-8">
-            <span className={`mr-3 ${billingCycle === 'monthly' ? 'text-gray-900 dark:text-white font-medium' : 'text-gray-500 dark:text-gray-400'}`}>
+            <span className={`mr-3 ${billingCycle === 'monthly' ? 'text-white font-medium' : 'text-gray-500 dark:text-gray-400'}`}>
               Monthly
             </span>
             <button
@@ -114,12 +111,12 @@ export default function Pricing() {
               className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                className={`inline-block h-4 w-4 transform rounded-full bg-gray-900 transition-transform ${
                   billingCycle === 'annual' ? 'translate-x-6' : 'translate-x-1'
                 }`}
               />
             </button>
-            <span className={`ml-3 ${billingCycle === 'annual' ? 'text-gray-900 dark:text-white font-medium' : 'text-gray-500 dark:text-gray-400'}`}>
+            <span className={`ml-3 ${billingCycle === 'annual' ? 'text-white font-medium' : 'text-gray-500 dark:text-gray-400'}`}>
               Annual
             </span>
             {billingCycle === 'annual' && (
@@ -151,7 +148,7 @@ export default function Pricing() {
               )}
 
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {plan.name}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -160,7 +157,7 @@ export default function Pricing() {
                 
                 {plan.monthlyPrice ? (
                   <div className="mb-4">
-                    <span className="text-4xl font-bold text-gray-900 dark:text-white">
+                    <span className="text-4xl font-bold text-white">
                       ${billingCycle === 'monthly' ? plan.monthlyPrice : Math.round(plan.annualPrice! / 12)}
                     </span>
                     <span className="text-gray-600 dark:text-gray-300 ml-2">
@@ -174,7 +171,7 @@ export default function Pricing() {
                   </div>
                 ) : (
                   <div className="mb-4">
-                    <span className="text-4xl font-bold text-gray-900 dark:text-white">
+                    <span className="text-4xl font-bold text-white">
                       Custom
                     </span>
                     <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">
@@ -188,7 +185,7 @@ export default function Pricing() {
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <Check className="h-5 w-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                    <span className="text-gray-300">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -197,7 +194,7 @@ export default function Pricing() {
                 className={`w-full py-3 px-4 rounded-lg font-medium transition-colors duration-200 ${
                   plan.popular
                     ? 'bg-blue-600 hover:bg-blue-700 text-white'
-                    : 'bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 text-gray-900 dark:text-white'
+                    : 'bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 text-white'
                 }`}
               >
                 {plan.cta}
@@ -208,13 +205,13 @@ export default function Pricing() {
 
         {/* Add-ons Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">
             Add-on Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {addOns.map((addon, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   {addon.name}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
@@ -230,12 +227,12 @@ export default function Pricing() {
 
         {/* FAQ Section */}
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-8">
+          <h2 className="text-2xl font-bold text-white text-center mb-8">
             Pricing FAQ
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2">
                 Do you offer a free trial?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -243,7 +240,7 @@ export default function Pricing() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2">
                 Can I change plans anytime?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -251,7 +248,7 @@ export default function Pricing() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2">
                 What payment methods do you accept?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -259,7 +256,7 @@ export default function Pricing() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2">
                 Is there a setup fee?
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -271,7 +268,7 @@ export default function Pricing() {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Ready to get started?
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
@@ -284,7 +281,7 @@ export default function Pricing() {
             </button>
             <a
               href="/contact"
-              className="inline-flex items-center px-8 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
+              className="inline-flex items-center px-8 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-300 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
             >
               Contact Sales
             </a>

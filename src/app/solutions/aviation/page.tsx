@@ -4,7 +4,7 @@ import { Zap, Plane, Shield, BarChart3, Clock, Users, CheckCircle } from 'lucide
 
 const AviationPage: React.FC = () => {
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="bg-gray-800 text-gray-100">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0">
@@ -20,7 +20,7 @@ const AviationPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                   <Zap className="h-10 w-10 text-white" />
                 </div>
                 <div>
@@ -32,16 +32,16 @@ const AviationPage: React.FC = () => {
                 Revolutionizing aviation through intelligent automation, predictive analytics, and real-time decision making that transforms how aircraft operate, maintain, and serve passengers.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-white text-blue-900 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                <button className="px-8 py-4 bg-gray-900 text-blue-900 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
                   Request Demo
                 </button>
-                <button className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-white/30 transition-all duration-300">
+                <button className="px-8 py-4 bg-gray-900/20 backdrop-blur-sm text-white rounded-xl font-semibold hover:bg-gray-900/30 transition-all duration-300">
                   View Case Studies
                 </button>
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-2xl p-8">
                 <h3 className="text-2xl font-bold mb-6">Key Capabilities</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
@@ -76,10 +76,10 @@ const AviationPage: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Intelligent Aviation Solutions</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">Intelligent Aviation Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               AeroMind transforms every aspect of aviation operations with cutting-edge AI technology
             </p>
@@ -99,7 +99,7 @@ const AviationPage: React.FC = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Plane className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Operation Management</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Operation Management</h3>
               <p className="text-gray-600 mb-4">
                 Comprehensive operation control with AI-powered flight planning, smart scheduling, and real-time fleet management.
               </p>
@@ -115,7 +115,7 @@ const AviationPage: React.FC = () => {
               <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Predictive Maintenance</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Predictive Maintenance</h3>
               <p className="text-gray-600 mb-4">
                 Advanced analytics predict component failures before they occur, reducing downtime and ensuring safety.
               </p>
@@ -131,7 +131,7 @@ const AviationPage: React.FC = () => {
               <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Passenger Experience</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Passenger Experience</h3>
               <p className="text-gray-600 mb-4">
                 Personalized services and proactive communication enhance every aspect of the passenger journey.
               </p>
@@ -156,28 +156,28 @@ const AviationPage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <BarChart3 className="w-10 h-10 text-white" />
               </div>
               <div className="text-4xl font-bold mb-2">Enhanced</div>
               <div className="text-blue-200">Fuel Efficiency</div>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-10 h-10 text-white" />
               </div>
               <div className="text-4xl font-bold mb-2">Reduced</div>
               <div className="text-blue-200">Operational Delays</div>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-10 h-10 text-white" />
               </div>
               <div className="text-4xl font-bold mb-2">Advanced</div>
               <div className="text-blue-200">Safety Systems</div>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-10 h-10 text-white" />
               </div>
               <div className="text-4xl font-bold mb-2">Improved</div>
@@ -189,23 +189,23 @@ const AviationPage: React.FC = () => {
           <div className="mt-16 text-center">
             <h3 className="text-2xl font-bold mb-8">Global Aviation Compliance</h3>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="font-bold text-lg">IATA</div>
                 <div className="text-sm text-blue-200">Standards</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="font-bold text-lg">ICAO</div>
                 <div className="text-sm text-blue-200">Regulations</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="font-bold text-lg">EASA</div>
                 <div className="text-sm text-blue-200">Compliance</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="font-bold text-lg">ECARS</div>
                 <div className="text-sm text-blue-200">Reporting</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="font-bold text-lg">FAA</div>
                 <div className="text-sm text-blue-200">Standards</div>
               </div>
@@ -217,15 +217,15 @@ const AviationPage: React.FC = () => {
             <h3 className="text-2xl font-bold mb-8">Advanced Scheduling & Rostering System</h3>
             <p className="text-blue-200 mb-6">Competing with industry leaders through AI-powered optimization</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-6">
                 <h4 className="font-bold text-lg mb-2">vs. Jeppesen</h4>
                 <p className="text-sm text-blue-200">Enhanced AI-powered flight planning and navigation solutions</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-6">
                 <h4 className="font-bold text-lg mb-2">vs. AIMS</h4>
                 <p className="text-sm text-blue-200">Advanced Aviation Information Management with predictive analytics</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+              <div className="bg-gray-900/10 backdrop-blur-sm rounded-lg p-6">
                 <h4 className="font-bold text-lg mb-2">vs. Lido</h4>
                 <p className="text-sm text-blue-200">Superior operational systems with real-time optimization</p>
               </div>
@@ -242,9 +242,9 @@ const AviationPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Transform Your Aviation Operations?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Aviation Operations?</h2>
           <p className="text-xl text-gray-600 mb-8">
             Join leading airlines and aviation companies already using AeroMind to revolutionize their operations.
           </p>
@@ -252,7 +252,7 @@ const AviationPage: React.FC = () => {
             <button className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
               Schedule Consultation
             </button>
-            <button className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300">
+            <button className="px-8 py-4 bg-gray-900 text-blue-600 border-2 border-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300">
               Download Whitepaper
             </button>
           </div>

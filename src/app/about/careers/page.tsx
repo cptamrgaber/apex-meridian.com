@@ -766,7 +766,7 @@ export default function CareersPage() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -787,7 +787,7 @@ export default function CareersPage() {
             <div className="mt-6">
               <Link 
                 href="/about/organization-chart" 
-                className="inline-flex items-center px-6 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-gray-900 text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
               >
                 View Organization Chart
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -801,7 +801,7 @@ export default function CareersPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Why <span className="font-light text-blue-600" style={{ letterSpacing: '0.2em' }}>
                 <span><BrandName /></span>
                 <sup className="text-xs ml-1">®</sup>
@@ -817,7 +817,7 @@ export default function CareersPage() {
               <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Star className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Cutting-Edge Research</h3>
+              <h3 className="text-lg font-bold text-white mb-2">Cutting-Edge Research</h3>
               <p className="text-gray-600 dark:text-gray-300">Work on breakthrough AI technologies that will shape the next decade.</p>
             </div>
             
@@ -825,7 +825,7 @@ export default function CareersPage() {
               <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">World-Class Team</h3>
+              <h3 className="text-lg font-bold text-white mb-2">World-Class Team</h3>
               <p className="text-gray-600 dark:text-gray-300">Collaborate with leading experts from top universities and tech companies.</p>
             </div>
             
@@ -833,7 +833,7 @@ export default function CareersPage() {
               <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Briefcase className="h-8 w-8 text-purple-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Growth Opportunities</h3>
+              <h3 className="text-lg font-bold text-white mb-2">Growth Opportunities</h3>
               <p className="text-gray-600 dark:text-gray-300">Accelerate your career with mentorship and learning opportunities.</p>
             </div>
             
@@ -841,7 +841,7 @@ export default function CareersPage() {
               <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-orange-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Work-Life Balance</h3>
+              <h3 className="text-lg font-bold text-white mb-2">Work-Life Balance</h3>
               <p className="text-gray-600 dark:text-gray-300">Flexible schedules and comprehensive benefits for your well-being.</p>
             </div>
           </div>
@@ -849,10 +849,10 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions by Category */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Open Positions</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Open Positions</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
               Discover exciting opportunities across all departments to make an impact in artificial intelligence
             </p>
@@ -869,13 +869,13 @@ export default function CareersPage() {
               const colors = getColorClasses(category.color);
               
               return (
-                <div key={categoryIndex} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8">
+                <div key={categoryIndex} className="bg-gray-900 rounded-lg shadow-lg p-8">
                   <div className="flex items-center mb-6">
                     <div className={`${colors.bg} rounded-full w-12 h-12 flex items-center justify-center mr-4`}>
                       <IconComponent className={`h-6 w-6 ${colors.text}`} />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{category.title}</h3>
+                      <h3 className="text-2xl font-bold text-white">{category.title}</h3>
                       <p className="text-gray-600 dark:text-gray-300">{category.jobs.length} open position{category.jobs.length > 1 ? 's' : ''}</p>
                     </div>
                   </div>
@@ -885,7 +885,7 @@ export default function CareersPage() {
                       <div key={jobIndex} className={`border ${colors.border} rounded-lg p-6 hover:shadow-md transition-shadow`}>
                         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                           <div className="flex-1">
-                            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{job.title}</h4>
+                            <h4 className="text-xl font-bold text-white mb-2">{job.title}</h4>
                             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-300 mb-3">
                               <div className="flex items-center">
                                 <MapPin className="h-4 w-4 mr-1" />
@@ -904,24 +904,24 @@ export default function CareersPage() {
                             
                             {/* Requirements Section */}
                             <div className="mb-4">
-                              <h5 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                              <h5 className="text-lg font-semibold text-white mb-3 flex items-center">
                                 <GraduationCap className="h-5 w-5 mr-2" />
                                 Requirements & Qualifications
                               </h5>
                               
                               <div className="grid md:grid-cols-2 gap-4 mb-4">
                                 <div>
-                                  <h6 className="font-medium text-gray-900 dark:text-white mb-2">Education</h6>
+                                  <h6 className="font-medium text-white mb-2">Education</h6>
                                   <p className="text-sm text-gray-600 dark:text-gray-300">{job.requirements.education}</p>
                                 </div>
                                 <div>
-                                  <h6 className="font-medium text-gray-900 dark:text-white mb-2">Experience</h6>
+                                  <h6 className="font-medium text-white mb-2">Experience</h6>
                                   <p className="text-sm text-gray-600 dark:text-gray-300">{job.requirements.experience}</p>
                                 </div>
                               </div>
                               
                               <div className="mb-4">
-                                <h6 className="font-medium text-gray-900 dark:text-white mb-2 flex items-center">
+                                <h6 className="font-medium text-white mb-2 flex items-center">
                                   <Award className="h-4 w-4 mr-1" />
                                   Required Certifications
                                 </h6>
@@ -935,7 +935,7 @@ export default function CareersPage() {
                               </div>
                               
                               <div className="mb-4">
-                                <h6 className="font-medium text-gray-900 dark:text-white mb-2 flex items-center">
+                                <h6 className="font-medium text-white mb-2 flex items-center">
                                   <CheckCircle className="h-4 w-4 mr-1" />
                                   Prerequisites
                                 </h6>
@@ -991,14 +991,14 @@ export default function CareersPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="mailto:careers@apex-meridian.com?subject=General Inquiry - Career Opportunities"
-              className="inline-flex items-center px-8 py-3 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-gray-900 text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
             >
               Contact HR Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link 
               href="/about/organization-chart"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-900 hover:text-blue-900 transition-colors"
             >
               Organization Chart
               <Users className="ml-2 h-5 w-5" />

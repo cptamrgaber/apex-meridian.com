@@ -307,7 +307,7 @@ export default function OrganizationChartPage() {
       <div className={`${colors.bg} ${colors.border} border rounded-lg p-4 ${colors.hover} transition-colors`}>
         <div className="flex items-center justify-between">
           <div className="flex-1">
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-1">{position.title}</h4>
+            <h4 className="font-semibold text-white mb-1">{position.title}</h4>
             <span className={`inline-block px-2 py-1 text-xs rounded-full ${
               position.status === 'Hiring' 
                 ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200' 
@@ -318,7 +318,7 @@ export default function OrganizationChartPage() {
           </div>
           <Link 
             href={`mailto:${position.email}?subject=Inquiry about ${position.title} position&body=Dear Hiring Team,%0D%0A%0D%0AI am interested in learning more about the ${position.title} position.%0D%0A%0D%0APlease let me know about the requirements and application process.%0D%0A%0D%0ABest regards`}
-            className={`ml-3 p-2 ${colors.text} hover:bg-white rounded-full transition-colors`}
+            className={`ml-3 p-2 ${colors.text} hover:bg-gray-900 rounded-full transition-colors`}
             title={`Contact ${position.title}`}
           >
             <Mail className="h-4 w-4" />
@@ -329,7 +329,7 @@ export default function OrganizationChartPage() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen">
+    <div className="bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -349,7 +349,7 @@ export default function OrganizationChartPage() {
             <div className="mt-6">
               <Link 
                 href="/about/careers" 
-                className="inline-flex items-center px-6 py-3 bg-white text-indigo-900 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-gray-900 text-indigo-900 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
               >
                 View Open Positions
                 <ExternalLink className="ml-2 h-5 w-5" />
@@ -360,12 +360,12 @@ export default function OrganizationChartPage() {
       </section>
 
       {/* Board of Directors */}
-      <section className="py-12 bg-gray-50 dark:bg-gray-800">
+      <section className="py-12 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
               <Crown className="h-8 w-8 text-purple-600 mr-3" />
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Board of Directors</h2>
+              <h2 className="text-3xl font-bold text-white">Board of Directors</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
               Strategic oversight and governance leadership
@@ -386,7 +386,7 @@ export default function OrganizationChartPage() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
               <Building className="h-8 w-8 text-blue-600 mr-3" />
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Executive Leadership</h2>
+              <h2 className="text-3xl font-bold text-white">Executive Leadership</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
               C-level executives driving company strategy and operations
@@ -402,10 +402,10 @@ export default function OrganizationChartPage() {
       </section>
 
       {/* Departments */}
-      <section className="py-12 bg-gray-50 dark:bg-gray-800">
+      <section className="py-12 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Departments & Teams</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Departments & Teams</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Comprehensive view of all departments, teams, and individual positions within 
               <span className="font-light text-blue-600 mx-2" style={{ letterSpacing: '0.2em' }}>
@@ -421,14 +421,14 @@ export default function OrganizationChartPage() {
               const colors = getColorClasses(department.color);
               
               return (
-                <div key={deptIndex} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-8">
+                <div key={deptIndex} className="bg-gray-900 rounded-lg shadow-lg p-8">
                   {/* Department Header */}
                   <div className="flex items-center mb-6">
                     <div className={`${colors.bg} rounded-full w-12 h-12 flex items-center justify-center mr-4`}>
                       <IconComponent className={`h-6 w-6 ${colors.text}`} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{department.title}</h3>
+                      <h3 className="text-2xl font-bold text-white">{department.title}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
                         {department.teams.reduce((total, team) => total + team.positions.length, 0) + 1} positions
                       </p>
@@ -437,7 +437,7 @@ export default function OrganizationChartPage() {
 
                   {/* Department Head */}
                   <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Department Leadership</h4>
+                    <h4 className="text-lg font-semibold text-white mb-3">Department Leadership</h4>
                     <PositionCard position={department.head} color={department.color} />
                   </div>
 
@@ -446,7 +446,7 @@ export default function OrganizationChartPage() {
                     {department.teams.map((team, teamIndex) => (
                       <div key={teamIndex} className={`border ${colors.border} rounded-lg p-6`}>
                         <div className="flex items-center justify-between mb-4">
-                          <h4 className="text-lg font-semibold text-gray-900 dark:text-white">{team.title}</h4>
+                          <h4 className="text-lg font-semibold text-white">{team.title}</h4>
                           <span className="text-sm text-gray-500 dark:text-gray-400">
                             {team.positions.length + 1} positions
                           </span>
@@ -454,13 +454,13 @@ export default function OrganizationChartPage() {
 
                         {/* Team Lead */}
                         <div className="mb-4">
-                          <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Team Leadership</h5>
+                          <h5 className="text-sm font-medium text-gray-300 mb-2">Team Leadership</h5>
                           <PositionCard position={team.lead} color={department.color} />
                         </div>
 
                         {/* Team Members */}
                         <div>
-                          <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Team Members</h5>
+                          <h5 className="text-sm font-medium text-gray-300 mb-2">Team Members</h5>
                           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                             {team.positions.map((position, posIndex) => (
                               <PositionCard key={posIndex} position={position} color={department.color} />
@@ -489,14 +489,14 @@ export default function OrganizationChartPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="mailto:info@apex-meridian.com?subject=General Inquiry"
-              className="inline-flex items-center px-8 py-3 bg-white text-indigo-900 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
+              className="inline-flex items-center px-8 py-3 bg-gray-900 text-indigo-900 font-semibold rounded-lg hover:bg-indigo-50 transition-colors"
             >
               <Mail className="mr-2 h-5 w-5" />
               General Inquiries
             </Link>
             <Link 
               href="mailto:careers@apex-meridian.com?subject=Career Opportunities"
-              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-indigo-900 transition-colors"
+              className="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-gray-900 hover:text-indigo-900 transition-colors"
             >
               <Users className="mr-2 h-5 w-5" />
               Career Opportunities
