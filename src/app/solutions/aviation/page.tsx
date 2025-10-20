@@ -95,15 +95,15 @@ const AviationPage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="group bg-gradient-to-br from-blue-900 to-blue-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Plane className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Operation Management</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Comprehensive operation control with AI-powered flight planning, smart scheduling, and real-time fleet management.
               </p>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>• Smart scheduling & routing systems</li>
                 <li>• Fleet management & optimization</li>
                 <li>• ADS-B flight following & tracking</li>
@@ -111,15 +111,15 @@ const AviationPage: React.FC = () => {
               </ul>
             </div>
 
-            <div className="group bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="group bg-gradient-to-br from-green-900 to-green-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Predictive Maintenance</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Advanced analytics predict component failures before they occur, reducing downtime and ensuring safety.
               </p>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>• Component health monitoring</li>
                 <li>• Failure prediction algorithms</li>
                 <li>• Maintenance scheduling optimization</li>
@@ -127,15 +127,15 @@ const AviationPage: React.FC = () => {
               </ul>
             </div>
 
-            <div className="group bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div className="group bg-gradient-to-br from-purple-900 to-purple-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Passenger Experience</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Personalized services and proactive communication enhance every aspect of the passenger journey.
               </p>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>• Personalized recommendations</li>
                 <li>• Real-time updates</li>
                 <li>• Service optimization</li>
