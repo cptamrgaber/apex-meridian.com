@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { TrendingUp, DollarSign, Shield, Users, ArrowRight } from 'lucide-react';
+import { TrendingUp, DollarSign, Shield, Users, ArrowRight } from 'lucide-reac
+  import BrandName from '@/components/BrandName';';
 
 export default function InvestorsPage() {
   return (
@@ -25,12 +26,7 @@ export default function InvestorsPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Investment Highlights</h2>
             <p className="text-lg text-gray-600">
-              Why <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x</span>
-                
-                <span>M e r i d i a n</span>
-                <sup className="text-xs ml-1">®</sup>
-              </span> represents a compelling investment opportunity
+Why <BrandName asLink={false} className="text-blue-300 font-light inline" /> represents a compelling investment opportunity
             </p>
           </div>
           
