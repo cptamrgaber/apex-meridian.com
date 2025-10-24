@@ -22,6 +22,7 @@ export default function LoginForm({ onSuccess, redirectTo }: LoginFormProps) {
     e.preventDefault();
     setError('');
     setIsLoading(true);
+    setIsLoading(true);
 
     try {
       const result = await login(email, password);
@@ -119,15 +120,6 @@ export default function LoginForm({ onSuccess, redirectTo }: LoginFormProps) {
         </button>
       </form>
 
-      <div className="mt-6 text-center">
-        <p className="text-sm text-gray-600">
-          Demo Credentials:
-        </p>
-        <div className="mt-2 text-xs text-gray-500 space-y-1">
-          <p>Admin: admin@apex-meridian.com / password123</p>
-          <p>HR: hr@apex-meridian.com / password123</p>
-          <p>Employee: employee@apex-meridian.com / password123</p>
-        </div>
       </div>
     </div>
   );
