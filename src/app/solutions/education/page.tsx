@@ -44,23 +44,23 @@ export default function EducationSolutionsPage() {
             </div>
             <div className="relative">
               <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Key Capabilities</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">Key Capabilities</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Personalized Learning Paths</span>
+                    <span className="text-white">Personalized Learning Paths</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Intelligent Content Adaptation</span>
+                    <span className="text-white">Intelligent Content Adaptation</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Real-time Progress Analytics</span>
+                    <span className="text-white">Real-time Progress Analytics</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Automated Assessment & Feedback</span>
+                    <span className="text-white">Automated Assessment & Feedback</span>
                   </div>
                 </div>
               </div>

@@ -44,23 +44,23 @@ export default function CybersecuritySolutionsPage() {
             </div>
             <div className="relative">
               <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Key Capabilities</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">Key Capabilities</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Real-time Threat Detection</span>
+                    <span className="text-white">Real-time Threat Detection</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Automated Incident Response</span>
+                    <span className="text-white">Automated Incident Response</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Predictive Risk Analysis</span>
+                    <span className="text-white">Predictive Risk Analysis</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
-                    <span>Zero-Day Vulnerability Protection</span>
+                    <span className="text-white">Zero-Day Vulnerability Protection</span>
                   </div>
                 </div>
               </div>
