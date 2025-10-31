@@ -22,7 +22,6 @@ export default function LoginForm({ onSuccess, redirectTo }: LoginFormProps) {
     e.preventDefault();
     setError('');
     setIsLoading(true);
-    setIsLoading(true);
 
     try {
       const result = await login(email, password);
@@ -119,8 +118,6 @@ export default function LoginForm({ onSuccess, redirectTo }: LoginFormProps) {
           {isLoading ? 'Signing in...' : 'Sign In'}
         </button>
       </form>
-
-      </div>
     </div>
   );
 }
