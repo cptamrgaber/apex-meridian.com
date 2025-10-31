@@ -94,7 +94,7 @@ export default function EducationSolutionsPage() {
                 <li>• Learning style recognition</li>
                 <li>• Progress tracking & analytics</li>
               </ul>
-              <Link href="/contact" className="text-green-300 hover:text-green-100 font-medium">
+              <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
                 Learn More →
               </Link>
             </div>
@@ -113,7 +113,7 @@ export default function EducationSolutionsPage() {
                 <li>• Homework assistance</li>
                 <li>• Socratic questioning methods</li>
               </ul>
-              <Link href="/contact" className="text-green-300 hover:text-green-100 font-medium">
+              <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
                 Learn More →
               </Link>
             </div>
@@ -132,7 +132,7 @@ export default function EducationSolutionsPage() {
                 <li>• Predictive performance modeling</li>
                 <li>• Educator dashboard & insights</li>
               </ul>
-              <Link href="/contact" className="text-green-300 hover:text-green-100 font-medium">
+              <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
                 Learn More →
               </Link>
             </div>
