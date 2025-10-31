@@ -9,31 +9,15 @@ export default function AGISolutionsPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 text-white py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 bg-black opacity-60"></div>
           <Image
             src="/images/solutions/agi-neural-network.jpg"
             alt="Neural Network Background"
             fill
             className="object-cover"
+            quality={95}
+            priority
           />
-          {/* Integrated Tree Logo */}
-          <div className="absolute top-1/2 right-22 transform -translate-y-1/2 z-10">
-            <a 
-              href="https://apex-meridian.net" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block hover:scale-110 transition-transform duration-300"
-              title="Visit Apex-Meridian AI LLM & Agent Platform"
-            >
-              <Image
-                src="/assets/Apex-Meridian_tree_drowing.png"
-                alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
-                width={300}
-                height={300}
-                className="h-40 w-40 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
-              />
-            </a>
-          </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -60,7 +44,25 @@ export default function AGISolutionsPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gray-900/10 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-gray-900/30 backdrop-blur-md rounded-2xl p-8 border border-purple-500/20">
+                {/* Integrated Tree Logo */}
+                <div className="absolute -top-6 -right-6 z-10">
+                  <a 
+                    href="https://apex-meridian.net" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block hover:scale-110 transition-transform duration-300"
+                    title="Visit Apex-Meridian AI LLM & Agent Platform"
+                  >
+                    <Image
+                      src="/assets/Apex-Meridian_tree_drowing.png"
+                      alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
+                      width={300}
+                      height={300}
+                      className="h-32 w-32 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"
+                    />
+                  </a>
+                </div>
                 <h3 className="text-2xl font-bold mb-6">AGI Capabilities</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
