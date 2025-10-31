@@ -74,7 +74,7 @@ export default function EducationSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Personalized Learning at Scale</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               Our AI-powered education platform adapts to each learner&apos;s unique needs, providing personalized instruction and support that maximizes learning outcomes.
             </p>
           </div>
@@ -85,10 +85,10 @@ export default function EducationSolutionsPage() {
                 <Brain className="h-6 w-6 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Adaptive Learning</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 AI algorithms adjust content difficulty and learning paths in real-time based on student performance and engagement.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-gray-400 space-y-1 mb-4">
                 <li>• Personalized learning paths</li>
                 <li>• Dynamic content adjustment</li>
                 <li>• Learning style recognition</li>
@@ -104,10 +104,10 @@ export default function EducationSolutionsPage() {
                 <Users className="h-6 w-6 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Intelligent Tutoring</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 AI-powered virtual tutors provide 24/7 personalized support, answering questions and guiding students through complex concepts.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-gray-400 space-y-1 mb-4">
                 <li>• Natural language interaction</li>
                 <li>• Concept explanation & examples</li>
                 <li>• Homework assistance</li>
@@ -123,10 +123,10 @@ export default function EducationSolutionsPage() {
                 <TrendingUp className="h-6 w-6 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Assessment & Analytics</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Comprehensive assessment tools with detailed analytics help educators understand student progress and optimize instruction.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-gray-400 space-y-1 mb-4">
                 <li>• Automated grading & feedback</li>
                 <li>• Learning gap identification</li>
                 <li>• Predictive performance modeling</li>
@@ -145,7 +145,7 @@ export default function EducationSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Proven Learning Outcomes</h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-300 mb-8">
               Educational institutions using our AI see significant improvements in student performance
             </p>
             <div className="flex justify-center">
@@ -162,26 +162,26 @@ export default function EducationSolutionsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-green-300 mb-2">35%</div>
-              <p className="text-gray-600 font-medium">Improvement in Test Scores</p>
-              <p className="text-sm text-gray-500 mt-1">Across all grade levels</p>
+              <p className="text-gray-300 font-medium">Improvement in Test Scores</p>
+              <p className="text-sm text-gray-400 mt-1">Across all grade levels</p>
             </div>
             
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-300 mb-2">50%</div>
-              <p className="text-gray-600 font-medium">Reduction in Learning Time</p>
-              <p className="text-sm text-gray-500 mt-1">Through personalized paths</p>
+              <p className="text-gray-300 font-medium">Reduction in Learning Time</p>
+              <p className="text-sm text-gray-400 mt-1">Through personalized paths</p>
             </div>
             
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-300 mb-2">90%</div>
-              <p className="text-gray-600 font-medium">Student Engagement Rate</p>
-              <p className="text-sm text-gray-500 mt-1">Interactive AI tutoring</p>
+              <p className="text-gray-300 font-medium">Student Engagement Rate</p>
+              <p className="text-sm text-gray-400 mt-1">Interactive AI tutoring</p>
             </div>
             
             <div className="text-center">
               <div className="text-4xl font-bold text-orange-300 mb-2">25%</div>
-              <p className="text-gray-600 font-medium">Teacher Time Savings</p>
-              <p className="text-sm text-gray-500 mt-1">Automated grading & feedback</p>
+              <p className="text-gray-300 font-medium">Teacher Time Savings</p>
+              <p className="text-sm text-gray-400 mt-1">Automated grading & feedback</p>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function EducationSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Advanced Educational AI</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Powered by cutting-edge machine learning and cognitive science research
             </p>
           </div>
@@ -207,7 +207,7 @@ export default function EducationSolutionsPage() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Learning Profile Creation</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       AI analyzes student interactions, performance patterns, and learning preferences to create detailed learner profiles.
                     </p>
                   </div>
@@ -219,7 +219,7 @@ export default function EducationSolutionsPage() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Content Adaptation</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       Machine learning algorithms adjust content presentation, difficulty, and pacing to match individual learning needs.
                     </p>
                   </div>
@@ -231,7 +231,7 @@ export default function EducationSolutionsPage() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Real-time Feedback</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       Continuous assessment and feedback help students understand concepts and correct misconceptions immediately.
                     </p>
                   </div>
@@ -243,7 +243,7 @@ export default function EducationSolutionsPage() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Predictive Analytics</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       AI predicts learning outcomes and identifies students at risk, enabling proactive intervention and support.
                     </p>
                   </div>
@@ -290,7 +290,7 @@ export default function EducationSolutionsPage() {
           <div className="bg-green-800 rounded-lg p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-white mb-4">Success Story</h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-300">
                 How Lincoln High School transformed student outcomes with AI-powered learning
               </p>
             </div>
@@ -298,12 +298,12 @@ export default function EducationSolutionsPage() {
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">The Challenge</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-300 mb-6">
                   Lincoln High School struggled with diverse learning needs across 2,000 students. Traditional one-size-fits-all instruction left many students behind, particularly in STEM subjects.
                 </p>
                 
                 <h3 className="text-2xl font-bold text-white mb-4">The Solution</h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-300 mb-6">
                   We implemented our comprehensive AI education platform across all grade levels, providing personalized learning paths and intelligent tutoring for every student.
                 </p>
                 
@@ -327,25 +327,25 @@ export default function EducationSolutionsPage() {
                 <h3 className="text-xl font-bold text-white mb-4">Results After One Academic Year</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Math Test Scores</span>
+                    <span className="text-gray-300">Math Test Scores</span>
                     <span className="text-2xl font-bold text-green-300">+42%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Science Test Scores</span>
+                    <span className="text-gray-300">Science Test Scores</span>
                     <span className="text-2xl font-bold text-blue-300">+38%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Student Engagement</span>
+                    <span className="text-gray-300">Student Engagement</span>
                     <span className="text-2xl font-bold text-purple-300">+55%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Graduation Rate</span>
+                    <span className="text-gray-300">Graduation Rate</span>
                     <span className="text-2xl font-bold text-orange-300">+15%</span>
                   </div>
                 </div>
                 
                 <div className="mt-6 p-4 bg-gray-800 rounded-lg">
-                  <p className="text-sm text-gray-600 italic">
+                  <p className="text-sm text-gray-300 italic">
                     &quot;Our students are more engaged and achieving better results than ever before. The AI tutoring has been a game-changer for personalized learning.&quot;
                   </p>
                   <p className="text-sm font-medium text-white mt-2">
@@ -363,7 +363,7 @@ export default function EducationSolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Easy Implementation</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Get started with AI-powered education in just a few simple steps
             </p>
           </div>
@@ -374,7 +374,7 @@ export default function EducationSolutionsPage() {
                 <span className="text-green-300 font-bold text-xl">1</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Setup & Integration</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Quick integration with existing LMS and student information systems. No disruption to current workflows.
               </p>
             </div>
@@ -384,7 +384,7 @@ export default function EducationSolutionsPage() {
                 <span className="text-blue-300 font-bold text-xl">2</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Teacher Training</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Comprehensive training program to help educators maximize the benefits of AI-powered teaching tools.
               </p>
             </div>
@@ -394,7 +394,7 @@ export default function EducationSolutionsPage() {
                 <span className="text-purple-300 font-bold text-xl">3</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Launch & Support</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Go live with full support from our education specialists. Ongoing optimization and feature updates included.
               </p>
             </div>

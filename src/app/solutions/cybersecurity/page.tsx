@@ -74,7 +74,7 @@ export default function CybersecuritySolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">Next-Generation Cyber Defense</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Our AI-powered cybersecurity platform provides comprehensive protection against sophisticated threats, from zero-day attacks to advanced persistent threats.
             </p>
           </div>
@@ -85,10 +85,10 @@ export default function CybersecuritySolutionsPage() {
                 <Eye className="h-6 w-6 text-red-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Threat Detection</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Advanced AI algorithms detect known and unknown threats in real-time across your entire network infrastructure.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-gray-300 space-y-1 mb-4">
                 <li>• Zero-day attack detection</li>
                 <li>• Behavioral anomaly analysis</li>
                 <li>• Network traffic monitoring</li>
@@ -104,10 +104,10 @@ export default function CybersecuritySolutionsPage() {
                 <AlertTriangle className="h-6 w-6 text-orange-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Incident Response</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Automated incident response and containment to minimize damage and reduce response times from hours to seconds.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-gray-300 space-y-1 mb-4">
                 <li>• Automated threat containment</li>
                 <li>• Incident classification</li>
                 <li>• Response orchestration</li>
@@ -123,10 +123,10 @@ export default function CybersecuritySolutionsPage() {
                 <Lock className="h-6 w-6 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Risk Management</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Predictive risk assessment and vulnerability management to prevent attacks before they happen.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1 mb-4">
+              <ul className="text-sm text-gray-300 space-y-1 mb-4">
                 <li>• Vulnerability prioritization</li>
                 <li>• Risk scoring algorithms</li>
                 <li>• Compliance monitoring</li>

@@ -96,7 +96,7 @@ export default function AGISolutionsPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               The Future of Intelligence
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Our AGI research focuses on creating artificial intelligence that can understand, learn, and apply knowledge across diverse domains while maintaining human values and ethical principles.
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function AGISolutionsPage() {
                   <Brain className="h-6 w-6 text-purple-300 mt-1 mr-4" />
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Human-Aligned Intelligence</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       Developing AGI systems that understand and align with human values, ensuring beneficial outcomes for all of humanity.
                     </p>
                   </div>
@@ -119,7 +119,7 @@ export default function AGISolutionsPage() {
                   <Shield className="h-6 w-6 text-purple-300 mt-1 mr-4" />
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Safety-First Approach</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       Implementing robust safety measures and ethical frameworks to ensure AGI development remains controllable and beneficial.
                     </p>
                   </div>
@@ -129,7 +129,7 @@ export default function AGISolutionsPage() {
                   <Users className="h-6 w-6 text-purple-300 mt-1 mr-4" />
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-2">Collaborative Intelligence</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       Creating AGI that enhances human capabilities rather than replacing them, fostering human-AI collaboration.
                     </p>
                   </div>
@@ -173,7 +173,7 @@ export default function AGISolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">AGI Research Pillars</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Our comprehensive approach to developing safe and beneficial artificial general intelligence
             </p>
           </div>
@@ -184,10 +184,10 @@ export default function AGISolutionsPage() {
                 <Brain className="h-6 w-6 text-purple-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Cognitive Architecture</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Developing advanced cognitive architectures that can reason, learn, and adapt across multiple domains with human-like flexibility.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1">
+              <ul className="text-sm text-gray-400 space-y-1">
                 <li>• Neural-symbolic integration</li>
                 <li>• Memory and attention systems</li>
                 <li>• Meta-learning capabilities</li>
@@ -199,10 +199,10 @@ export default function AGISolutionsPage() {
                 <Zap className="h-6 w-6 text-blue-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Emergent Intelligence</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Researching how complex intelligent behaviors can emerge from simpler components and interactions.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1">
+              <ul className="text-sm text-gray-400 space-y-1">
                 <li>• Self-organizing systems</li>
                 <li>• Emergent problem-solving</li>
                 <li>• Adaptive behavior patterns</li>
@@ -214,10 +214,10 @@ export default function AGISolutionsPage() {
                 <Shield className="h-6 w-6 text-green-300" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">AI Safety & Ethics</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-300 mb-4">
                 Ensuring AGI systems remain aligned with human values and operate safely in complex real-world environments.
               </p>
-              <ul className="text-sm text-gray-500 space-y-1">
+              <ul className="text-sm text-gray-400 space-y-1">
                 <li>• Value alignment research</li>
                 <li>• Robustness testing</li>
                 <li>• Ethical decision frameworks</li>
@@ -232,7 +232,7 @@ export default function AGISolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-4">AGI Development Roadmap</h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Our phased approach to achieving safe and beneficial artificial general intelligence
             </p>
           </div>
@@ -244,7 +244,7 @@ export default function AGISolutionsPage() {
               </div>
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-white mb-2">Foundation Models (2024-2025)</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Developing robust foundation models with enhanced reasoning capabilities and multi-modal understanding.
                 </p>
               </div>
@@ -256,7 +256,7 @@ export default function AGISolutionsPage() {
               </div>
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-white mb-2">Cognitive Integration (2025-2027)</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Integrating cognitive architectures with advanced learning systems for more flexible and adaptable AI.
                 </p>
               </div>
@@ -268,7 +268,7 @@ export default function AGISolutionsPage() {
               </div>
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-white mb-2">AGI Emergence (2027-2030)</h3>
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Achieving artificial general intelligence with human-level performance across diverse cognitive tasks.
                 </p>
               </div>
