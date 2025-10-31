@@ -21,17 +21,17 @@ export default function AGISolutionsPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="bg-gray-900/80 backdrop-blur-md rounded-3xl p-8">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <div className="w-20 h-20 bg-purple-600/30 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                   <Brain className="h-10 w-10 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">MeridianAGI</h1>
+                  <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">MeridianAGI</h1>
                   <p className="text-xl text-purple-200">Artificial General Intelligence</p>
                 </div>
               </div>
-              <p className="text-xl md:text-2xl text-purple-100 mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
                 Pioneering the future of artificial intelligence with advanced reasoning, multi-modal understanding, and autonomous problem-solving capabilities that adapt and learn like human intelligence.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -44,7 +44,7 @@ export default function AGISolutionsPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gray-900/30 backdrop-blur-md rounded-2xl p-8 border border-purple-500/20">
+              <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-8 border border-purple-500/20">
                 <div className="flex items-start justify-between mb-6">
                   <h3 className="text-2xl font-bold">AGI Capabilities</h3>
                   {/* Integrated Tree Logo */}

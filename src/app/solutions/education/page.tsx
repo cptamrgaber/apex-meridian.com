@@ -20,17 +20,17 @@ export default function EducationSolutionsPage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="bg-gray-900/80 backdrop-blur-md rounded-3xl p-8">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-gray-900/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                <div className="w-20 h-20 bg-green-600/30 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                   <Brain className="h-10 w-10 text-white" />
                 </div>
                 <div>
-                  <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">EduGenius</h1>
+                  <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">EduGenius</h1>
                   <p className="text-xl text-green-200">Personalized Learning Platform</p>
                 </div>
               </div>
-              <p className="text-xl md:text-2xl text-green-100 mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
                 Transform learning experiences with personalized AI tutoring, adaptive content delivery, and intelligent assessment systems that empower both educators and students.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -43,7 +43,7 @@ export default function EducationSolutionsPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gray-900/10 backdrop-blur-sm rounded-2xl p-8">
+              <div className="bg-gray-900/80 backdrop-blur-md rounded-2xl p-8">
                 <h3 className="text-2xl font-bold mb-6">Key Capabilities</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
