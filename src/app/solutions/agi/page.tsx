@@ -45,13 +45,14 @@ export default function AGISolutionsPage() {
             </div>
             <div className="relative">
               <div className="bg-gray-900/30 backdrop-blur-md rounded-2xl p-8 border border-purple-500/20">
-                {/* Integrated Tree Logo */}
-                <div className="absolute -top-6 -right-6 z-10">
+                <div className="flex items-start justify-between mb-6">
+                  <h3 className="text-2xl font-bold">AGI Capabilities</h3>
+                  {/* Integrated Tree Logo */}
                   <a 
                     href="https://apex-meridian.net" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="block hover:scale-110 transition-transform duration-300"
+                    className="block hover:scale-110 transition-transform duration-300 flex-shrink-0 ml-4"
                     title="Visit Apex-Meridian AI LLM & Agent Platform"
                   >
                     <Image
@@ -59,11 +60,10 @@ export default function AGISolutionsPage() {
                       alt="Apex-Meridian AGI Tree of Knowledge - Click to visit AI Platform"
                       width={300}
                       height={300}
-                      className="h-32 w-32 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"
+                      className="h-24 w-24 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"
                     />
                   </a>
                 </div>
-                <h3 className="text-2xl font-bold mb-6">AGI Capabilities</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-400" />
