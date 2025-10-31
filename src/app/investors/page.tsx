@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { TrendingUp, DollarSign, Shield, Users, ArrowRight } from 'lucide-reac
-  import BrandName from '@/components/BrandName';';
+import { TrendingUp, DollarSign, Shield, Users, ArrowRight } from 'lucide-react';
+import BrandName from '@/components/BrandName';
 
 export default function InvestorsPage() {
   return (
