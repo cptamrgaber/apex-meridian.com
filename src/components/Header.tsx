@@ -42,7 +42,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/assets/Apex-Meridianlogofull_red_1.png"
+                src="/assets/logo-new.png"
                 alt="Apex Meridian"
                 width={540}
                 height={162}

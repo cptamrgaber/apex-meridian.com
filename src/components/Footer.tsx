@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/assets/Apex-Meridianlogofull_red_1.png"
+                src="/assets/logo-new.png"
                 alt="Apex Meridian Logo"
                 width={405}
                 height={112}
