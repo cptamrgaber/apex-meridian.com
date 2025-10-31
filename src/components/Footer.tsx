@@ -22,7 +22,6 @@ const Footer: React.FC = () => {
                 height={112}
                 className="h-28 w-auto object-contain"
                 style={{ 
-                  filter: 'drop-shadow(0.5px 0.5px 0 white) drop-shadow(-0.5px -0.5px 0 white) drop-shadow(0.5px -0.5px 0 white) drop-shadow(-0.5px 0.5px 0 white)',
                   aspectRatio: 'auto'
                 }}
               />
