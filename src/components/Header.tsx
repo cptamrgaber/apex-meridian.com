@@ -43,7 +43,7 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/assets/Apex-Meridianlogofull_red_1.png"
-                alt="A  p  e  x    M  e  r  i  d  i  a  n"
+                alt="Apex Meridian"
                 width={540}
                 height={162}
                 className="h-12 sm:h-14 md:h-16 w-auto object-contain max-w-[200px] sm:max-w-[240px] md:max-w-none"

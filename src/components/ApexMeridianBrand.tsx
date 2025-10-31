@@ -36,7 +36,7 @@ export const ApexMeridianBrand: React.FC<ApexMeridianBrandProps> = ({
   const content = (
     <span className={baseClasses}>
       <span className="whitespace-nowrap">
-        A  p  e  x    M  e  r  i  d  i  a  n
+        Apex Meridian
       </span>
       {showRegistered && (
         <sup className="text-sm ml-1">®</sup>

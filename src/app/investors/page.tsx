@@ -166,7 +166,7 @@ Why <BrandName asLink={false} className="text-blue-300 font-light inline" /> rep
             <h2 className="text-3xl font-bold text-white mb-4">Massive Market Opportunity</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               The AI market is experiencing unprecedented growth, and <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x</span>
+                <span>Apex</span>
                 
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>

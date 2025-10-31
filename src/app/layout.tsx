@@ -10,21 +10,21 @@ import { ThemeProvider } from "@/lib/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
-  description: "A  p  e  x    M  e  r  i  d  i  a  n delivers cutting-edge AI solutions across aviation, cybersecurity, education, and AGI development. Transform your industry with our advanced artificial intelligence platform.",
+  title: "Apex Meridian | Leading AI Technology Solutions",
+  description: "Apex Meridian delivers cutting-edge AI solutions across aviation, cybersecurity, education, and AGI development. Transform your industry with our advanced artificial intelligence platform.",
   keywords: "AI, artificial intelligence, aviation, cybersecurity, education, AGI, technology solutions",
-  authors: [{ name: "A  p  e  x    M  e  r  i  d  i  a  n" }],
+  authors: [{ name: "Apex Meridian" }],
   openGraph: {
-    title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
-    description: "Transform your industry with cutting-edge AI solutions from A  p  e  x    M  e  r  i  d  i  a  n",
+    title: "Apex Meridian | Leading AI Technology Solutions",
+    description: "Transform your industry with cutting-edge AI solutions from Apex Meridian",
     url: "https://www.apex-meridian.com",
-    siteName: "A  p  e  x    M  e  r  i  d  i  a  n",
+    siteName: "Apex Meridian",
     images: [
       {
         url: "/Apex-Meridianlogoicon.png",
         width: 1200,
         height: 630,
-        alt: "A  p  e  x    M  e  r  i  d  i  a  n Logo",
+        alt: "Apex Meridian Logo",
       },
     ],
     locale: "en_US",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A  p  e  x    M  e  r  i  d  i  a  n | Leading AI Technology Solutions",
-    description: "Transform your industry with cutting-edge AI solutions from A  p  e  x    M  e  r  i  d  i  a  n",
+    title: "Apex Meridian | Leading AI Technology Solutions",
+    description: "Transform your industry with cutting-edge AI solutions from Apex Meridian",
     images: ["/Apex-Meridianlogoicon.png"],
   },
   robots: {

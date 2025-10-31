@@ -14,7 +14,7 @@ export default function InvestmentOpportunityPage() {
             </h1>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
               Join us in revolutionizing artificial intelligence across multiple industries. Discover why <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x</span>
+                <span>Apex</span>
                 
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>
@@ -101,7 +101,7 @@ export default function InvestmentOpportunityPage() {
             <h2 className="text-3xl font-bold text-white mb-4">Competitive Advantages</h2>
             <p className="text-lg text-gray-600">
               What sets <span className="font-light text-blue-300" style={{ letterSpacing: '0.2em' }}>
-                <span>A  p  e  x</span>
+                <span>Apex</span>
                 
                 <span>M e r i d i a n</span>
                 <sup className="text-xs ml-1">®</sup>

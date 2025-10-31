@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center mb-4">
               <Image
                 src="/assets/Apex-Meridianlogofull_red_1.png"
-                alt="A  p  e  x    M  e  r  i  d  i  a  n Logo"
+                alt="Apex Meridian Logo"
                 width={405}
                 height={112}
                 className="h-28 w-auto object-contain"
