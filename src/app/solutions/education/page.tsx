@@ -251,32 +251,32 @@ export default function EducationSolutionsPage() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8">
+            <div className="bg-gray-900/90 backdrop-blur-lg rounded-lg p-8 border border-green-500/30">
               <h4 className="text-xl font-bold text-white mb-6">Key AI Features</h4>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Natural language processing for content understanding</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Natural language processing for content understanding</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Computer vision for handwriting and diagram analysis</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Computer vision for handwriting and diagram analysis</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Reinforcement learning for adaptive questioning</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Reinforcement learning for adaptive questioning</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Knowledge graph modeling for concept relationships</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Knowledge graph modeling for concept relationships</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Emotion recognition for engagement monitoring</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Emotion recognition for engagement monitoring</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Collaborative filtering for peer learning recommendations</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Collaborative filtering for peer learning recommendations</span>
                 </div>
               </div>
             </div>

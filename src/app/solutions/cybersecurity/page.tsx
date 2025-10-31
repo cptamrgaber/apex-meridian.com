@@ -251,32 +251,32 @@ export default function CybersecuritySolutionsPage() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-lg p-8">
+            <div className="bg-gray-900/90 backdrop-blur-lg rounded-lg p-8 border border-red-500/30">
               <h4 className="text-xl font-bold text-white mb-6">Key AI Capabilities</h4>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Deep learning neural networks for pattern recognition</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Deep learning neural networks for pattern recognition</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Natural language processing for threat intelligence</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Natural language processing for threat intelligence</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Reinforcement learning for adaptive defense</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Reinforcement learning for adaptive defense</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Graph analytics for attack path analysis</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Graph analytics for attack path analysis</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Ensemble methods for improved accuracy</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Ensemble methods for improved accuracy</span>
                 </div>
                 <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                  <span className="text-gray-300">Federated learning for privacy-preserving updates</span>
+                  <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                  <span className="text-gray-200">Federated learning for privacy-preserving updates</span>
                 </div>
               </div>
             </div>
