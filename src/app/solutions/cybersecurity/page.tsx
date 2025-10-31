@@ -12,7 +12,7 @@ export default function CybersecuritySolutionsPage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <Image
-            src="/images/solutions/cybersecurity-ai.jpg"
+            src="/images/solutions/cybersecurity-ai-hq.jpg"
             alt="Cybersecurity AI Background"
             fill
             className="object-cover"
