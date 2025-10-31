@@ -94,7 +94,7 @@ export default function CybersecuritySolutionsPage() {
                 <li>• Network traffic monitoring</li>
                 <li>• Endpoint threat hunting</li>
               </ul>
-              <Link href="/contact" className="text-red-300 hover:text-red-100 font-medium">
+              <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
                 Learn More →
               </Link>
             </div>
@@ -113,7 +113,7 @@ export default function CybersecuritySolutionsPage() {
                 <li>• Response orchestration</li>
                 <li>• Forensic analysis automation</li>
               </ul>
-              <Link href="/contact" className="text-red-300 hover:text-red-100 font-medium">
+              <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
                 Learn More →
               </Link>
             </div>
@@ -132,7 +132,7 @@ export default function CybersecuritySolutionsPage() {
                 <li>• Compliance monitoring</li>
                 <li>• Security posture assessment</li>
               </ul>
-              <Link href="/contact" className="text-red-300 hover:text-red-100 font-medium">
+              <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
                 Learn More →
               </Link>
             </div>
