@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 alt="Apex Meridian Logo"
                 width={405}
                 height={112}
-                className="h-28 w-auto object-contain"
+                className="h-10 w-auto object-contain"
                 style={{ 
                   aspectRatio: 'auto'
                 }}
