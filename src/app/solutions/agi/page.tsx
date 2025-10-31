@@ -11,7 +11,7 @@ export default function AGISolutionsPage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <Image
-            src="/images/solutions/agi-neural-network.jpg"
+            src="/images/solutions/agi-neural-network-hq.jpg"
             alt="Neural Network Background"
             fill
             className="object-cover"
@@ -138,28 +138,28 @@ export default function AGISolutionsPage() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-lg p-8">
+              <div className="bg-gray-900/80 backdrop-blur-sm rounded-lg p-8 border border-purple-500/30">
                 <h4 className="text-xl font-bold text-white mb-4">AGI Research Areas</h4>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                    <span className="text-gray-300">Multi-modal reasoning and understanding</span>
+                    <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                    <span className="text-gray-200">Multi-modal reasoning and understanding</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                    <span className="text-gray-300">Continual learning and adaptation</span>
+                    <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                    <span className="text-gray-200">Continual learning and adaptation</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                    <span className="text-gray-300">Ethical decision-making frameworks</span>
+                    <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                    <span className="text-gray-200">Ethical decision-making frameworks</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                    <span className="text-gray-300">Human-AI interaction protocols</span>
+                    <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                    <span className="text-gray-200">Human-AI interaction protocols</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-300 mr-3" />
-                    <span className="text-gray-300">Interpretable AI systems</span>
+                    <CheckCircle className="h-5 w-5 text-green-400 mr-3" />
+                    <span className="text-gray-200">Interpretable AI systems</span>
                   </li>
                 </ul>
               </div>
