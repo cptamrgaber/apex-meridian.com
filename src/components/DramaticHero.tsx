@@ -37,18 +37,15 @@ export default function DramaticHero() {
 
         {/* AGI Tree Icon */}
         <div className="flex justify-center mb-8 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          <Link href="/solutions/agi" className="group relative">
-            <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl group-hover:bg-blue-500/30 transition-all duration-300"></div>
-            <div className="relative bg-gradient-to-br from-blue-500/10 to-cyan-500/10 backdrop-blur-sm rounded-full p-8 border border-blue-500/20 group-hover:border-blue-400/40 transition-all duration-300">
-              <Image
-                src="/assets/Apex-Meridian_tree_drowing.png"
-                alt="AI Technology"
-                width={180}
-                height={180}
-                className="w-36 h-36 md:w-48 md:h-48 object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
+          <Link href="/solutions/agi" className="group relative inline-block">
+            <Image
+              src="/assets/Apex-Meridian_tree_drowing.png"
+              alt="AI Technology"
+              width={180}
+              height={180}
+              className="w-36 h-36 md:w-48 md:h-48 object-contain transition-all duration-500 group-hover:drop-shadow-[0_0_25px_rgba(59,130,246,0.8)] group-hover:scale-105"
+              style={{ filter: 'drop-shadow(0 0 0px rgba(59,130,246,0))' }}
+            />
           </Link>
         </div>
 
