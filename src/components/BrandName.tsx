@@ -44,10 +44,10 @@ export default function BrandName({
 
   const content = (
     <span 
-      className={`${sizeClasses[size]} ${className} whitespace-nowrap inline-block text-blue-400 hover:text-blue-300 transition-colors font-light`}
-      style={{ letterSpacing: '0.05em', ...style }}
+      className={`${sizeClasses[size]} ${className} whitespace-nowrap inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors font-light`}
+      style={{ letterSpacing: '0.2em', ...style }}
     >
-      Apex-Meridian{showRegistered && <sup className={`${registeredSizes[size]} ml-1`}>®</sup>}
+      <span>A p e x - M e r i d i a n</span>{showRegistered && <span className="ml-2">®</span>}
     </span>
   );
 
