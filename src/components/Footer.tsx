@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center mb-4">
             <div className="text-gray-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 <BrandName />. All rights reserved.
+              © 2025 <BrandName /> LLC. All rights reserved.
             </div>
             
             {/* Social Links */}

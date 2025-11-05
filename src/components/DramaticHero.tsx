@@ -29,7 +29,7 @@ export default function DramaticHero() {
         <div className="flex items-center justify-center mb-8 animate-slide-up">
           <div className="relative">
             <h1 className="text-center font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent mb-2 flex items-center justify-center" style={{ letterSpacing: '0.2em' }}>
-              <span>A p e x  M e r i d i a n</span><span className="text-xl sm:text-2xl md:text-3xl ml-2">®</span>
+              <span>A p e x - M e r i d i a n</span><span className="text-xl sm:text-2xl md:text-3xl ml-2">®</span>
             </h1>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"></div>
           </div>

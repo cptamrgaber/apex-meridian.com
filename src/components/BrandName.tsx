@@ -47,7 +47,7 @@ export default function BrandName({
       className={`${sizeClasses[size]} ${className} whitespace-nowrap inline-block text-blue-400 hover:text-blue-300 transition-colors font-light`}
       style={{ letterSpacing: '0.05em', ...style }}
     >
-      Apex Meridian{showRegistered && <sup className={`${registeredSizes[size]} ml-1`}>®</sup>}
+      Apex-Meridian{showRegistered && <sup className={`${registeredSizes[size]} ml-1`}>®</sup>}
     </span>
   );
 

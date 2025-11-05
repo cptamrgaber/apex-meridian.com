@@ -67,7 +67,7 @@ export default function Licenses() {
 
               <h3 className="text-xl font-semibold text-white mb-3">Trademarks and Service Marks</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li><strong>Apex Meridian®</strong> - Registered trademark for AI technology services</li>
+                <li><strong>Apex-Meridian®</strong> - Registered trademark for AI technology services</li>
                 <li><strong>AeroMind™</strong> - Aviation intelligence platform</li>
                 <li><strong>CyberGuard™</strong> - Intelligent security shield</li>
                 <li><strong>EduGenius™</strong> - Personalized learning AI</li>

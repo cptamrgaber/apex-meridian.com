@@ -16,7 +16,7 @@ export default function EmployeeLoginPage() {
             <div className="flex items-center">
               <Image
                 src="/assets/logo_blue.png"
-                alt="Apex Meridian Logo"
+                alt="Apex-Meridian Logo"
                 width={120}
                 height={40}
                 className="h-10 w-auto"
@@ -41,7 +41,7 @@ export default function EmployeeLoginPage() {
               Employee Portal Access
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Welcome to the Apex Meridian employee portal. Please sign in with your company credentials 
+              Welcome to the Apex-Meridian employee portal. Please sign in with your company credentials 
               to access your dashboard, HR resources, and company information.
             </p>
           </div>

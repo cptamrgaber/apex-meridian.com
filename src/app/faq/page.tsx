@@ -27,7 +27,7 @@ export default function FAQ() {
     {
       category: "General",
       question: "What is <BrandName />?",
-      answer: "Apex Meridian is a leading artificial intelligence company that develops cutting-edge AI solutions for aviation, cybersecurity, education, and AGI development. We focus on creating AI that augments human capabilities and solves complex real-world problems."
+      answer: "Apex-Meridian is a leading artificial intelligence company that develops cutting-edge AI solutions for aviation, cybersecurity, education, and AGI development. We focus on creating AI that augments human capabilities and solves complex real-world problems."
     },
     {
       category: "General",
