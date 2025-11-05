@@ -57,13 +57,13 @@ export default function InvestmentOpportunityPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8">
+          <div className="bg-gray-900/90 backdrop-blur-md rounded-lg p-8 border border-gray-700/50">
             <h3 className="text-2xl font-bold text-white mb-4">Total Addressable Market</h3>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="text-5xl font-bold text-blue-300 mb-2">$74.1B</div>
-                <p className="text-lg text-gray-600 mb-4">Combined TAM across our target markets by 2028</p>
-                <ul className="space-y-2 text-gray-600">
+                <p className="text-lg text-gray-300 mb-4">Combined TAM across our target markets by 2028</p>
+                <ul className="space-y-2 text-gray-300">
                   <li>• Early-stage market with significant growth potential</li>
                   <li>• Limited competition in specialized AI applications</li>
                   <li>• High barriers to entry due to technical complexity</li>
@@ -187,45 +187,45 @@ export default function InvestmentOpportunityPage() {
             </p>
           </div>
           
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8">
+          <div className="bg-gray-900/90 backdrop-blur-md rounded-lg p-8 border border-gray-700/50">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">2025</h3>
-                <div className="text-2xl font-bold text-blue-300 mb-1">$45M</div>
-                <p className="text-sm text-gray-600">Revenue</p>
+                <h3 className="text-lg font-bold text-gray-400 mb-2">2025</h3>
+                <div className="text-2xl font-bold text-blue-400 mb-1">$45M</div>
+                <p className="text-sm text-gray-300">Revenue</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">2026</h3>
-                <div className="text-2xl font-bold text-green-300 mb-1">$120M</div>
-                <p className="text-sm text-gray-600">Revenue</p>
+                <h3 className="text-lg font-bold text-gray-400 mb-2">2026</h3>
+                <div className="text-2xl font-bold text-green-400 mb-1">$120M</div>
+                <p className="text-sm text-gray-300">Revenue</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">2027</h3>
-                <div className="text-2xl font-bold text-purple-300 mb-1">$280M</div>
-                <p className="text-sm text-gray-600">Revenue</p>
+                <h3 className="text-lg font-bold text-gray-400 mb-2">2027</h3>
+                <div className="text-2xl font-bold text-purple-400 mb-1">$280M</div>
+                <p className="text-sm text-gray-300">Revenue</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">2028</h3>
-                <div className="text-2xl font-bold text-orange-300 mb-1">$580M</div>
-                <p className="text-sm text-gray-600">Revenue</p>
+                <h3 className="text-lg font-bold text-gray-400 mb-2">2028</h3>
+                <div className="text-2xl font-bold text-orange-400 mb-1">$580M</div>
+                <p className="text-sm text-gray-300">Revenue</p>
               </div>
             </div>
             
             <div className="mt-8 grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <h4 className="text-lg font-bold text-white mb-2">Gross Margin</h4>
-                <div className="text-3xl font-bold text-green-300">85%</div>
-                <p className="text-sm text-gray-600">Software-based revenue model</p>
+                <h4 className="text-lg font-bold text-gray-400 mb-2">Gross Margin</h4>
+                <div className="text-3xl font-bold text-green-400">85%</div>
+                <p className="text-sm text-gray-300">Software-based revenue model</p>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-white mb-2">Customer LTV</h4>
-                <div className="text-3xl font-bold text-blue-300">$2.3M</div>
-                <p className="text-sm text-gray-600">Average enterprise customer</p>
+                <h4 className="text-lg font-bold text-gray-400 mb-2">Customer LTV</h4>
+                <div className="text-3xl font-bold text-blue-400">$2.3M</div>
+                <p className="text-sm text-gray-300">Average enterprise customer</p>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-white mb-2">CAC Payback</h4>
-                <div className="text-3xl font-bold text-purple-300">8 months</div>
-                <p className="text-sm text-gray-600">Efficient customer acquisition</p>
+                <h4 className="text-lg font-bold text-gray-400 mb-2">CAC Payback</h4>
+                <div className="text-3xl font-bold text-purple-400">8 months</div>
+                <p className="text-sm text-gray-300">Efficient customer acquisition</p>
               </div>
             </div>
           </div>
