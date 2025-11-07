@@ -411,14 +411,14 @@ Seeking qualified candidate with 12+ years experience in venture capital and tec
             </p>
           </div>
           
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8">
+          <div className="bg-gray-900/90 backdrop-blur-lg border border-gray-700/50 rounded-lg p-8">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-green-300 font-bold text-xl">E</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Environmental</h3>
-                <ul className="text-gray-600 text-sm space-y-2">
+                <ul className="text-gray-300 text-sm space-y-2">
                   <li>• Carbon neutral operations by 2026</li>
                   <li>• Renewable energy for all data centers</li>
                   <li>• AI for climate change solutions</li>
@@ -431,7 +431,7 @@ Seeking qualified candidate with 12+ years experience in venture capital and tec
                   <span className="text-blue-300 font-bold text-xl">S</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Social</h3>
-                <ul className="text-gray-600 text-sm space-y-2">
+                <ul className="text-gray-300 text-sm space-y-2">
                   <li>• Diverse and inclusive workforce</li>
                   <li>• AI education accessibility programs</li>
                   <li>• Community technology initiatives</li>
@@ -444,7 +444,7 @@ Seeking qualified candidate with 12+ years experience in venture capital and tec
                   <span className="text-purple-300 font-bold text-xl">G</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Governance</h3>
-                <ul className="text-gray-600 text-sm space-y-2">
+                <ul className="text-gray-300 text-sm space-y-2">
                   <li>• Independent board majority</li>
                   <li>• Transparent reporting practices</li>
                   <li>• Ethical AI development standards</li>
