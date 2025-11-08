@@ -26,7 +26,7 @@ export default function FAQ() {
   const faqData: FAQItem[] = [
     {
       category: "General",
-      question: "What is <BrandName />?",
+      question: "What is A p e x - M e r i d i a n ®?",
       answer: "A p e x  M e r i d i a n ® is a leading artificial intelligence company that develops cutting-edge AI solutions for aviation, cybersecurity, education, and AGI development. We focus on creating AI that augments human capabilities and solves complex real-world problems."
     },
     {
