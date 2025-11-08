@@ -59,9 +59,9 @@ export default function CompanyOverviewPage() {
               <Image
                 src="/assets/Apex-Meridian_tree_drowing.png"
                 alt="Apex-Meridian Vision"
-                width={600}
+                width={400}
                 height={400}
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-80 h-auto rounded-lg shadow-lg mx-auto"
               />
             </div>
           </div>
