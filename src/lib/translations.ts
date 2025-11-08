@@ -118,16 +118,16 @@ export const translations = {
 
     // CTA section
     'cta.title': 'Ready to Transform Your Industry?',
-    'cta.subtitle': 'Join leading organizations exploring Apex-Meridian\'s AI solutions to drive innovation and growth.',
+    'cta.subtitle': 'Join leading organizations exploring A p e x - M e r i d i a n ®\'s AI solutions to drive innovation and growth.',
     'cta.button': 'Start Your AI Journey',
 
     // About page
-    'about.title': 'About Apex-Meridian',
+    'about.title': 'About A p e x - M e r i d i a n ®',
     'about.subtitle': 'Discover our mission, leadership, history, and opportunities to join our team in revolutionizing artificial intelligence.',
     'about.overview.title': 'Company Overview',
     'about.overview.description': 'Learn about our mission, vision, values, and the impact we\'re making in the AI industry.',
     'about.leadership.title': 'Leadership Team',
-    'about.leadership.description': 'Meet the visionary leaders driving innovation and excellence at Apex-Meridian.',
+    'about.leadership.description': 'Meet the visionary leaders driving innovation and excellence at A p e x - M e r i d i a n ®.',
     'about.history.title': 'Company History',
     'about.history.description': 'Explore our journey from startup to industry leader in artificial intelligence solutions.',
     'about.careers.title': 'Careers',
@@ -136,13 +136,13 @@ export const translations = {
     'about.meetTeam': 'Meet the Team',
     'about.ourStory': 'Our Story',
     'about.viewOpportunities': 'View Opportunities',
-    'about.whyChoose.title': 'Why Choose Apex-Meridian?',
+    'about.whyChoose.title': 'Why Choose A p e x - M e r i d i a n ®?',
     'about.whyChoose.description': 'We\'re not just building AI solutions – we\'re creating the future of intelligent technology that benefits humanity.',
     'about.stats.users': 'Global User Base',
     'about.stats.clients': 'Enterprise Partners',
     'about.stats.uptime': 'Platform Performance',
     'about.cta.title': 'Ready to Get Started?',
-    'about.cta.description': 'Discover how Apex-Meridian can transform your industry with cutting-edge AI solutions.',
+    'about.cta.description': 'Discover how A p e x - M e r i d i a n ® can transform your industry with cutting-edge AI solutions.',
     'about.cta.exploreSolutions': 'Explore Solutions',
     'about.cta.contactUs': 'Contact Us',
 

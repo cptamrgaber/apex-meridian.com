@@ -41,7 +41,7 @@ export default function EmployeeLoginPage() {
               Employee Portal Access
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Welcome to the Apex-Meridian employee portal. Please sign in with your company credentials 
+              Welcome to the A p e x  M e r i d i a n ® employee portal. Please sign in with your company credentials 
               to access your dashboard, HR resources, and company information.
             </p>
           </div>
